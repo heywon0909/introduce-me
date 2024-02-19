@@ -16,8 +16,9 @@ module.exports = {
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
-  plugins: ["react-refresh", "heywon0909"],
+  plugins: ["react-refresh", "variablesrules"],
   rules: {
+    "variablesrules/array-definition": "error",
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
@@ -26,7 +27,7 @@ module.exports = {
     "no-restricted-imports": [
       "error",
       {
-        patterns: [".*"],
+        // patterns: [".*"],
         paths: [
           {
             name: "react",
