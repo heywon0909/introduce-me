@@ -5,6 +5,7 @@ interface Props {
 }
 export default function Nav({ hover, handleHover }: Props) {
   return (
+<S.WrapNav>
     <S.FloatNav
       left={true}
       onMouseOver={() => handleHover(true)}
@@ -45,6 +46,7 @@ export default function Nav({ hover, handleHover }: Props) {
           </S.NavWrapper>
         )}
       </S.Nav>
-    </S.FloatNav>
+      </S.FloatNav>
+      </S.WrapNav>
   );
 }

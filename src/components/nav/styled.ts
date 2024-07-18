@@ -145,6 +145,12 @@ export const FrameContainer = styled.div<{ url: string }>`
   }
 `;
 
+export const WrapNav = styled.nav`
+  position: sticky;
+  z-index: 1000;
+  top: 37%;
+`
+
 export const FloatNav = styled.div<{ left?: boolean; right?: boolean }>`
   width: 60px;
   height: 230px;
