@@ -1,6 +1,5 @@
 import * as S from './styled'
 import heywon from '/assets/image/heywon.jpg'
-import { TextContainer, Typography } from 'react-md'
 
 export default function Info() {
     return (
@@ -15,19 +14,27 @@ export default function Info() {
                         🌳
                     </S.TitleText>
                     <S.TitleText>
-                        <TextContainer>
-                            <Typography>
-                                1. React, Vue js 활용한 실무 적용 경험이
-                                있습니다. - Vue js 실무 경험 (2년) - React
-                                팀프로젝트 + 실무 (1년) 2. **협업**을 중요하게
-                                생각합니다. - 함께 성장해 나갈 수 있는 환경을
-                                만드는 것을 좋아합니다. - 팀프로젝트에서 코드
+
+                                <span>1. React, Vue js 활용한 실무 적용 경험이
+                                    있습니다.</span>
+                                <ul>
+                                    <li>Vue js 실무 경험 (2년)</li>
+                                    <li>React 팀프로젝트 + 실무 (1년)</li>
+                                </ul>
+                                <span>
+                                 2. **협업**을 중요하게
+                                생각합니다.   
+                                </span>
+                                <ul>
+                                    <li>함께 성장해 나갈 수 있는 환경을
+                                        만드는 것을 좋아합니다.</li>
+                                    <li>팀프로젝트에서 코드
                                 컨벤션을 eslint-plugin으로 만들어 적용한 경험이
-                                있습니다. - 스프린트 환경에서의 프론트엔드 개발
+                                        있습니다.</li>
+                                    <li>스프린트 환경에서의 프론트엔드 개발
                                 가능한 환경을 만들기 위해 msw를 활용하여, 개발
-                                시간을 줄인 경험이 있습니다.
-                            </Typography>
-                        </TextContainer>
+                                시간을 줄인 경험이 있습니다.</li>
+                                </ul>
                     </S.TitleText>
                     <S.UserWrapper>
                         <S.UserImg src={heywon}></S.UserImg>
