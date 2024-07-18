@@ -1,5 +1,5 @@
 import * as S from './styled'
-import heywon from '/introduce-me/assets/image/heywon.jpg'
+import heywon from '/assets/image/heywon.jpg'
 
 
 export default function Info() {

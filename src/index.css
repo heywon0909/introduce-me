@@ -13,45 +13,45 @@ code {
 
 @font-face {
     font-family: 'NotoSansKR-Bold';
-    src: url('/introduce-me/assets/fonts/NotoSansKR-Bold.ttf');
+    src: url('/assets/fonts/NotoSansKR-Bold.ttf');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Light';
-    src: url('/introduce-me/assets/fonts/NotoSansKR-Light.ttf');
+    src: url('/assets/fonts/NotoSansKR-Light.ttf');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Medium';
-    src: url('/introduce-me/assets/fonts/NotoSansKR-Medium.ttf');
+    src: url('/assets/fonts/NotoSansKR-Medium.ttf');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Regular';
-    src: url('/introduce-me/assets/fonts/NotoSansKR-Regular.ttf');
+    src: url('/assets/fonts/NotoSansKR-Regular.ttf');
 }
 
 @font-face {
     font-family: 'NotoSansKR-SemiBold';
-    src: url('/introduce-me/assets/fonts/NotoSansKR-SemiBold.ttf');
+    src: url('/assets/fonts/NotoSansKR-SemiBold.ttf');
 }
 
 @font-face {
     font-family: 'NotoSansKR-ExtraBold';
-    src: url('/introduce-me/assets/fonts/NotoSansKR-ExtraBold.ttf');
+    src: url('/assets/fonts/NotoSansKR-ExtraBold.ttf');
 }
 
 @font-face {
     font-family: 'Lemon';
-    src: url('/introduce-me/assets/fonts/Lemon-Regular.ttf');
+    src: url('/assets/fonts/Lemon-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Poppins-semibold';
-    src: url('/introduce-me/assets/fonts/Poppins-SemiBold.ttf');
+    src: url('/assets/fonts/Poppins-SemiBold.ttf');
 }
 
 @font-face {
     font-family: 'Poppins-black';
-    src: url('/introduce-me/assets/fonts/Poppins-Black.ttf');
+    src: url('/assets/fonts/Poppins-Black.ttf');
 }
