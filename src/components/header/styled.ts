@@ -24,6 +24,10 @@ export const Header = styled.header`
   align-item: center;
   padding: 15px 15px;
   border-bottom: 1px solid #515151;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: rgb(11, 12, 13);
 `;
 
 export const HeaderMenu = styled.div`
@@ -71,7 +75,7 @@ export const LogoImgWrapper = styled.div`
 `;
 
 export const Logo = styled.span`
-  color: rgb(255, 252, 225);
+  color: #fff;
   font-family: Lemon;
   font-size: 16px;
 `;
