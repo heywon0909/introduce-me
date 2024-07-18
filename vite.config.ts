@@ -7,7 +7,7 @@ export default defineConfig({
     base: '/introduce-me/',
     build: {
         rollupOptions: {
-            input: 'src/main.tsx',
+            input: path.resolve(__dirname, 'index.html'),
             output: {
                 dir: 'build',
                 entryFileNames: '[name]-[hash].js',
