@@ -50,7 +50,7 @@ export default function Nav({ hover, handleHover }: Props) {
                             <S.NavTitle>H</S.NavTitle>
                             <S.NavTitle>O</S.NavTitle>
                             <S.NavTitle>W</S.NavTitle>
-                            <S.NavTitle>　</S.NavTitle>
+                            <S.NavTitle>&apos;</S.NavTitle>
                             <S.NavTitle>M</S.NavTitle>
                             <S.NavTitle>O</S.NavTitle>
                             <S.NavTitle>R</S.NavTitle>
