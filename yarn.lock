@@ -48,6 +48,13 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@babel/runtime@^7.23.9", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+  version "7.24.8"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.24.8.tgz#5d958c3827b13cc6d05e038c07fb2e5e3420d82e"
+  integrity sha512-5F7SDGs1T72ZczbRwbGO9lQi0NLjQxzl6i4lJxLxfW9U5UluCSyEJeniWvnhl3/euNiqQVbo8zruhsDfid0esA==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
 "@babel/types@^7.22.15":
   version "7.23.9"
   resolved "https://registry.npmjs.org/@babel/types/-/types-7.23.9.tgz"
@@ -338,6 +345,83 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-2.0.2.tgz"
   integrity sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==
 
+"@juggle/resize-observer@^3.3.0":
+  version "3.4.0"
+  resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz#08d6c5e20cf7e4cc02fd181c4b0c225cd31dbb60"
+  integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
+
+"@mui/core-downloads-tracker@^5.16.4":
+  version "5.16.4"
+  resolved "https://registry.npmjs.org/@mui/core-downloads-tracker/-/core-downloads-tracker-5.16.4.tgz#a34de72acd7e81fdbcc7eeb07786205e90dda148"
+  integrity sha512-rNdHXhclwjEZnK+//3SR43YRx0VtjdHnUFhMSGYmAMJve+KiwEja/41EYh8V3pZKqF2geKyfcFUenTfDTYUR4w==
+
+"@mui/material@^5.16.4":
+  version "5.16.4"
+  resolved "https://registry.npmjs.org/@mui/material/-/material-5.16.4.tgz#992d630637d9d38620e4937fb11d0a97965fdabf"
+  integrity sha512-dBnh3/zRYgEVIS3OE4oTbujse3gifA0qLMmuUk13ywsDCbngJsdgwW5LuYeiT5pfA8PGPGSqM7mxNytYXgiMCw==
+  dependencies:
+    "@babel/runtime" "^7.23.9"
+    "@mui/core-downloads-tracker" "^5.16.4"
+    "@mui/system" "^5.16.4"
+    "@mui/types" "^7.2.15"
+    "@mui/utils" "^5.16.4"
+    "@popperjs/core" "^2.11.8"
+    "@types/react-transition-group" "^4.4.10"
+    clsx "^2.1.0"
+    csstype "^3.1.3"
+    prop-types "^15.8.1"
+    react-is "^18.3.1"
+    react-transition-group "^4.4.5"
+
+"@mui/private-theming@^5.16.4":
+  version "5.16.4"
+  resolved "https://registry.npmjs.org/@mui/private-theming/-/private-theming-5.16.4.tgz#0118f137975b35dc4774c6d593b8fcf86594c3fc"
+  integrity sha512-ZsAm8cq31SJ37SVWLRlu02v9SRthxnfQofaiv14L5Bht51B0dz6yQEoVU/V8UduZDCCIrWkBHuReVfKhE/UuXA==
+  dependencies:
+    "@babel/runtime" "^7.23.9"
+    "@mui/utils" "^5.16.4"
+    prop-types "^15.8.1"
+
+"@mui/styled-engine@^5.16.4":
+  version "5.16.4"
+  resolved "https://registry.npmjs.org/@mui/styled-engine/-/styled-engine-5.16.4.tgz#a7a8c9079c307bab91ccd65ed5dd1496ddf2a3ab"
+  integrity sha512-0+mnkf+UiAmTVB8PZFqOhqf729Yh0Cxq29/5cA3VAyDVTRIUUQ8FXQhiAhUIbijFmM72rY80ahFPXIm4WDbzcA==
+  dependencies:
+    "@babel/runtime" "^7.23.9"
+    "@emotion/cache" "^11.11.0"
+    csstype "^3.1.3"
+    prop-types "^15.8.1"
+
+"@mui/system@^5.16.4":
+  version "5.16.4"
+  resolved "https://registry.npmjs.org/@mui/system/-/system-5.16.4.tgz#c03f971ed273f0ad06c69c949c05e866ad211407"
+  integrity sha512-ET1Ujl2/8hbsD611/mqUuNArMCGv/fIWO/f8B3ZqF5iyPHM2aS74vhTNyjytncc4i6dYwGxNk+tLa7GwjNS0/w==
+  dependencies:
+    "@babel/runtime" "^7.23.9"
+    "@mui/private-theming" "^5.16.4"
+    "@mui/styled-engine" "^5.16.4"
+    "@mui/types" "^7.2.15"
+    "@mui/utils" "^5.16.4"
+    clsx "^2.1.0"
+    csstype "^3.1.3"
+    prop-types "^15.8.1"
+
+"@mui/types@^7.2.15":
+  version "7.2.15"
+  resolved "https://registry.npmjs.org/@mui/types/-/types-7.2.15.tgz#dadd232fe9a70be0d526630675dff3b110f30b53"
+  integrity sha512-nbo7yPhtKJkdf9kcVOF8JZHPZTmqXjJ/tI0bdWgHg5tp9AnIN4Y7f7wm9T+0SyGYJk76+GYZ8Q5XaTYAsUHN0Q==
+
+"@mui/utils@^5.16.4":
+  version "5.16.4"
+  resolved "https://registry.npmjs.org/@mui/utils/-/utils-5.16.4.tgz#8e50e27a630e3d8eeb3e9d3bc31cbb0e4956f5fd"
+  integrity sha512-nlppYwq10TBIFqp7qxY0SvbACOXeOjeVL3pOcDsK0FT8XjrEXh9/+lkg8AEIzD16z7YfiJDQjaJG2OLkE7BxNg==
+  dependencies:
+    "@babel/runtime" "^7.23.9"
+    "@types/prop-types" "^15.7.12"
+    clsx "^2.1.1"
+    prop-types "^15.8.1"
+    react-is "^18.3.1"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -358,6 +442,413 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@popperjs/core@^2.11.8":
+  version "2.11.8"
+  resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
+
+"@react-md/alert@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/alert/-/alert-5.1.6.tgz#0dc1734045e49861bb5f09087f122d7364124c74"
+  integrity sha512-k+o4KZWRlDo+RbLvgK0WEJ/RqUUUxfg9wvmBQqjLOT7Nrg+JunH6+0LlHA/SbGFSp6xORk6737TGjbGPoUsOuw==
+  dependencies:
+    "@react-md/button" "^5.1.6"
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/portal" "^5.1.0"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/app-bar@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/app-bar/-/app-bar-5.1.6.tgz#adc620c4c2dd7e13f384066869e2fe1099ce8f6d"
+  integrity sha512-z0ewAuyxlarl0TdPFwFphm//V0KxJjgsU29wDCm+czdk1J283cSYR2Uzsk3IWB8yDf++S7tHmAxuMXuH3lROhg==
+  dependencies:
+    "@react-md/button" "^5.1.6"
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/autocomplete@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/autocomplete/-/autocomplete-5.1.6.tgz#939b38eca33edac06b0f0867e7662e20e202a3ad"
+  integrity sha512-aZpiz0YP0mIKdDKKH8ECTL3i+yzqeJ0rQFfT7C3ilVF2/uNI1n3AIS4XqQvsgyhVsHGA2LeVLSeMqncvQx6CQw==
+  dependencies:
+    "@react-md/form" "^5.1.6"
+    "@react-md/list" "^5.1.6"
+    "@react-md/portal" "^5.1.0"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/avatar@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/avatar/-/avatar-5.1.6.tgz#c81be7b5bfe262459ff83e924386b94508755b17"
+  integrity sha512-XD4wI4FCUYpGynkpPSCAVHf9gyQPYeE0Awa6M5sTJDtKxWD0VrO7x+buy5G1yYEGqDI7m1456fAT6gTqFUVO6w==
+  dependencies:
+    "@react-md/icon" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/badge@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/badge/-/badge-5.1.6.tgz#89e6eea1e629b3a1c19da3a1555c95a2aac539b1"
+  integrity sha512-B312+3t3HP9wUaQebxApoZwwRPm/JW9FfcyF3dWtgjECyonJqYbbIswIHkmWahwbqZvYawdNrQ81RCSO/THc6g==
+  dependencies:
+    "@react-md/button" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/button@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/button/-/button-5.1.6.tgz#c200a469dbf144dd6d48f7271f095b42998cb7c4"
+  integrity sha512-FtzS/tJ0Fi/o6wFtRZ8weDOT5bHWuuAWZH1ZSY/fyXN0aVYROMdSNNghXWd32qxoUfWx623HeSD8fZK9ZqTtlw==
+  dependencies:
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/card@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/card/-/card-5.1.6.tgz#20abe1d7d33a16af599e3add84d8a55e83b97998"
+  integrity sha512-VFa+KjTKUos6K7zG6bN99aT+CvW0rNs8WZqMzJUg5jTqEyXeWp0j9X438UcG0coIYZr26XeVlcYfVSHIz2sBHA==
+  dependencies:
+    "@react-md/divider" "^5.1.6"
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/chip@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/chip/-/chip-5.1.6.tgz#2b18119a72e0b01386fb75337e3f70fba7c97ce1"
+  integrity sha512-WnMzNYQpYhCw7BdgzvnZaHqMTph+KlBXoS1S2pppPDVMNVYQTYIi29MwOgvmb4WY8uahxSB9Iy5Hczn+lOaMKg==
+  dependencies:
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/dialog@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/dialog/-/dialog-5.1.6.tgz#d4d55ce18ad62675dff2fb2dd5f2870072b83069"
+  integrity sha512-s/UJXwJDBw4yk/hz6qJtxJxDd4Tqq7ZZ8HEmJDFbQyiQS7DzpA+VujKZ9mkFYM2ZYGmvq2dXgbuNBlwziOIIPA==
+  dependencies:
+    "@react-md/app-bar" "^5.1.6"
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/overlay" "^5.1.6"
+    "@react-md/portal" "^5.1.0"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/divider@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/divider/-/divider-5.1.6.tgz#648795263435abe9e11b3a65de74d8b01a33ea29"
+  integrity sha512-JNzMdeooO/ZuZ/PmB3J4KuvznWTi1ZuuW20KPfd6QjK7BxgQHqpkUwNPaBtlIN9UMZ/Qjhljp5kRTaI8X281/w==
+  dependencies:
+    "@react-md/theme" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/elevation@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/elevation/-/elevation-5.1.6.tgz#97522c660525e833f17be17476525da086895416"
+  integrity sha512-H+7qhSPghY576Yc31LJTUNI3gux4Wx5rd7elAdG5hKAofAjX7Oz9RlQtECOWlHFrTlkgiG13BBjfTeOkphL15A==
+  dependencies:
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+
+"@react-md/expansion-panel@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/expansion-panel/-/expansion-panel-5.1.6.tgz#6007b8eecca42888ea15053d67d50c2e65e4ae57"
+  integrity sha512-iVVvfTHgJUwGm3CddWaqNA7H6acj7dH9FF0E/Irzd4qOpShVgldoe1esF8VgQpMkqkICaYDj4fiumA+Q7ndnYg==
+  dependencies:
+    "@react-md/button" "^5.1.6"
+    "@react-md/card" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/form@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/form/-/form-5.1.6.tgz#1830dffdf2196acb1ccfacdc18a17242f44ee6f0"
+  integrity sha512-Q1HWT0Ipo0gjv7ycHd8C3lIvJWe9IgC6b+9/ClaSciNdWTQUHEhp3q/epBb8sRUKVI/GRuVoy/PDQPISCHEmeA==
+  dependencies:
+    "@react-md/button" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/list" "^5.1.6"
+    "@react-md/menu" "^5.1.6"
+    "@react-md/portal" "^5.1.0"
+    "@react-md/progress" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/tooltip" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+    nanoid "^3.3.3"
+
+"@react-md/icon@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/icon/-/icon-5.1.6.tgz#f21afc121427675776f97979a28fbd4383fe18d9"
+  integrity sha512-VxvDvV9vzLGFnQeeNfSLQU7HQvG1xD6ARuoq4iZUCT0TtKAFdfX0T1yAOZpRKlAMHPIssp8bm0aW02OxUPx47A==
+  dependencies:
+    "@react-md/theme" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/layout@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/layout/-/layout-5.1.6.tgz#a60801ab132b73a50cbbd1ec876e58279647459d"
+  integrity sha512-VscGTgyBKKZJU5K/Rv+6CT9FkRRFUBMbg3SULGmqpyo5QfzN1JAFZCA6IDc/hVH548RAvvaDnv6f9dA6CIcqqg==
+  dependencies:
+    "@react-md/app-bar" "^5.1.6"
+    "@react-md/dialog" "^5.1.6"
+    "@react-md/divider" "^5.1.6"
+    "@react-md/form" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/link" "^5.1.6"
+    "@react-md/list" "^5.1.6"
+    "@react-md/menu" "^5.1.6"
+    "@react-md/sheet" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/tooltip" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/tree" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/link@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/link/-/link-5.1.6.tgz#50d36be1dc90011c6b29a663b51b693307cd4778"
+  integrity sha512-IUtrzsaEt2qFhwktKo97WAWbB7jyTR+cQx+VznlXO2Et/U0VKNOqG1TapwBNeQpmiWIy0DA2GSBJzso6cYFELQ==
+  dependencies:
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/list@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/list/-/list-5.1.6.tgz#db84dd2f9d0cf56b73a54876e3775e7a3657ab61"
+  integrity sha512-Y6pYvjW8WG9qxkZ06URhM8wmYtOQsseiRPWOtfdFYnTN3j2xLkI+FZc5flNx9bax4U7lWxImkpY2jB4aioonBg==
+  dependencies:
+    "@react-md/avatar" "^5.1.6"
+    "@react-md/divider" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/material-icons@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/material-icons/-/material-icons-5.1.6.tgz#885952849299ef34db0fae8aabb6958697fd39cc"
+  integrity sha512-UxBdhTiLSP/pJ6LQwQA83dHxWj1zYtasEHCHaT8vIY3mK1w2lxM5KMpbBahRvHgag9bzsusiLgmBTO/DMBrVKw==
+  dependencies:
+    "@react-md/icon" "^5.1.6"
+
+"@react-md/media@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/media/-/media-5.1.6.tgz#b5637153df0c9305705d6dc45f0fb59c75d4836d"
+  integrity sha512-6Fo0arkRdpocHedgaZcDW9fYVtJyGMBpIToNL7kjOGJP/89BYJo7h3EboG1wdPtFWPPcxBCQFihFT9DcT/St9A==
+  dependencies:
+    "@react-md/theme" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/menu@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/menu/-/menu-5.1.6.tgz#ea8fe8e6627e2c4a105f4eb19f3d6d6ad5f0e43f"
+  integrity sha512-nW+Ep+44y/5gzLWd66yM6V5degxRHC0driW5skNIxTXaEjqSIvOWIA3caBZ6xhKTE4+dCnDlr6Vo3YUJB/Yl5A==
+  dependencies:
+    "@react-md/app-bar" "^5.1.6"
+    "@react-md/button" "^5.1.6"
+    "@react-md/divider" "^5.1.6"
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/list" "^5.1.6"
+    "@react-md/portal" "^5.1.0"
+    "@react-md/sheet" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/overlay@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/overlay/-/overlay-5.1.6.tgz#ffbc3ab4d068bfa98ec83e0aca1a5c7676f93fb4"
+  integrity sha512-0rEQH/cxG5+myqOgSMZqTiHrGU6OlLGxXRakCjjDUeXzmeioe9E7KSwN3FsSmsaZpbD6ayfNS0rQsiHr7gFZuA==
+  dependencies:
+    "@react-md/portal" "^5.1.0"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/portal@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/@react-md/portal/-/portal-5.1.0.tgz#e286f77eac11d829c51ac6d09bef24f34eb34512"
+  integrity sha512-f8kY7G2tAFKPXEVqkuBk5Kv1Pk4ICO+ZzC4jLJOISKGaVMs0jVTJfKyngj3/EnI4eYZzKqCO3OACI/3Khl5OyA==
+
+"@react-md/progress@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/progress/-/progress-5.1.6.tgz#a22e45651b3291498c1c4646d21eb3936a565751"
+  integrity sha512-IEe75tpLypVQvvmby6FRWopR/HLZFKF+Y4RtltyZTbBAOXjS2CKnQDIbX/xAjXvjdS3SnRBy/lgQaCgs9TQnmw==
+  dependencies:
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/sheet@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/sheet/-/sheet-5.1.6.tgz#9ac1ef5642b31a009674073c586e0c3e091f7d6b"
+  integrity sha512-4GBlNlVYYYbXq0HlNiCSfsnysPQDUhZVkEcCyG9uyOMJpKRGI3eJ5jF7hdBOsV2xwApbP6O5oKG5TpfsU9MRug==
+  dependencies:
+    "@react-md/dialog" "^5.1.6"
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/overlay" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/states@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/states/-/states-5.1.6.tgz#a26e67ac83bed9f7eb928a1019c907ee44267405"
+  integrity sha512-GoDWv0xlWgV57ZEiU2dy3axxsiG3sCPinlg2JB4BXJNQ4BzgQJ/YlY1i5sKQ73kevTnbhoCMHrkDAm9T01s8GA==
+  dependencies:
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/table@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/table/-/table-5.1.6.tgz#1ad14799edf3321fb225ef5e8f43e73dc86c3a66"
+  integrity sha512-+DTYUPjOJhXpIY64iEltyzyVoua+6uMACqO+O39o2C+U6B6l9UbBINAzAgQ1PvPCPuUA8jBsy/CwoKjKOS9f4Q==
+  dependencies:
+    "@react-md/button" "^5.1.6"
+    "@react-md/divider" "^5.1.6"
+    "@react-md/form" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/tabs@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/tabs/-/tabs-5.1.6.tgz#66ca90391347e3c0f41497420b78fe49f9730454"
+  integrity sha512-979BNaC6JU+zP7j+1SkCEeWjDhsRLIMLyhWItk0SCbimGnH95RSfXwWZAGP8HQVCBQOtnqjPracgYefFzMh1bw==
+  dependencies:
+    "@react-md/icon" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/theme@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/theme/-/theme-5.1.6.tgz#046618e5ff957dfa714850b3de8b60aafa11823e"
+  integrity sha512-1F4nhG44xGTmlymbMLZlDmon+NY5Br8TvFkzabh6CvUzD61x5dwzAD1dCM4EuQCKNQNDg/qn68jNz1h7eg/vyg==
+  dependencies:
+    "@react-md/utils" "^5.1.6"
+
+"@react-md/tooltip@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/tooltip/-/tooltip-5.1.6.tgz#e53c1ba9bbc6a438f7895eadcc8eb220a18ab5a7"
+  integrity sha512-CZSSmDNXur1PJpYZa23Mtq50wYe4XOAV2kGjOvGL7/tUr/eqAA8SIpdmwktwGOACOxdIivR2GUk4P9JCUI/6/Q==
+  dependencies:
+    "@react-md/portal" "^5.1.0"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/transition@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/transition/-/transition-5.1.6.tgz#d42f666b744cedd40adf01c745847e1f4a92feb8"
+  integrity sha512-kuNf/y2B7f4MnGmegOoK9vM9mDNkw0MJLll6mPFNjrruIt2TlMTs25cC9DLI9GNQ6JWOibab0e7CqqrnqIgrFA==
+  dependencies:
+    "@react-md/portal" "^5.1.0"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/tree@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/tree/-/tree-5.1.6.tgz#49e5c8bffdd9d5ecb3fef5a62267cab1289b9bf2"
+  integrity sha512-kIV6nKe3BIdFErWY3cmuHFCc4oD7UelzVobFnQY1aFkRft0FtBACUEaVlrxTdVKUkpKLUAo/D8JohCYtYoYKvg==
+  dependencies:
+    "@react-md/icon" "^5.1.6"
+    "@react-md/list" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/typography@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/typography/-/typography-5.1.6.tgz#e07490ca474a24c577ac3865bfad494aa595076c"
+  integrity sha512-LXDYVivv+KDRXoux+OSmhJo3nLa+5Eq5l+wfUarif6n4MVFchi1oP2XCZQwgEfD81ZGExIfQ9n+1jwHSr/4ltg==
+  dependencies:
+    "@react-md/theme" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+    classnames "^2.3.1"
+
+"@react-md/utils@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/@react-md/utils/-/utils-5.1.6.tgz#d7778b3176ad66e62ffe041f30bfc7d901e58642"
+  integrity sha512-ZrhKOkIcqEzMb3SotRg+RP/uzSE4atbRqfhSBeSn2Wbli94sTxmNihNACrVCE8fZ9UTaeipIogcOs90l8E16Yw==
+  dependencies:
+    "@juggle/resize-observer" "^3.3.0"
+    classnames "^2.3.1"
 
 "@remix-run/router@1.15.1":
   version "1.15.1"
@@ -540,10 +1031,22 @@
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.11.tgz"
   integrity sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==
 
+"@types/prop-types@^15.7.12":
+  version "15.7.12"
+  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.12.tgz#12bb1e2be27293c1406acb6af1c3f3a1481d98c6"
+  integrity sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==
+
 "@types/react-dom@^18.2.19":
   version "18.2.19"
   resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.2.19.tgz"
   integrity sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-transition-group@^4.4.10":
+  version "4.4.10"
+  resolved "https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.10.tgz#6ee71127bdab1f18f11ad8fb3322c6da27c327ac"
+  integrity sha512-hT/+s0VQs2ojCX823m60m5f0sL5idt9SO6Tj6Dg+rdphGPIeJbJ6CxvBYkgkGKrYeDjvIpKTR38UzmtHJOGW3Q==
   dependencies:
     "@types/react" "*"
 
@@ -880,6 +1383,16 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+classnames@^2.3.1:
+  version "2.5.1"
+  resolved "https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
+  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
+
+clsx@^2.1.0, clsx@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz#eed397c9fd8bd882bfb18deab7102049a2f32999"
+  integrity sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz"
@@ -934,7 +1447,7 @@ cross-spawn@^7.0.2:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-csstype@^3.0.2:
+csstype@^3.0.2, csstype@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
@@ -996,6 +1509,14 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+dom-helpers@^5.0.1:
+  version "5.2.1"
+  resolved "https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz#d9400536b2bf8225ad98fe052e029451ac40e902"
+  integrity sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    csstype "^3.0.2"
 
 error-ex@^1.3.1:
   version "1.3.2"
@@ -1935,7 +2456,7 @@ ms@2.1.2, ms@^2.1.1:
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-nanoid@^3.3.7:
+nanoid@^3.3.3, nanoid@^3.3.7:
   version "3.3.7"
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.7.tgz"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
@@ -2115,7 +2636,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.8.1:
+prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -2152,6 +2673,50 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-is@^18.3.1:
+  version "18.3.1"
+  resolved "https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
+  integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
+
+react-md@^5.1.6:
+  version "5.1.6"
+  resolved "https://registry.npmjs.org/react-md/-/react-md-5.1.6.tgz#d017691e0fdea31fb5b95443cb1b29a0ff1e7c1d"
+  integrity sha512-+Z63TciwQ0UyJiTGTWeBhJZ7IQznBbb/rbOwSjmhxeZjC+HV0rDQzams7M2VTg24hMXw1aYAUUita5Ha2gZv3Q==
+  dependencies:
+    "@react-md/alert" "^5.1.6"
+    "@react-md/app-bar" "^5.1.6"
+    "@react-md/autocomplete" "^5.1.6"
+    "@react-md/avatar" "^5.1.6"
+    "@react-md/badge" "^5.1.6"
+    "@react-md/button" "^5.1.6"
+    "@react-md/card" "^5.1.6"
+    "@react-md/chip" "^5.1.6"
+    "@react-md/dialog" "^5.1.6"
+    "@react-md/divider" "^5.1.6"
+    "@react-md/elevation" "^5.1.6"
+    "@react-md/expansion-panel" "^5.1.6"
+    "@react-md/form" "^5.1.6"
+    "@react-md/icon" "^5.1.6"
+    "@react-md/layout" "^5.1.6"
+    "@react-md/link" "^5.1.6"
+    "@react-md/list" "^5.1.6"
+    "@react-md/material-icons" "^5.1.6"
+    "@react-md/media" "^5.1.6"
+    "@react-md/menu" "^5.1.6"
+    "@react-md/overlay" "^5.1.6"
+    "@react-md/portal" "^5.1.0"
+    "@react-md/progress" "^5.1.6"
+    "@react-md/sheet" "^5.1.6"
+    "@react-md/states" "^5.1.6"
+    "@react-md/table" "^5.1.6"
+    "@react-md/tabs" "^5.1.6"
+    "@react-md/theme" "^5.1.6"
+    "@react-md/tooltip" "^5.1.6"
+    "@react-md/transition" "^5.1.6"
+    "@react-md/tree" "^5.1.6"
+    "@react-md/typography" "^5.1.6"
+    "@react-md/utils" "^5.1.6"
+
 react-router-dom@^6.22.1:
   version "6.22.1"
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.22.1.tgz"
@@ -2166,6 +2731,16 @@ react-router@6.22.1, react-router@^6.22.1:
   integrity sha512-0pdoRGwLtemnJqn1K0XHUbnKiX0S4X8CgvVVmHGOWmofESj31msHo/1YiqcJWK7Wxfq2a4uvvtS01KAQyWK/CQ==
   dependencies:
     "@remix-run/router" "1.15.1"
+
+react-transition-group@^4.4.5:
+  version "4.4.5"
+  resolved "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
+  integrity sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    dom-helpers "^5.0.1"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
 
 react@>=16, react@^18.2.0:
   version "18.2.0"

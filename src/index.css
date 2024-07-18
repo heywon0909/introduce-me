@@ -1,57 +1,57 @@
 body {
-  margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(14, 16, 15);
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(14, 16, 15);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
 @font-face {
-  font-family: "NotoSansKR-Bold";
-  src: url("/assets/fonts/NotoSansKR-Bold.ttf");
+    font-family: 'NotoSansKR-Bold';
+    src: url('/assets/fonts/NotoSansKR-Bold.ttf');
 }
 
 @font-face {
-  font-family: "NotoSansKR-Light";
-  src: url("/assets/fonts/NotoSansKR-Light.ttf");
+    font-family: 'NotoSansKR-Light';
+    src: url('/assets/fonts/NotoSansKR-Light.ttf');
 }
 
 @font-face {
-  font-family: "NotoSansKR-Medium";
-  src: url("/assets/fonts/NotoSansKR-Medium.ttf");
+    font-family: 'NotoSansKR-Medium';
+    src: url('/assets/fonts/NotoSansKR-Medium.ttf');
 }
 
 @font-face {
-  font-family: "NotoSansKR-Regular";
-  src: url("/assets/fonts/NotoSansKR-Regular.ttf");
+    font-family: 'NotoSansKR-Regular';
+    src: url('/assets/fonts/NotoSansKR-Regular.ttf');
 }
 
 @font-face {
-  font-family: "NotoSansKR-SemiBold";
-  src: url("/assets/fonts/NotoSansKR-SemiBold.ttf");
+    font-family: 'NotoSansKR-SemiBold';
+    src: url('/assets/fonts/NotoSansKR-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: "NotoSansKR-ExtraBold";
-  src: url("/assets/fonts/NotoSansKR-ExtraBold.ttf");
+    font-family: 'NotoSansKR-ExtraBold';
+    src: url('/assets/fonts/NotoSansKR-ExtraBold.ttf');
 }
 
 @font-face {
-  font-family: "Lemon";
-  src: url("/assets/fonts/Lemon-Regular.ttf");
+    font-family: 'Lemon';
+    src: url('/assets/fonts/Lemon-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Poppins-semibold";
-  src: url("/assets/fonts/Poppins-SemiBold.ttf");
+    font-family: 'Poppins-semibold';
+    src: url('/assets/fonts/Poppins-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: "Poppins-black";
-  src: url("/assets/fonts/Poppins-Black.ttf");
+    font-family: 'Poppins-black';
+    src: url('/assets/fonts/Poppins-Black.ttf');
 }

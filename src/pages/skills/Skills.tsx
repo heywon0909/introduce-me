@@ -1,3 +1,3 @@
 export default function Skills() {
-  return <div></div>;
+    return <div></div>
 }
