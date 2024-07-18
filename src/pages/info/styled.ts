@@ -6,26 +6,30 @@ export const ContainerWrapper = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgb(14, 16, 15);
+
 `;
 
 export const Title = styled.div`
   font-family: Poppins-black;
   color: rgb(182 182 182);
-  font-size: 3rem;
+  font-size: 1.5rem;
 `;
 
 export const InfoWrapper = styled.div`
   width: 70%;
-  height: 100%;
+  height: auto;
   display: flex;
-  gap: 3%;
   flex-direction: column;
+  align-items: stretch;
+  gap:20px;
 `;
 
 export const Mybanner = styled.div`
   width: auto;
+  height:auto;
+  margin-top: 3%;
 `;
 
 export const Userbanner = styled.div`
@@ -36,12 +40,15 @@ export const Userbanner = styled.div`
   align-items: center;
 `;
 
-export const UserImg = styled.div`
-  width: 100%;
+export const UserImg = styled.img`
+  width:180px;
+  height:180px;
+  object-fit: cover;
+  border-radius: 8%;
 `;
 
 export const UserInfoWrapper = styled.div`
-  width: 100%;
+  width: 50%;
   padding: 2px 2px;
   height: 291px;
   display: flex;
@@ -58,16 +65,17 @@ export const UserInfo = styled.div`
 `;
 
 export const UserWrapper = styled.div<{ url?: string }>`
-  width: 70%;
-  background-color: #000;
-  display: flex;
+  width: 100%;
+  display:flex;
+  gap:15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #27292cbf;
   padding: 2px 2px;
-  background-size: cover;
-  background-image: url(${(props) => props.url});
 `;
 
 export const UserText = styled.span`
-  font-size: 1.6rem;
+  font-size: 1rem;
   letter-spacing: -0.01em;
   line-height: 100%;
   margin: 0;
@@ -96,14 +104,14 @@ export const Text = styled.span`
   color: #9f9f9f;
 `;
 
-export const SkillText = styled.span`
-  font-size: 1vw;
+export const SkillText = styled.span<{ importance: 'strong' | 'knowlegable' |'etc' }>`
+  font-size: 1rem;
   letter-spacing: -0.01em;
   line-height: 100%;
+  color:${({ importance }) =>importance==='strong'?'rgb(76 61 255)':importance==='knowlegable'?'rgb(28 222 28)':'white' };
   margin: 0;
   font-family: Poppins-black;
   width: 100%;
-  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -116,8 +124,8 @@ export const SkillsWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  gap: 30px;
+  
 `;
 
 export const SkillSection = styled.div`
@@ -128,7 +136,7 @@ export const SkillSection = styled.div`
 
 export const Skills = styled.div`
   width: 100%;
-  gap: 5px;
+  gap: 4%;
   display: flex;
   padding: 2px 2px;
 `;
@@ -138,7 +146,7 @@ export const TitleText = styled.span`
   letter-spacing: -0.01em;
   line-height: 100%;
   margin: 0;
-  font-family: Poppins-black;
+  font-family: Lemon;
   width: 100%;
   color: #fff;
   display: flex;

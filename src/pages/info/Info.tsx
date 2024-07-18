@@ -1,4 +1,5 @@
 import * as S from "./styled";
+import heywon from '/assets/image/heywon.jpg'
 
 export default function Info() {
   return (
@@ -7,12 +8,12 @@ export default function Info() {
         <S.Mybanner>
           <S.Title>ABOUT</S.Title>
         </S.Mybanner>
-        <S.TitleText>
+        <S.Userbanner>
+          <S.TitleText>
           꾸준히 LEVELUP 하는 프론트엔드 박혜원입니다 🌳
         </S.TitleText>
-        <S.Userbanner>
           <S.UserWrapper>
-            <S.UserImg></S.UserImg>
+            <S.UserImg src={heywon} ></S.UserImg>
             <S.UserInfoWrapper>
               <S.UserInfo>
                 <S.UserText>NAME</S.UserText>
@@ -37,7 +38,7 @@ export default function Info() {
           <S.TitleText>SKILLS</S.TitleText>
           <S.SkillsWrapper>
             <S.SkillSection>
-              <S.SkillText>Strong</S.SkillText>
+              <S.SkillText importance="strong">Strong</S.SkillText>
               <S.Skills>
                 <svg
                   width="60px"
@@ -373,7 +374,7 @@ export default function Info() {
               </S.Skills>
             </S.SkillSection>
             <S.SkillSection>
-              <S.SkillText>Knowlegable</S.SkillText>
+              <S.SkillText importance="knowlegable">Knowlegable</S.SkillText>
               <S.Skills>
                 <svg
                   width="60px"

@@ -13,7 +13,7 @@ export const ContainerWrapper = styled.div`
 export const Title = styled.div`
   font-family: Poppins-black;
   color: rgb(182 182 182);
-  font-size: 3rem;
+  font-size: 1.5rem;
 `;
 
 export const CareerWrapper = styled.div`
