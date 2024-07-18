@@ -1,48 +1,51 @@
 {
-  "name": "introduce-me",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{js,ts}": "eslint --fix"
-  },
-  "dependencies": {
-    "@mui/material": "^5.16.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-md": "^5.1.6"
-  },
-  "devDependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@gsap/react": "^2.1.0",
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "eslint-plugin-variablesrules": "^0.0.6",
-    "gsap": "^3.12.5",
-    "husky": "^9.1.0",
-    "lint-staged": "^15.2.7",
-    "pinst": "^3.0.0",
-    "react-icons": "^5.0.1",
-    "react-router": "^6.22.1",
-    "react-router-dom": "^6.22.1",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.0"
-  }
+    "name": "introduce-me",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview",
+        "prepare": "husky",
+        "deploy": "gh-pages -d build"
+    },
+    "lint-staged": {
+        "*.{js,ts}": "eslint --fix"
+    },
+    "dependencies": {
+        "@mui/material": "^5.16.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-md": "^5.1.6"
+    },
+    "devDependencies": {
+        "@emotion/react": "^11.11.3",
+        "@emotion/styled": "^11.11.0",
+        "@gsap/react": "^2.1.0",
+        "@types/node": "^20.11.19",
+        "@types/react": "^18.2.55",
+        "@types/react-dom": "^18.2.19",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "@vitejs/plugin-react-swc": "^3.5.0",
+        "eslint": "^8.56.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.5",
+        "eslint-plugin-variablesrules": "^0.0.6",
+        "gh-pages": "^6.1.1",
+        "gsap": "^3.12.5",
+        "husky": "^9.1.0",
+        "lint-staged": "^15.2.7",
+        "pinst": "^3.0.0",
+        "react-icons": "^5.0.1",
+        "react-router": "^6.22.1",
+        "react-router-dom": "^6.22.1",
+        "typescript": "^5.2.2",
+        "vite": "^5.1.0"
+    },
+    "homepage": "https://heywon0909.github.io/introduce-me/"
 }
