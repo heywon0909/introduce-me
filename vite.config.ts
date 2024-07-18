@@ -6,10 +6,12 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
     base: '/introduce-me/',
     build: {
+        assetsDir: 'build',
         rollupOptions: {
-            input: 'index.html',
+            input: 'src/main.tsx',
             output: {
                 dir: 'build',
+                entryFileNames: '[name]-[hash].js',
             },
         },
     },
@@ -27,7 +29,10 @@ export default defineConfig({
             },
             {
                 find: '@assets',
-                replacement: path.resolve(__dirname, 'public/assets'),
+                replacement: path.resolve(
+                    __dirname,
+                    'public/introduce-me/assets'
+                ),
             },
         ],
     },

@@ -85,7 +85,7 @@ export default function Home() {
                 <S.FrameText>N</S.FrameText>
                 <S.FrameText>D</S.FrameText>
             </S.Frame>
-            <S.FrameContainer url={'/assets/image/image.png'}>
+            <S.FrameContainer url={'/introduce-me/assets/image/image.png'}>
                 <S.Container>
                     <S.ContentWrapper>
                         <S.TitleWrap ref={greeting}>
@@ -105,8 +105,8 @@ export default function Home() {
                             <S.JobDesc>Frontend Developer</S.JobDesc>
                         </S.TitleWrap>
                     </S.ContentWrapper>
-                    <S.Img url={'/assets/image/photo.jpg'}>
-                        <S.ProfileImg src={'/assets/image/heyIcon.png'} />
+                    <S.Img url={'/introduce-me/assets/image/photo.jpg'}>
+                        <S.ProfileImg src={'/introduce-me/assets/image/heyIcon.png'} />
                     </S.Img>
                 </S.Container>
             </S.FrameContainer>

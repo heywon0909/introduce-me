@@ -16,7 +16,7 @@ export default function Header() {
                 <S.Logo>0909</S.Logo>
                 <S.LogoImgWrapper>
                     <S.LogoImg
-                        src={'/assets/image/hyewonLogo.png'}
+                        src={'/introduce-me/assets/image/hyewonLogo.png'}
                         alt="logo"
                     />
                 </S.LogoImgWrapper>

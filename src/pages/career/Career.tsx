@@ -8,7 +8,7 @@ export default function Resume() {
                 <S.ContentWrapper>
                     <S.CompanyWrapper>
                         <S.CompanyLogo>
-                            <S.CompanyImg src={'/assets/image/eco.png'} />
+                            <S.CompanyImg src={'/introduce-me/assets/image/eco.png'} />
                         </S.CompanyLogo>
                         <S.CompanyCareer>
                             <S.CompanyTitle>(주)ECO</S.CompanyTitle>
@@ -60,7 +60,7 @@ export default function Resume() {
                     </S.CompanyWrapper>
                     <S.CompanyWrapper>
                         <S.CompanyLogo>
-                            <S.CompanyImg src={'/assets/image/tmax.jpg'} />
+                            <S.CompanyImg src={'/introduce-me/assets/image/tmax.jpg'} />
                         </S.CompanyLogo>
                         <S.CompanyCareer>
                             <S.CompanyTitle>(주)Tmax WAPL.ai</S.CompanyTitle>
