@@ -6,9 +6,9 @@ export const Container = styled.div`
     align-items: center;
     color: white;
     width: 100%;
-    height: 800px;
-    padding: 5px 5px;
-
+    height: 100%;
+    padding: 0px 5px;
+    gap: 3%;
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -33,21 +33,15 @@ export const TitleWrap = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    @media (max-width: 660px) {
-        width: 100%;
-    }
-    @media (min-width: 660px) {
-        width: 100%;
-        min-width: 330px;
-    }
+    width: 100%;
 `
 
 export const Title = styled.span`
-    font-size: 3vw;
+    font-size: 3.2rem;
     letter-spacing: -0.01em;
     line-height: 100%;
     margin: 0;
-    font-family: Poppins-black;
+    font-family: Kanit-extrabold;
     width: 100%;
     color: rgb(182, 182, 182, 0.2);
     background: linear-gradient(to right, #fdbbbb, #001c95) no-repeat;
@@ -97,9 +91,9 @@ export const JobTitle = styled.div`
 `
 
 export const JobDesc = styled.div`
-    color: #673ab7;
+    color: rgb(84 32 181);
     font-size: 1.5rem;
-    font-family: Poppins-black;
+    font-family: Kanit-medium;
     font-weight: 100;
 `
 
@@ -133,7 +127,7 @@ export const Frame = styled.div<{ left?: number; right?: number }>`
 `
 
 export const FrameText = styled.span`
-    color: rgb(255, 252, 225);
+    color: rgb(157 157 157);
     font-family: NotoSansKR-Bold;
     font-weight: 800;
 `
@@ -143,7 +137,7 @@ export const FrameContainer = styled.div<{ url: string }>`
     background-color: white;
     gap: 10px;
     width: 85%;
-    height: 91%;
+    height: 700px;
     background-image: url(${(props) => props.url});
     background-size: cover;
     background-repeat: no-repeat;
@@ -160,7 +154,7 @@ export const ContainerWrapper = styled.div`
     height: auto;
     display: flex;
     position: relative;
-    top: 10%;
+    top: 16%;
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 16, 15);

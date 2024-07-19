@@ -55,3 +55,18 @@ code {
     font-family: 'Poppins-black';
     src: url('/assets/fonts/Poppins-Black.ttf');
 }
+
+@font-face {
+    font-family: 'Kanit-extrabold';
+    src: url('/assets/fonts/Kanit-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Kanit-medium';
+    src: url('/assets/fonts/Kanit-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Kanit-thin';
+    src: url('/assets/fonts/Kanit-Thin.ttf');
+}
