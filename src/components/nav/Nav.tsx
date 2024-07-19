@@ -21,7 +21,7 @@ export default function Nav({ hover, handleHover }: Props) {
                                 />
                                 <S.NavText>Info</S.NavText>
                             </S.NavWrapper>
-                            <S.NavWrapper>
+                            {/* <S.NavWrapper>
                                 <S.NavImg
                                     src={
                                         '/introduce-me/assets/image/pencil.png'
@@ -29,7 +29,7 @@ export default function Nav({ hover, handleHover }: Props) {
                                     alt="skills"
                                 />
                                 <S.NavText>Skills</S.NavText>
-                            </S.NavWrapper>
+                            </S.NavWrapper> */}
                             <S.NavWrapper>
                                 <S.NavImg
                                     src={

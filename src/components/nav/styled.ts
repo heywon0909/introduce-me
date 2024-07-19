@@ -189,6 +189,7 @@ export const Nav = styled.div`
     align-items: center;
     position: absolute;
     inset: 3px;
+    gap: 15px;
     z-index: 1;
     padding: 2px 8px;
 `

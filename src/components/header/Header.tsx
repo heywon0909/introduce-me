@@ -25,11 +25,6 @@ export default function Header() {
                     </S.MenuLink>
                 </S.MenuLinkWrapper>
                 <S.MenuLinkWrapper>
-                    <S.MenuLink to="/skills" clicked={pathname === '/skills'}>
-                        Skills
-                    </S.MenuLink>
-                </S.MenuLinkWrapper>
-                <S.MenuLinkWrapper>
                     <S.MenuLink to="/career" clicked={pathname === '/career'}>
                         Career
                     </S.MenuLink>
