@@ -1,7 +1,6 @@
 import * as S from './styled'
 import heywon from '/assets/image/heywon.jpg'
 
-
 export default function Info() {
     return (
         <S.ContainerWrapper>
@@ -9,55 +8,40 @@ export default function Info() {
                 <S.Mybanner>
                     <S.Title>ABOUT</S.Title>
                 </S.Mybanner>
+                <S.Userbanner dir="row">
+                    <S.UserTitle>박혜원 👩‍💻</S.UserTitle>
+                    <S.UserImg src={heywon}></S.UserImg>
+                </S.Userbanner>
                 <S.Userbanner>
                     <S.TitleText>
                         안녕하세요 꾸준히 LEVELUP 하는 프론트엔드 박혜원입니다
                         🌳
                     </S.TitleText>
                     <S.TitleText>
-
-                                <span>1. React, Vue js 활용한 실무 적용 경험이
-                                    있습니다.</span>
-                                <ul>
-                                    <li>Vue js 실무 경험 (2년)</li>
-                                    <li>React 팀프로젝트 + 실무 (1년)</li>
-                                </ul>
-                                <span>
-                                 2. **협업**을 중요하게
-                                생각합니다.   
-                                </span>
-                                <ul>
-                                    <li>함께 성장해 나갈 수 있는 환경을
-                                        만드는 것을 좋아합니다.</li>
-                                    <li>팀프로젝트에서 코드
-                                컨벤션을 eslint-plugin으로 만들어 적용한 경험이
-                                        있습니다.</li>
-                                    <li>스프린트 환경에서의 프론트엔드 개발
-                                가능한 환경을 만들기 위해 msw를 활용하여, 개발
-                                시간을 줄인 경험이 있습니다.</li>
-                                </ul>
+                        <span>
+                            1. React, Vue js 활용한 실무 적용 경험이 있습니다.
+                        </span>
+                        <ul>
+                            <li>Vue js 실무 경험 (2년)</li>
+                            <li>React 팀프로젝트 + 실무 (1년)</li>
+                        </ul>
+                        <span>2. **협업**을 중요하게 생각합니다.</span>
+                        <ul>
+                            <li>
+                                함께 성장해 나갈 수 있는 환경을 만드는 것을
+                                좋아합니다.
+                            </li>
+                            <li>
+                                팀프로젝트에서 코드 컨벤션을 eslint-plugin으로
+                                만들어 적용한 경험이 있습니다.
+                            </li>
+                            <li>
+                                스프린트 환경에서의 프론트엔드 개발 가능한
+                                환경을 만들기 위해 msw를 활용하여, 개발 시간을
+                                줄인 경험이 있습니다.
+                            </li>
+                        </ul>
                     </S.TitleText>
-                    <S.UserWrapper>
-                        <S.UserImg src={heywon}></S.UserImg>
-                        <S.UserInfoWrapper>
-                            <S.UserInfo>
-                                <S.UserText>NAME</S.UserText>
-                                <S.Text>PARK. HYE. WON</S.Text>
-                            </S.UserInfo>
-                            <S.UserInfo>
-                                <S.UserText>BIRTH</S.UserText>
-                                <S.Text>1997.03.31</S.Text>
-                            </S.UserInfo>
-                            <S.UserInfo>
-                                <S.UserText>GITHUB</S.UserText>
-                                <S.Text>https://github.com/heywon0909</S.Text>
-                            </S.UserInfo>
-                            <S.UserInfo>
-                                <S.UserText>GMAIL</S.UserText>
-                                <S.Text>hw731911@gmail.com</S.Text>
-                            </S.UserInfo>
-                        </S.UserInfoWrapper>
-                    </S.UserWrapper>
                 </S.Userbanner>
                 <S.Userbanner>
                     <S.TitleText>SKILLS</S.TitleText>
@@ -602,6 +586,26 @@ export default function Info() {
                         </S.SkillSection>
                     </S.SkillsWrapper>
                 </S.Userbanner>
+                {/* <S.UserWrapper>
+                    <S.UserInfoWrapper>
+                        <S.UserInfo>
+                            <S.UserText>NAME</S.UserText>
+                            <S.Text>PARK. HYE. WON</S.Text>
+                        </S.UserInfo>
+                        <S.UserInfo>
+                            <S.UserText>BIRTH</S.UserText>
+                            <S.Text>1997.03.31</S.Text>
+                        </S.UserInfo>
+                        <S.UserInfo>
+                            <S.UserText>GITHUB</S.UserText>
+                            <S.Text>https://github.com/heywon0909</S.Text>
+                        </S.UserInfo>
+                        <S.UserInfo>
+                            <S.UserText>GMAIL</S.UserText>
+                            <S.Text>hw731911@gmail.com</S.Text>
+                        </S.UserInfo>
+                    </S.UserInfoWrapper>
+                </S.UserWrapper> */}
             </S.InfoWrapper>
         </S.ContainerWrapper>
     )

@@ -20,7 +20,7 @@ export const ContainerWrapper = styled.div`
 export const Header = styled.header`
     display: flex;
     justify-content: space-between;
-    align-item: center;
+    align-items: center;
     padding: 15px 15px;
     border-bottom: 1px solid #515151;
 `
@@ -112,7 +112,7 @@ export const Bottom = styled.div`
     position: absolute;
     display: flex;
     justify-content: center;
-    algin-items: center;
+    align-items: center;
     bottom: 4%;
     @media (max-width: 768px) {
         bottom: 0;
@@ -129,7 +129,6 @@ export const BottomText = styled.span`
 export const FrameContainer = styled.div<{ url: string }>`
     display: flex;
     justify-content: space-between;
-    background-color: white;
     gap: 10px;
     width: 85%;
     height: 91%;
@@ -157,8 +156,10 @@ export const FloatNav = styled.div<{ left?: boolean; right?: boolean }>`
     aspect-ratio: 1 / 1;
     position: absolute;
     border-radius: 5px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
     display: flex;
-    background: #7e5bbf;
     top: 40%;
     z-index: 1;
     ${(props) =>
@@ -204,7 +205,7 @@ export const NavWrapper = styled.div<{ dir?: 'column' | 'row' }>`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 5px 2px;
+    padding: 2px 5px;
     ${(props) =>
         props.dir &&
         `

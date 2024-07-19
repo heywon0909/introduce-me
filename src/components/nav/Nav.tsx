@@ -23,14 +23,18 @@ export default function Nav({ hover, handleHover }: Props) {
                             </S.NavWrapper>
                             <S.NavWrapper>
                                 <S.NavImg
-                                    src={'/introduce-me/assets/image/pencil.png'}
+                                    src={
+                                        '/introduce-me/assets/image/pencil.png'
+                                    }
                                     alt="skills"
                                 />
                                 <S.NavText>Skills</S.NavText>
                             </S.NavWrapper>
                             <S.NavWrapper>
                                 <S.NavImg
-                                    src={'/introduce-me/assets/image/resume.png'}
+                                    src={
+                                        '/introduce-me/assets/image/resume.png'
+                                    }
                                     alt="info"
                                 />
                                 <S.NavText>Resume</S.NavText>

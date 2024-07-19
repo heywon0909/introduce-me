@@ -9,10 +9,12 @@ export default function Root() {
     const handleHover = (flg: boolean) => setHover(flg)
 
     return (
-        <S.Container>
+        <>
             <Header />
-            <Nav hover={hover} handleHover={handleHover} />
-            <Outlet />
-        </S.Container>
+            <S.Container>
+                <Nav hover={hover} handleHover={handleHover} />
+                <Outlet />
+            </S.Container>
+        </>
     )
 }

@@ -11,14 +11,20 @@ export const ContainerWrapper = styled.div`
     top: 10%;
 `
 
+export const UserTitle = styled.div`
+    font-family: Poppins-black;
+    color: rgb(202 202 202);
+    font-size: 2rem;
+`
+
 export const Title = styled.div`
     font-family: Poppins-black;
-    color: rgb(182 182 182);
+    color: #fff;
     font-size: 1.5rem;
 `
 
 export const InfoWrapper = styled.div`
-    width: 70%;
+    width: 60%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -31,10 +37,12 @@ export const Mybanner = styled.div`
     height: auto;
 `
 
-export const Userbanner = styled.div`
+export const Userbanner = styled.div<{
+    dir?: 'column' | 'row'
+}>`
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: ${({ dir }) => (dir ? dir : 'column')};
+    justify-content: space-between;
     padding: 2px 2px;
     align-items: center;
 `
@@ -44,6 +52,7 @@ export const UserImg = styled.img`
     height: 180px;
     object-fit: cover;
     border-radius: 8%;
+    float: right;
 `
 
 export const UserInfoWrapper = styled.div`
@@ -151,9 +160,9 @@ export const TitleText = styled.span`
     letter-spacing: -0.01em;
     line-height: 20px;
     margin: 0;
-    font-family: Lemon;
+    font-family: Kanit-medium;
     width: 100%;
-    color: #fff;
+    color: rgb(160 160 160);
     display: flex;
     flex-direction: column;
     align-items: flex-start;

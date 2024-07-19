@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.div`
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -9,7 +10,7 @@ export const Container = styled.div`
 
 export const ContainerWrapper = styled.div`
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     position: relative;
     justify-content: center;
@@ -98,7 +99,6 @@ export const FloatNav = styled.div<{ left?: boolean; right?: boolean }>`
     position: absolute;
     border-radius: 5px;
     display: flex;
-    background: #7e5bbf;
     ${(props) =>
         props.left &&
         `
