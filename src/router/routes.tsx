@@ -10,7 +10,6 @@ const Career = lazy(() => import('@pages/career/Career'))
 const Project = lazy(() => import('@pages/project/Project'))
 const Skills = lazy(() => import('@pages/skills/Skills'))
 
-// eslint-disable-next-line variablesrules/array-definition
 const router = createBrowserRouter(
     [
         {
