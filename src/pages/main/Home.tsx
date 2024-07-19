@@ -106,7 +106,9 @@ export default function Home() {
                         </S.TitleWrap>
                     </S.ContentWrapper>
                     <S.Img url={'/introduce-me/assets/image/photo.jpg'}>
-                        <S.ProfileImg src={'/introduce-me/assets/image/heyIcon.png'} />
+                        <S.ProfileImg
+                            src={'/introduce-me/assets/image/heyIcon.png'}
+                        />
                     </S.Img>
                 </S.Container>
             </S.FrameContainer>

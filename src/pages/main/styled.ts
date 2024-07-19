@@ -6,6 +6,7 @@ export const Container = styled.div`
     align-items: center;
     color: white;
     width: 100%;
+    height: 800px;
     padding: 5px 5px;
 
     @media (max-width: 768px) {
@@ -30,9 +31,15 @@ export const ContentWrapper = styled.div`
 
 export const TitleWrap = styled.div`
     display: flex;
-    width: 330px;
     justify-content: flex-start;
     align-items: center;
+    @media (max-width: 660px) {
+        width: 100%;
+    }
+    @media (min-width: 660px) {
+        width: 100%;
+        min-width: 330px;
+    }
 `
 
 export const Title = styled.span`
@@ -145,15 +152,15 @@ export const FrameContainer = styled.div<{ url: string }>`
     }
     @media (min-width: 768px) {
         width: 70%;
-        height: 80%;
     }
 `
 
 export const ContainerWrapper = styled.div`
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     position: relative;
+    top: 10%;
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 16, 15);

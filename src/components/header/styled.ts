@@ -40,6 +40,9 @@ export const HeaderMenu = styled.div`
 
 export const MenuLinkWrapper = styled.div`
     display: flex;
+    @media (max-width: 660px) {
+        display: none;
+    }
 `
 
 export const MenuLink = styled(Link)<{ clicked: boolean }>`
