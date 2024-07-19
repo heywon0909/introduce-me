@@ -15,5 +15,10 @@ export default function CareerDetail({ fetchUrl }: Props) {
 
     if (markdown === undefined) return null
 
-    return <ReactMarkdown>{markdown}</ReactMarkdown>
+    return <ReactMarkdown
+        components={{
+             ul: ({ children }) => <ul style={{ color: '#fff' }}>{children}</ul>,
+            li: ({ children }) => <li style={{ color: '#fff' }} >{children}</li>,
+            p: ({ children }) => <p style={{ color: '#6155ff' }}>{children}</p>
+  }}>{markdown}</ReactMarkdown>
 }
