@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router'
 import * as S from './styled'
 import { useState } from 'react'
-import Header from '@components/header/Header'
+import { MainHeader } from '@components/header/Header'
 import Nav from '@components/nav/Nav'
 
 export default function Root() {
@@ -10,7 +10,7 @@ export default function Root() {
 
     return (
         <>
-            <Header />
+            <MainHeader />
             <S.Container>
                 <Nav hover={hover} handleHover={handleHover} />
                 <Outlet />
