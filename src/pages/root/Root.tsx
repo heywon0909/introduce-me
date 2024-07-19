@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router'
 import * as S from './styled'
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import { MainHeader } from '@components/header/Header'
 import Nav from '@components/nav/Nav'
 
@@ -13,7 +13,9 @@ export default function Root() {
             <MainHeader />
             <S.Container>
                 <Nav hover={hover} handleHover={handleHover} />
-                <Outlet />
+                <Suspense fallback={<div>loading...</div>}>
+                    <Outlet />
+                </Suspense>
             </S.Container>
         </>
     )
