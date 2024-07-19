@@ -711,7 +711,7 @@ Error generating stack: `+l.message+`
     color: #fff;
     font-family: NotoSansKR-Medium;
     font-weight: 400;
-`;function Mm(){const t=po(),{pathname:e}=t;return g.jsxs(Cm,{children:[g.jsxs(Sm,{to:"/",children:[g.jsx(wr,{children:"h"}),g.jsx(wr,{children:"e"}),g.jsx(wr,{children:"y"}),g.jsx(wr,{children:"w"}),g.jsx(wr,{children:"o"}),g.jsx(wr,{children:"n"}),g.jsx(wr,{children:"0909"}),g.jsx(Lm,{children:g.jsx(wm,{src:"/introduce-me/assets/image/hyewonLogo.png",alt:"logo"})})]}),g.jsxs(xm,{children:[g.jsx(Wo,{children:g.jsx(Yo,{to:"/info",clicked:e==="/info",children:"Info"})}),g.jsx(Wo,{children:g.jsx(Yo,{to:"/skills",clicked:e==="/skills",children:"Skills"})}),g.jsx(Wo,{children:g.jsx(Yo,{to:"/career",clicked:e==="/career",children:"Career"})}),g.jsx(Wo,{children:g.jsx(Yo,{to:"/project",clicked:e==="/project",children:"Projects"})})]})]})}R.div`
+`;function Mm(){const t=po(),{pathname:e}=t;return g.jsxs(Cm,{children:[g.jsxs(Sm,{to:"/",children:[g.jsx(wr,{children:"h"}),g.jsx(wr,{children:"e"}),g.jsx(wr,{children:"y"}),g.jsx(wr,{children:"w"}),g.jsx(wr,{children:"o"}),g.jsx(wr,{children:"n"}),g.jsx(wr,{children:"0909"}),g.jsx(Lm,{children:g.jsx(wm,{src:"assets/image/hyewonLogo.png",alt:"logo"})})]}),g.jsxs(xm,{children:[g.jsx(Wo,{children:g.jsx(Yo,{to:"/info",clicked:e==="/info",children:"Info"})}),g.jsx(Wo,{children:g.jsx(Yo,{to:"/skills",clicked:e==="/skills",children:"Skills"})}),g.jsx(Wo,{children:g.jsx(Yo,{to:"/career",clicked:e==="/career",children:"Career"})}),g.jsx(Wo,{children:g.jsx(Yo,{to:"/project",clicked:e==="/project",children:"Projects"})})]})]})}R.div`
     width: 100%;
     height: 100vh;
     display: flex;
