@@ -15,10 +15,7 @@ export default function Header() {
                 <S.Logo>n</S.Logo>
                 <S.Logo>0909</S.Logo>
                 <S.LogoImgWrapper>
-                    <S.LogoImg
-                        src={'/introduce-me/assets/image/hyewonLogo.png'}
-                        alt="logo"
-                    />
+                    <S.LogoImg src={'assets/image/hyewonLogo.png'} alt="logo" />
                 </S.LogoImgWrapper>
             </S.LogoWrapper>
             <S.HeaderMenu>
