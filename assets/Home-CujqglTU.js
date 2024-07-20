@@ -1,4 +1,4 @@
-import{n as it,R as Lt,r as ne,j as k}from"../index-BvwHJuiJ.js";const Gr=it.div`
+import{n as it,R as Lt,r as ne,j as k}from"../index-DsdLY06j.js";const Gr=it.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +119,6 @@ import{n as it,R as Lt,r as ne,j as k}from"../index-BvwHJuiJ.js";const Gr=it.div
     height: auto;
     display: flex;
     position: relative;
-    top: 16%;
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 16, 15);
