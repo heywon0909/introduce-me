@@ -31,6 +31,14 @@ export default defineConfig({
                 find: '@assets',
                 replacement: path.resolve(__dirname, 'public/assets'),
             },
+            {
+                find: '@utils',
+                replacement: path.resolve(__dirname, 'src/utils'),
+            },
+            {
+                find: '@hooks',
+                replacement: path.resolve(__dirname, 'src/hooks'),
+            },
         ],
     },
 })
