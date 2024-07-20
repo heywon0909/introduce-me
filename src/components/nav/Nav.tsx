@@ -19,7 +19,7 @@ export default function Nav({ hover, handleHover }: Props) {
                                     src={'/introduce-me/assets/image/woman.png'}
                                     alt="info"
                                 />
-                                <S.NavText>Info</S.NavText>
+                                <S.NavText>info</S.NavText>
                             </S.NavWrapper>
                             {/* <S.NavWrapper>
                                 <S.NavImg
@@ -37,14 +37,14 @@ export default function Nav({ hover, handleHover }: Props) {
                                     }
                                     alt="info"
                                 />
-                                <S.NavText>Resume</S.NavText>
+                                <S.NavText>career</S.NavText>
                             </S.NavWrapper>
                             <S.NavWrapper>
                                 <S.NavImg
                                     src={'/introduce-me/assets/image/idea.png'}
                                     alt="info"
                                 />
-                                <S.NavText>Project</S.NavText>
+                                <S.NavText>project</S.NavText>
                             </S.NavWrapper>
                         </>
                     )}
