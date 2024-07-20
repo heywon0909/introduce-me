@@ -5,8 +5,7 @@ interface Props{
 }
 export const FrameText = ({ leftFrameText, rightFrameText }: Props) => {
     const leftText = leftFrameText?.split('').map((v,i) => ({ key: i, value: v }));
-    console.log('leftText',leftFrameText)
-    const rightText = rightFrameText?.split('').map((v,i)=>({key:i,value:v}))
+    const rightText = rightFrameText?.split('').map((v, i) => ({ key: i, value: v }));
     return (
         <>
             {leftText && (
