@@ -19,6 +19,6 @@ export default function CareerDetail({ fetchUrl }: Props) {
         components={{
              ul: ({ children }) => <ul style={{ color: '#fff' }}>{children}</ul>,
             li: ({ children }) => <li style={{ color: '#fff' }} >{children}</li>,
-            p: ({ children }) => <p style={{ color: '#6155ff' }}>{children}</p>
+            // p: ({ children }) => <p style={{ color: '#6155ff' }}>{children}</p>
   }}>{markdown}</ReactMarkdown>
 }

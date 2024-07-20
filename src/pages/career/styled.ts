@@ -58,7 +58,7 @@ export const CompanyCareer = styled.div`
     padding: 2px 15px;
     border-left: 0.1rem solid #7c7c7c;
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -96,6 +96,11 @@ export const CompanyDesc = styled.div`
 
 export const CompanyLine = styled.div`
     border-b: 1px solid #fff;
+`
+
+export const CompanyBackground = styled.div`
+    font-family: NotoSansKR-Light;
+    font-size: 0.9rem;
 `
 
 export const WorkTitle = styled.div`

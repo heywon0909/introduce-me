@@ -144,8 +144,8 @@ export const FrameContainer = styled.div<{ url: string }>`
     }
 `
 
-export const WrapNav = styled.nav`
-    position: sticky;
+export const WrapNav = styled.aside`
+    position: fixed;
     z-index: 1000;
     top: 37%;
 `

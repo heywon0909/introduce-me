@@ -30,7 +30,9 @@ export default function Resume() {
                                 개발하였습니다.
                             </S.CompanyDesc>
                             <S.CompanyLine></S.CompanyLine>
-                            <CareerDetail fetchUrl="/introduce-me/assets/md/tmax.md" />
+                            <S.CompanyBackground>
+                                <CareerDetail fetchUrl="/introduce-me/assets/md/tmax.md" />
+                            </S.CompanyBackground>
                         </S.CompanyCareer>
                     </S.CompanyWrapper>
                     <S.CompanyWrapper>
@@ -59,7 +61,9 @@ export default function Resume() {
                                 백 오피스 전반적인 관리 및 각종 기능 개발 / 기획
                             </S.WorkTitle>
                             {/* <S.CompanyPeriod>2021-08 ~ 2023-07</S.CompanyPeriod> */}
-                            <CareerDetail fetchUrl="/introduce-me/assets/md/eco.md" />
+                            <S.CompanyBackground>
+                                <CareerDetail fetchUrl="/introduce-me/assets/md/eco.md" />
+                            </S.CompanyBackground>
                         </S.CompanyCareer>
                     </S.CompanyWrapper>
                 </S.ContentWrapper>

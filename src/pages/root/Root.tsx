@@ -11,8 +11,8 @@ export default function Root() {
     return (
         <>
             <MainHeader />
+             <Nav hover={hover} handleHover={handleHover} />
             <S.Container>
-                <Nav hover={hover} handleHover={handleHover} />
                 <Suspense fallback={<div>loading...</div>}>
                     <Outlet />
                 </Suspense>
