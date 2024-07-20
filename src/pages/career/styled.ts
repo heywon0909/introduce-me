@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 export const ContainerWrapper = styled.div`
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -18,7 +18,7 @@ export const Title = styled.div`
 `
 
 export const CareerWrapper = styled.div`
-    width: 70%;
+    width: 60%;
     height: 100%;
     display: flex;
     gap: 10px;
@@ -68,9 +68,9 @@ export const CompanyCareer = styled.div`
 `
 
 export const CompanyImg = styled.img<{ src: string }>`
-    width: 180px;
-    height: 180px;
-    clip-path: circle(90px);
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
     ${(props) =>
         props.src &&
         `

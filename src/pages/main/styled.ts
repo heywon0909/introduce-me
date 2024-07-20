@@ -154,7 +154,6 @@ export const ContainerWrapper = styled.div`
     height: auto;
     display: flex;
     position: relative;
-    top: 16%;
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 16, 15);
