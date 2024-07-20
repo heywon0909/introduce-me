@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import * as S from './styled'
 import { FaHandsClapping } from 'react-icons/fa6'
 import gsap from 'gsap'
+import { FrameText } from '@components/design/FrameText'
 
 export default function Home() {
     const greeting = useRef<HTMLHeadingElement>(null)
@@ -63,28 +64,10 @@ export default function Home() {
 
     return (
         <S.ContainerWrapper>
-            <S.Frame left={3}>
-                <S.FrameText>D</S.FrameText>
-                <S.FrameText>E</S.FrameText>
-                <S.FrameText>V</S.FrameText>
-                <S.FrameText>E</S.FrameText>
-                <S.FrameText>L</S.FrameText>
-                <S.FrameText>O</S.FrameText>
-                <S.FrameText>P</S.FrameText>
-                <S.FrameText>E</S.FrameText>
-                <S.FrameText>R</S.FrameText>
-            </S.Frame>
-            <S.Frame right={3}>
-                <S.FrameText>F</S.FrameText>
-                <S.FrameText>R</S.FrameText>
-                <S.FrameText>O</S.FrameText>
-                <S.FrameText>N</S.FrameText>
-                <S.FrameText>T</S.FrameText>
-                <S.FrameText>-</S.FrameText>
-                <S.FrameText>E</S.FrameText>
-                <S.FrameText>N</S.FrameText>
-                <S.FrameText>D</S.FrameText>
-            </S.Frame>
+            <FrameText
+                leftFrameText='DEVELOPER'
+                rightFrameText='FRONT-END'
+            />
             <S.FrameContainer url={'/introduce-me/assets/image/image.png'}>
                 <S.Container>
                     <S.ContentWrapper>
