@@ -12,7 +12,7 @@ export default defineConfig({
             output: {
                 dir: 'build',
                 entryFileNames: '[name]-[hash].js',
-                chunkFileNames: '[name]-[hash].js',
+                chunkFileNames: 'assets/[name]-[hash].js',
                 assetFileNames: '[name]-[hash][extname]',
             },
         },
