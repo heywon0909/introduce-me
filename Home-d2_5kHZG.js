@@ -1,4 +1,4 @@
-import{n as F,j as A,r as wt,R as Lt}from"../index-_LpBMxUU.js";F.div`
+import{n as F,j as A,r as wt,R as Lt}from"./index-BjNb7lt_.js";F.div`
     display: flex;
     justify-content: center;
     align-items: center;
