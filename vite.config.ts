@@ -6,11 +6,13 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
     base: '/introduce-me/',
     build: {
+        assetsDir: path.resolve(__dirname, 'build'),
         rollupOptions: {
             input: path.resolve(__dirname, 'index.html'),
             output: {
                 dir: 'build',
                 entryFileNames: '[name]-[hash].js',
+                chunkFileNames: '[name]-[hash].js',
                 assetFileNames: '[name]-[hash][extname]',
             },
         },
