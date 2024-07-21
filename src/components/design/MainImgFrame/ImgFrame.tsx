@@ -1,8 +1,6 @@
 import { useEffect, useRef } from 'react';
-import BackgroundImg from '/assets/image/image.png';
 import * as S from '../styled'
 import gsap from 'gsap'
-import { useImgEncoding } from '@hooks/useImgEncoding';
 import { FaHandsClapping } from 'react-icons/fa6';
 interface Props{
     children: React.ReactNode;
@@ -12,7 +10,7 @@ export const ImgFrame = ({children}:Props) => {
     const job = useRef<HTMLDivElement>(null);
     const hiFive = useRef<HTMLDivElement>(null);
     
-    const { image, isLoading } = useImgEncoding(BackgroundImg);
+  
  
 
     useEffect(() => {
@@ -70,7 +68,7 @@ export const ImgFrame = ({children}:Props) => {
 
 
     return (
-          <S.FrameContainer url={isLoading ? '': image}>
+          <S.FrameContainer>
                 <S.Container>
                     <S.ContentWrapper>
                         <S.TitleWrap ref={greeting}>
@@ -82,9 +80,12 @@ export const ImgFrame = ({children}:Props) => {
                                     color="rgb(67 92 221)"
                                 />
                             </S.Title>
+                    </S.TitleWrap>
+                    <S.TitleWrap ref={job}>
+                            <S.Title id="text">I&apos;m </S.Title>
                         </S.TitleWrap>
-                        <S.TitleWrap ref={job}>
-                            <S.Title id="text">I&apos;m Heywon</S.Title>
+                    <S.TitleWrap ref={job}>
+                            <S.Title id="text">Heywon</S.Title>
                         </S.TitleWrap>
                         <S.TitleWrap ref={job}>
                             <S.JobDesc>Frontend Developer</S.JobDesc>

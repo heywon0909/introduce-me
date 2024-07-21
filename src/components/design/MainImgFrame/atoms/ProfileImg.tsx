@@ -1,8 +1,8 @@
 import * as S from '../../styled'
 import { useImgEncoding } from '@hooks/useImgEncoding'
-import profileImg from '/assets/image/heyIcon.png'
+import photo from '/assets/image/heywonLogo.png'
 export const ProfileImg = () => {
-    const {image,isLoading} = useImgEncoding(profileImg)
+    const {image,isLoading} = useImgEncoding(photo)
     return (
           <S.ProfileImg src={isLoading ? '': image}/>
     )

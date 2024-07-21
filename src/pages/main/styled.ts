@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Button as BaseButton } from '@mui/base/Button'
 
 export const Container = styled.div`
     display: flex;
@@ -131,6 +132,14 @@ export const FrameText = styled.span`
     font-family: NotoSansKR-Bold;
     font-weight: 800;
 `
+
+export const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+`
+
 export const FrameContainer = styled.div<{ url: string }>`
     display: flex;
     justify-content: space-between;
@@ -148,6 +157,8 @@ export const FrameContainer = styled.div<{ url: string }>`
         width: 70%;
     }
 `
+
+export const StyleButton = styled(BaseButton)``
 
 export const ContainerWrapper = styled.div`
     width: 100%;

@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 export const ContainerWrapper = styled.div`
     width: 100%;
-    height: 100%;
+    height: calc(100% - 70px);
     display: flex;
     position: relative;
     justify-content: center;

@@ -33,14 +33,14 @@ export const TitleWrap = styled.div`
 `
 
 export const Title = styled.span`
-    font-size: 3.2rem;
+    font-size: 6rem;
     letter-spacing: -0.01em;
     line-height: 100%;
     margin: 0;
     font-family: Kanit-extrabold;
     width: 100%;
-    color: rgb(182, 182, 182, 0.2);
-    background: linear-gradient(to right, #fdbbbb, #001c95) no-repeat;
+    color: #000;
+    // background: linear-gradient(to right, #fdbbbb, #001c95) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0%;
@@ -53,6 +53,9 @@ export const Title = styled.span`
     @media (max-width: 600px) {
         font-size: 10vw;
     }
+    background-image: linear-gradient(120deg, #ffc4f7, #725bdc);
+    -webkit-background-clip: text;
+    color: transparent;
 `
 
 export const Frame = styled.div<{ left?: number; right?: number }>`
@@ -89,30 +92,25 @@ export const FrameText = styled.span`
     font-family: NotoSansKR-Bold;
     font-weight: 800;
 `
-export const FrameContainer = styled.div<{ url?: string }>`
+export const FrameContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    background-color: white;
     gap: 10px;
     width: 85%;
-    height: 700px;
-    background-image: url(${(props) => props.url});
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 2%;
+    // background: linear-gradient(120deg, #ffc4f7, #725bdc);
     @media (max-width: 768px) {
         flex-direction: column;
     }
     @media (min-width: 768px) {
-        width: 70%;
+        width: 50%;
     }
 `
-export const Img = styled.div<{ url?: string }>`
+export const Img = styled.div`
     width: 300px;
     height: 300px;
     position: relative;
-    background-image: url(${(props) => props.url});
-    background-size: contain;
-    background-repeat: no-repeat;
     flex-shrink: 1;
 `
 

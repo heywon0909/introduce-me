@@ -15,6 +15,7 @@
         "*.{js,ts}": "eslint --fix"
     },
     "dependencies": {
+        "@mui/base": "^5.0.0-beta.40",
         "@mui/material": "^5.16.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",

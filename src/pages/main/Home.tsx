@@ -4,6 +4,8 @@ import { FrameText } from '@components/design/FrameText'
 import { ImgFrame } from '@components/design/MainImgFrame/ImgFrame'
 import { ImgSmallFrame } from '@components/design/MainImgFrame/atoms/ImgSmallFrame'
 import { ProfileImg } from '@components/design/MainImgFrame/atoms/ProfileImg'
+import { StyleButton } from '@components/common/StyleButton'
+
 
 
 export default function Home() {
@@ -15,11 +17,14 @@ export default function Home() {
                 leftFrameText='DEVELOPER'
                 rightFrameText='FRONT-END'
             />
+            <S.Wrapper>
             <ImgFrame>
                 <ImgSmallFrame>
                 <ProfileImg/>
                 </ImgSmallFrame>
             </ImgFrame>
+                <StyleButton text='More Info' />
+            </S.Wrapper>
         </S.ContainerWrapper>
     )
 }

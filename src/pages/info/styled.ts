@@ -15,6 +15,9 @@ export const UserTitle = styled.div`
     font-family: Poppins-black;
     color: rgb(202 202 202);
     font-size: 2rem;
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
+    }
 `
 
 export const Title = styled.div`
@@ -53,10 +56,14 @@ export const UserImg = styled.img`
     object-fit: cover;
     border-radius: 8%;
     float: right;
+    @media (max-width: 500px) {
+        width: 130px;
+        height: 130px;
+    }
 `
 
 export const UserInfoWrapper = styled.div`
-    width: 50%;
+    width: 60%;
     padding: 2px 2px;
     height: 291px;
     display: flex;
@@ -169,7 +176,7 @@ export const TitleText = styled.span`
     justify-content: center;
     position: relative;
     @media (max-width: 600px) {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     margin-bottom: 10px;
 `
