@@ -3,9 +3,10 @@ import { ButtonProps } from '@mui/base/Button';
 
 
 interface Props{
-  text: string;
+  text?: string;
   props?: ButtonProps;
+  children?: React.ReactNode;
 }
-export const StyleButton  = ({text,props}:Props) => {
-  return <S.Button {...props}  >{text}</S.Button>;
+export const StyleButton  = ({text,props,children}:Props) => {
+  return <S.Button {...props}  >{children}{text}</S.Button>;
 }

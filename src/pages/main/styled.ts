@@ -133,10 +133,11 @@ export const FrameText = styled.span`
     font-weight: 800;
 `
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ dir?: 'row' | 'column' }>`
     display: flex;
-    flex-direction: column;
+    flex-direction: ${({ dir }) => dir || 'column'};
     align-items: center;
+    justify-content: center;
     width: 100%;
 `
 
@@ -168,4 +169,43 @@ export const ContainerWrapper = styled.div`
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 16, 15);
+`
+
+export const Footer = styled.footer<{ display?: string }>`
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.8) 20%,
+        rgba(0, 0, 0, 1) 30%,
+        rgb(0, 0, 0)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    bottom: 0;
+`
+export const Text = styled.p`
+    // font-family: Kanit-medium;
+    color: #c3c3c3;
+    font-size: 1rem;
+`
+
+export const InfoTitle = styled.h3<{ margin?: number }>`
+    font-family: Kanit-medium;
+    color: #737373;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: ${({ margin }) => margin && `${margin}px`};
+`
+
+export const Content = styled.div`
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 2px;
+    justify-content: center;
+    align-items: center;
 `

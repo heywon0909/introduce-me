@@ -5,14 +5,14 @@ import { FrameText } from '@components/design/FrameText'
 import { ImgFrame } from '@components/design/MainImgFrame/ImgFrame'
 import { ImgSmallFrame } from '@components/design/MainImgFrame/atoms/ImgSmallFrame'
 import { ProfileImg } from '@components/design/MainImgFrame/atoms/ProfileImg'
-
+import { ContentWrapper } from '@components/common/Wrapper/ContentWrapper'
 
 
 export default function Home() {
    
 
     return (
-        <S.ContainerWrapper>
+        <ContentWrapper props={{height:'100vh'}}>
             <FrameText
                 leftFrameText='DEVELOPER'
                 rightFrameText='FRONT-END'
@@ -23,8 +23,10 @@ export default function Home() {
                 <ProfileImg/>
                 </ImgSmallFrame>
             </ImgFrame>
-                <StyleButton text='More Info' />
+                <StyleButton text='More Info' props={{ id: 'more' }}>
+                <a href="#footer"/>    
+                </StyleButton>
             </S.Wrapper>
-        </S.ContainerWrapper>
+            </ContentWrapper>
     )
 }
