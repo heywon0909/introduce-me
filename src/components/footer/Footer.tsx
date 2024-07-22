@@ -26,11 +26,11 @@ export const Footer = () => {
                     <S.Content>
                         <ContentWrapper props={{background:'rgb(40 104 255)',height:'100%',width:'100%',maxWidth:'300px',paddingTop:'18px',marginTop:'2px',borderRadius:'8px',gap:'0px'}}>
                             <S.InfoTitle margin={0}>Info</S.InfoTitle>
-                            <ul>
-                                <li> <S.Text>이메일: hw731911@gmail.com</S.Text></li>
-                                <li> <S.Text>소속: tmax coreai</S.Text></li>
-                                <li> <S.Text>전화번호: please contact email</S.Text></li>
-                            </ul>
+                            <S.ListWrapper>
+                                <S.List> <S.Text>이메일: hw731911@gmail.com</S.Text></S.List>
+                                <S.List> <S.Text>소속: tmax coreai</S.Text></S.List>
+                                <S.List> <S.Text>전화번호: please contact email</S.Text></S.List>
+                            </S.ListWrapper>
                         </ContentWrapper>
                     </S.Content>
             </ContentWrapper>

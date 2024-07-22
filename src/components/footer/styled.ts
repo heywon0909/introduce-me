@@ -35,8 +35,20 @@ export const Footer = styled.footer<{ visible?: string }>`
 `
 export const Text = styled.p`
     // font-family: Kanit-medium;
-    color: #c9bfbf;
+    color: #c9bfc6;
     font-size: 1rem;
+`
+
+export const List = styled.li`
+    list-style: none;
+    height: auto;
+    margin: 3px;
+`
+export const ListWrapper = styled.ul`
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 `
 
 export const InfoTitle = styled.h3<{ margin?: number }>`
