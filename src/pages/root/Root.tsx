@@ -4,6 +4,7 @@ import { Suspense, useState } from 'react'
 import { MainHeader } from '@components/header/Header'
 import Nav from '@components/nav/Nav'
 import { Footer } from '@components/footer/Footer'
+import { Loading } from '@components/loading/Loading'
 
 export default function Root() {
     const mainRoute = useMatch('/');
@@ -16,7 +17,7 @@ export default function Root() {
             <MainHeader />
              <Nav hover={hover} handleHover={handleHover} />
             <S.Container style={{position: mainRoute ? 'fixed':'relative'}}>
-                <Suspense fallback={<div>loading...</div>}>
+                <Suspense fallback={<Loading/>}>
                     <Outlet />
                 </Suspense>
             </S.Container>
