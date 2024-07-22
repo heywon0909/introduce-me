@@ -24,7 +24,7 @@ export const Footer = () => {
                         <S.Text>2024 © All Rights Reserved</S.Text>
                     </S.Content>
                     <S.Content>
-                        <ContentWrapper props={{background:'rgb(40 104 255)',height:'100%',width:'80%',paddingTop:'18px',marginTop:'2px',borderRadius:'8px',gap:'0px'}}>
+                        <ContentWrapper props={{background:'rgb(40 104 255)',height:'100%',width:'100%',maxWidth:'300px',paddingTop:'18px',marginTop:'2px',borderRadius:'8px',gap:'0px'}}>
                             <S.InfoTitle margin={0}>Info</S.InfoTitle>
                             <ul>
                                 <li> <S.Text>이메일: hw731911@gmail.com</S.Text></li>
