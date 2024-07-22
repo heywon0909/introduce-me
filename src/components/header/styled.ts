@@ -25,7 +25,7 @@ export const Header = styled.header`
     padding: 15px 15px;
     border-bottom: 1px solid #515151;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
     background: rgb(11, 12, 13);
 `

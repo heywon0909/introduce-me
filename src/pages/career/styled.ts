@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 export const ContainerWrapper = styled.div`
-    width: 100%;
+    width: calc(100vw - 40px);
     height: calc(100% - 70px);
     display: flex;
     position: relative;

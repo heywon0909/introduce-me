@@ -6,7 +6,7 @@ import { Loading } from '@components/loading/Loading';
 import CareerDetail from '@components/markdown/CareerDetail';
 
 export default function Resume() {
-    const { isPending,isSuccess:isFirstSuccess,data:tmax } = useQuery({
+    const { isLoading,isSuccess:isFirstSuccess,data:tmax } = useQuery({
         queryKey: ['prevCareer'],
         queryFn: () => fetch('/introduce-me/assets/data/tmax.json')
             .then((response) => response.text()).then(res=>JSON.parse(res))
@@ -22,7 +22,7 @@ export default function Resume() {
     });
 
     
-    if(isPending) return <Loading/>
+    if (isLoading) return <Loading/>
 
     return (
         <S.ContainerWrapper>
