@@ -8,7 +8,7 @@ export const ContainerWrapper = styled.div`
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 16, 15);
-    top: 10%;
+    margin-top: 10%;
 `
 
 export const Title = styled.div`
