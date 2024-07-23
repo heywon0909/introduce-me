@@ -13,7 +13,7 @@ export const Footer = styled.footer<{ visible?: string }>`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 80vh;
     bottom: 0;
     // visibility: ${({ visible }) => visible || 'hidden'};
     margin-top: 123vh;
@@ -45,7 +45,7 @@ export const List = styled.li`
     margin: 3px;
 `
 export const ListWrapper = styled.ul`
-    width: auto;
+    width: 90%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
