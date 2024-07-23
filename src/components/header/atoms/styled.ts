@@ -39,7 +39,10 @@ export const MenuLinkWrapper = styled.div`
     }
 `
 
-export const MenuLink = styled(Link)<{ clicked: boolean }>`
+export const MenuLink = styled(Link, {
+    shouldForwardProp: (propName): propName is 'clicked' =>
+        propName !== 'clicked',
+})<{ clicked: boolean }>`
     width: 100%;
     color: rgb(123 123 123);
     font-family: NotoSansKR-Medium;
