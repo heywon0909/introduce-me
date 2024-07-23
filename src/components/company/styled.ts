@@ -24,6 +24,7 @@ export const CompanyCareer = styled.div`
     border-left: 0.1rem solid #7c7c7c;
     display: flex;
     width: 60%;
+    gap: 15px;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -59,10 +60,12 @@ export const CompanyDesc = styled.div`
 `
 
 export const CompanyLine = styled.div`
-    border-b: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 `
 
 export const CompanyBackground = styled.div`
     font-family: NotoSansKR-Light;
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
 `
