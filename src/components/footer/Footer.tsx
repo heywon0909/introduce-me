@@ -32,12 +32,13 @@ export const Footer = () => {
                         props={{
                             background: 'rgb(40 104 255)',
                             height: '100%',
+                            minHeight: '200px',
                             width: '100%',
                             maxWidth: '300px',
                             paddingTop: '18px',
                             marginTop: '2px',
                             borderRadius: '8px',
-                            gap: '0px',
+                            gap: '10px',
                         }}
                     >
                         <S.InfoTitle margin={0}>Info</S.InfoTitle>

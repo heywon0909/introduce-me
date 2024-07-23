@@ -42,7 +42,7 @@ export const Text = styled.p`
 export const List = styled.li`
     list-style: none;
     height: auto;
-    margin: 3px;
+    margin: 5px;
 `
 export const ListWrapper = styled.ul`
     width: 90%;
@@ -66,4 +66,5 @@ export const Content = styled.div`
     padding: 2px 2px;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 `
