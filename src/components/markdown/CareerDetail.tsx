@@ -17,6 +17,18 @@ export default function CareerDetail({ fetchUrl }: Props) {
     return (
         <ReactMarkdown
             components={{
+                code: ({ children }) => (
+                    <code
+                        style={{
+                            color: '#fff',
+                            fontSize: '1rem',
+                            padding: '2px',
+                            width: '100%',
+                        }}
+                    >
+                        {children}
+                    </code>
+                ),
                 ul: ({ children }) => (
                     <ul
                         style={{
