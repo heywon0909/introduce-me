@@ -5,7 +5,7 @@ interface Props {
     text?: string
     props?: ButtonProps
     children?: React.ReactNode
-    onClick: () => void
+    onClick?: () => void
 }
 export const StyleButton = ({ text, props, children, onClick }: Props) => {
     return (
