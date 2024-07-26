@@ -9,9 +9,13 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     padding: 0px 5px;
-    gap: 3%;
-    @media (max-width: 768px) {
+    @media screen {
+        gap: 3%;
+    }
+
+    @media (min-width: 768px) {
         flex-direction: column;
+        gap: 8%;
     }
 `
 
@@ -153,6 +157,7 @@ export const FrameContainer = styled.div<{ url: string }>`
     background-repeat: no-repeat;
     @media (max-width: 768px) {
         flex-direction: column;
+        gap: 10%;
     }
     @media (min-width: 768px) {
         width: 70%;

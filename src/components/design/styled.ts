@@ -109,7 +109,7 @@ export const FrameContainer = styled.div`
 `
 export const Img = styled.div`
     width: 300px;
-    height: 300px;
+    height: auto;
     position: relative;
     flex-shrink: 1;
 `

@@ -1,9 +1,9 @@
-import * as S from '../../styled'
-import { useImgEncoding } from '@hooks/useImgEncoding'
-import photo from '/assets/image/heywonLogo.png'
+import { TechBunney } from 'bunney-ui'
 export const ProfileImg = () => {
-    const {image,isLoading} = useImgEncoding(photo)
+    // const {image,isLoading} = useImgEncoding(photo)
     return (
-          <S.ProfileImg src={isLoading ? '': image}/>
+        <TechBunney />
+
+        //   <S.ProfileImg src={isLoading ? '': image}/>
     )
 }
