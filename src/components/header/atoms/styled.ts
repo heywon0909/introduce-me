@@ -8,9 +8,9 @@ export const LogoImg = styled.img`
 
 export const LogoImgWrapper = styled.div`
     width: 40px;
-    height: 40px;
-    margin-top: -2px;
+    margin-top: 0px;
     margin-left: 5px;
+    padding-top: 2px;
 `
 
 export const Logo = styled.span`

@@ -9,12 +9,7 @@ interface Props {
 export const MainHeader = () => {
     return (
         <Header
-            Logo={
-                <LogoText
-                    name="heywon0909"
-                    imgUrl="assets/image/hyewonLogo.png"
-                />
-            }
+            Logo={<LogoText name="heywon0909" />}
             MenuLink={<Menu linkList={['info', 'career', 'project']} />}
         />
     )
