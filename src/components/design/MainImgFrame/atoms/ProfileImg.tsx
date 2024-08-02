@@ -1,4 +1,4 @@
-import { TechBunney } from 'bunney-ui'
+import { TechBunney } from 'bunney-ui/TechBunney'
 export const ProfileImg = () => {
     // const {image,isLoading} = useImgEncoding(photo)
     return (

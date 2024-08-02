@@ -1,4 +1,4 @@
-import { Logo } from 'bunney-ui'
+import { Logo } from 'bunney-ui/Logo'
 import * as S from './styled'
 interface Props {
     name: string
