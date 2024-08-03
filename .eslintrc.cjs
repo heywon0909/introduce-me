@@ -21,6 +21,7 @@ module.exports = {
             'warn',
             { allowConstantExport: true },
         ],
+        'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'off',
         'no-restricted-imports': [
             'error',
