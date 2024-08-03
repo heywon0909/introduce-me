@@ -7,6 +7,10 @@ body {
     scroll-behavior: smooth;
 }
 
+html {
+    --myColor: #00bae2;
+}
+
 div#root {
     width: 100%;
     height: 100%;
@@ -17,6 +21,10 @@ div#root {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+
+.wrapper {
+    border: 3px solid var(--myColor);
 }
 
 @font-face {

@@ -36,7 +36,7 @@ export const Footer = styled.footer<{ visible?: string }>`
 export const Text = styled.p`
     // font-family: Kanit-medium;
     color: #c9bfc6;
-    font-size: 1rem;
+    font-size: 1.2rem;
 `
 
 export const List = styled.li`
@@ -45,7 +45,7 @@ export const List = styled.li`
     margin: 5px;
 `
 export const ListWrapper = styled.ul`
-    width: 90%;
+    width: 70%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
