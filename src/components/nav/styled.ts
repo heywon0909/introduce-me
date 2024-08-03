@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
     width: 100%;
@@ -201,10 +202,11 @@ export const NavText = styled.span`
     padding-left: 3px;
 `
 
-export const NavWrapper = styled.div<{ dir?: 'column' | 'row' }>`
+export const NavWrapper = styled(Link)<{ dir?: 'column' | 'row' }>`
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    text-decoration: none;
     align-items: center;
     padding: 2px 5px;
     ${(props) =>
