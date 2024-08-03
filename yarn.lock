@@ -1721,9 +1721,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bunney-ui@npm:0.0.10":
-  version: 0.0.10
-  resolution: "bunney-ui@npm:0.0.10"
+"bunney-ui@npm:0.0.14":
+  version: 0.0.14
+  resolution: "bunney-ui@npm:0.0.14"
   dependencies:
     "@emotion/react": ^11.13.0
     "@emotion/styled": ^11.13.0
@@ -1734,7 +1734,7 @@ __metadata:
     react: ^18.3.1
     react-dom: ^18.3.1
     vite-plugin-commonjs: ^0.10.1
-  checksum: e027287a049c719409d60aef6dd7608d3cbc7e490155850cf0166fd4df163716d009450d1efba5698ecf4fc57d7b38f61c5f5ff1cc047274d83899cc244ed508
+  checksum: c20a4d37e98873b76165a31c9ec82e986b58e6b3f428e9b4af407181702b2282b3bdb61760255de200400b73d701a1bc29fc2d844f44a2d7cac01a210fb7e59f
   languageName: node
   linkType: hard
 
@@ -3427,7 +3427,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.21.0
     "@typescript-eslint/parser": ^6.21.0
     "@vitejs/plugin-react-swc": ^3.5.0
-    bunney-ui: 0.0.10
+    bunney-ui: 0.0.14
     eslint: ^8.56.0
     eslint-plugin-import: ^2.29.1
     eslint-plugin-react: ^7.33.2
