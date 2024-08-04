@@ -1,16 +1,16 @@
 import ReactMarkdown from 'react-markdown'
-import { useQuery } from '@tanstack/react-query'
 import { Loading } from '@components/loading/Loading'
+import { useDelayedQuery } from '@hooks/useDelayedQuery'
 
 interface Props {
     fetchUrl: string
 }
 
 export default function CareerDetail({ fetchUrl }: Props) {
-    const { isLoading, data } = useQuery({
+    const { isLoading, data } = useDelayedQuery({
         queryKey: [`${fetchUrl}`],
         queryFn: () => fetch(fetchUrl).then((response) => response.text()),
-    })
+    }).then(data=>data)
 
     if (isLoading) return <Loading />
 
