@@ -1,6 +1,5 @@
 
 import * as S from './styled'
-import { useQuery } from '@tanstack/react-query'
 import { Company } from '@components/company/Comapny';
 import { Loading } from '@components/loading/Loading';
 import CareerDetail from '@components/markdown/CareerDetail';

@@ -201,8 +201,20 @@ export const NavText = styled.span`
     font-weight: 400;
     padding-left: 3px;
 `
-
-export const NavWrapper = styled(Link)<{ dir?: 'column' | 'row' }>`
+export const NavWrapper = styled.div<{ dir?: 'column' | 'row' }>`
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    align-items: center;
+    padding: 2px 5px;
+    ${(props) =>
+        props.dir &&
+        `
+    flex-direction:${props.dir};
+  `};
+`
+export const NavWrapperLink = styled(Link)<{ dir?: 'column' | 'row' }>`
     width: 100%;
     display: flex;
     justify-content: flex-start;

@@ -14,13 +14,13 @@ export default function Nav({ hover, handleHover }: Props) {
                 <S.Nav>
                     {hover && (
                         <>
-                            <S.NavWrapper to='/info'>
+                            <S.NavWrapperLink to='/info'>
                                 <S.NavImg
                                     src={'/introduce-me/assets/image/woman.png'}
                                     alt="info"
                                 />
                                 <S.NavText>info</S.NavText>
-                            </S.NavWrapper>
+                            </S.NavWrapperLink>
                             {/* <S.NavWrapper>
                                 <S.NavImg
                                     src={
@@ -30,7 +30,7 @@ export default function Nav({ hover, handleHover }: Props) {
                                 />
                                 <S.NavText>Skills</S.NavText>
                             </S.NavWrapper> */}
-                            <S.NavWrapper to='/career'>
+                            <S.NavWrapperLink to='/career'>
                                 <S.NavImg
                                     src={
                                         '/introduce-me/assets/image/resume.png'
@@ -38,14 +38,14 @@ export default function Nav({ hover, handleHover }: Props) {
                                     alt="info"
                                 />
                                 <S.NavText>career</S.NavText>
-                            </S.NavWrapper>
-                            <S.NavWrapper to='/project'>
+                            </S.NavWrapperLink>
+                            <S.NavWrapperLink to='/project'>
                                 <S.NavImg
                                     src={'/introduce-me/assets/image/idea.png'}
                                     alt="info"
                                 />
                                 <S.NavText>project</S.NavText>
-                            </S.NavWrapper>
+                            </S.NavWrapperLink>
                         </>
                     )}
                     {!hover && (

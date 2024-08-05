@@ -9,7 +9,7 @@ import { ContentWrapper } from '@components/common/Wrapper/ContentWrapper'
 export default function Home() {
     const onMoveFooter = () => window.scroll({ top: 1000, behavior: 'smooth' })
     return (
-        <ContentWrapper props={{ height: '100vh' }}>
+        <ContentWrapper otherProps={{ height: '100vh' }}>
             <FrameText leftFrameText="DEVELOPER" rightFrameText="FRONT-END" />
             <S.Wrapper>
                 <ImgFrame>
