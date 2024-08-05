@@ -1,10 +1,10 @@
 import { QueryKey, useQuery } from '@tanstack/react-query';
-import {AsyncFunction, fetchingDelay } from '@utils/fetchingDelay';
+import {fetchingDelay } from '@utils/fetchingDelay';
 
-export const useDelayedQuery = <T extends QueryKey,A, O>(key:T,fn:AsyncFunction<A,O>) => {
+export const useDelayedQuery = <TQueryFnData=unknown,TQueryKey extends QueryKey = QueryKey>({queryKey,queryFn}:{ queryKey: TQueryKey, queryFn:Promise<TQueryFnData>}) => {
     return useQuery({
-        queryKey:key,
-        queryFn: ()=>fetchingDelay(fn)
+        queryKey,
+        queryFn: ()=> fetchingDelay(queryFn) as TQueryFnData
     })
 }
 
