@@ -1,3 +1,4 @@
+import { NotFoundPage } from '@pages/NotFoundPage'
 import Root from '@pages/root/Root'
 import { lazy } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -35,6 +36,10 @@ const router = createBrowserRouter(
                 {
                     path: '/project',
                     element: <Project />,
+                },
+                {
+                    path: '*',
+                    element: <NotFoundPage />,
                 },
             ],
         },
