@@ -2,7 +2,6 @@ import Box from '@mui/material/Box'
 import { BunneyLoading } from 'bunney-ui/BunneyLoading'
 
 export const Loading = () => {
-    console.log('url loading')
     return (
         <Box
             sx={{
