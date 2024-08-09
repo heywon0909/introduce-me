@@ -1,4 +1,3 @@
-import { ErrorCatchWrapper } from '@error/ErrorCatcherWrapper'
 import { ErrorPage } from '@pages/error/ErrorPage'
 import { NotFoundPage } from '@pages/NotFoundPage'
 import Root from '@pages/root/Root'
