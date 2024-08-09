@@ -45,6 +45,10 @@ export default defineConfig({
                 find: '@common',
                 replacement: path.resolve(__dirname, 'src/common'),
             },
+            {
+                find: '@error',
+                replacement: path.resolve(__dirname, 'src/error'),
+            },
         ],
     },
 })
