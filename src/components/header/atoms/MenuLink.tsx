@@ -1,9 +1,10 @@
 import { useLocation } from 'react-router-dom'
 import * as S from './styled'
+import { memo } from 'react'
 interface Props {
     linkList: Array<string>
 }
-export const Menu = ({ linkList }: Props) => {
+export const Menu = memo(({ linkList }: Props) => {
     const links = linkList?.map((link, i) => ({ key: i, value: link }))
     const location = useLocation()
 
@@ -22,4 +23,6 @@ export const Menu = ({ linkList }: Props) => {
             ))}
         </S.HeaderMenu>
     )
-}
+})
+
+Menu.displayName = 'Menu'
