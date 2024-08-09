@@ -1,9 +1,9 @@
+import { ErrorCatchWrapper } from '@error/ErrorCatcherWrapper'
+import { ErrorPage } from '@pages/error/ErrorPage'
 import { NotFoundPage } from '@pages/NotFoundPage'
 import Root from '@pages/root/Root'
 import { lazy } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-// import Insert from 'pages/insert/Insert';
 
 const Home = lazy(() => import('@pages/main/Home'))
 const Info = lazy(() => import('@pages/info/Info'))
@@ -16,6 +16,7 @@ const router = createBrowserRouter(
         {
             path: '/',
             element: <Root />,
+            errorElement: <ErrorPage />,
             children: [
                 {
                     path: '/',
