@@ -8,7 +8,8 @@
             "@assets/*": ["public/introduce-me/assets/*"],
             "@utils/*": ["src/utils/*"],
             "@hooks/*": ["src/hooks/*"],
-            "@common/*": ["src/common/*"]
+            "@common/*": ["src/common/*"],
+            "@error/*": ["src/error/*"]
         },
         "useDefineForClassFields": true,
         "lib": ["ES2020", "DOM", "DOM.Iterable"],

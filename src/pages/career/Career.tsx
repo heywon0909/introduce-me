@@ -6,34 +6,19 @@ import { useDelayedQuery } from '@hooks/useDelayedQuery'
 import { Suspense } from 'react'
 
 export default function Resume() {
-    const {
-        isLoading,
-        isSuccess: isFirstSuccess,
-        data: tmax,
-    } = useDelayedQuery({
+    const { data: tmax } = useDelayedQuery({
         queryKey: ['prevCareer'],
         queryFn: fetch('/introduce-me/assets/data/tmax.json')
             .then((response) => response.text())
             .then((res) => JSON.parse(res)),
     })
 
-    const {
-        data: eco,
-        isSuccess: isFinalSuccess,
-        isLoading: isFinalLoading,
-    } = useDelayedQuery({
+    const { data: eco } = useDelayedQuery({
         queryKey: ['curCareer'],
         queryFn: fetch('/introduce-me/assets/data/eco.json')
             .then((response) => response.text())
             .then((res) => JSON.parse(res)),
     })
-
-    if (isLoading || isFinalLoading || !isFirstSuccess || !isFinalSuccess)
-        return <Loading />
-
-    const isSuccessAll = isFirstSuccess && isFinalSuccess
-
-    if (!isSuccessAll) return <Loading />
 
     return (
         <S.ContainerWrapper>
