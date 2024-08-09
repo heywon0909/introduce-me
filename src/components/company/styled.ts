@@ -68,4 +68,5 @@ export const CompanyBackground = styled.div`
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
 `
