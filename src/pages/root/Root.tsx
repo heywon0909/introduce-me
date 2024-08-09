@@ -5,9 +5,10 @@ import { MainHeader } from '@components/header/Header'
 import Nav from '@components/nav/Nav'
 import { Footer } from '@components/footer/Footer'
 import { Loading } from '@components/loading/Loading'
+import { ErrorCatchWrapper } from '@error/ErrorCatcherWrapper'
 
 export default function Root() {
-    const mainRoute = useMatch('/');
+    const mainRoute = useMatch('/')
 
     const [hover, setHover] = useState(false)
     const handleHover = (flg: boolean) => setHover(flg)
@@ -15,13 +16,15 @@ export default function Root() {
     return (
         <>
             <MainHeader />
-             <Nav hover={hover} handleHover={handleHover} />
-            <S.Container style={{position: mainRoute ? 'fixed':'relative'}}>
-                <Suspense fallback={<Loading/>}>
-                    <Outlet />
+            <Nav hover={hover} handleHover={handleHover} />
+            <S.Container style={{ position: mainRoute ? 'fixed' : 'relative' }}>
+                <Suspense fallback={<Loading />}>
+                    <ErrorCatchWrapper>
+                        <Outlet />
+                    </ErrorCatchWrapper>
                 </Suspense>
             </S.Container>
-            {mainRoute && <Footer/>}
+            {mainRoute && <Footer />}
         </>
     )
 }
