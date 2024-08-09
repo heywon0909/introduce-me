@@ -18,7 +18,6 @@ export const MainHeader = () => {
 }
 
 const Header = ({ Logo, MenuLink }: Props) => {
-    console.log('렌더')
     return (
         <S.Header>
             {Logo}
