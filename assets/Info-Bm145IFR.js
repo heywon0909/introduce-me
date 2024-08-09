@@ -1,4 +1,4 @@
-import{n as L,j as C}from"../index-DDVf4iof.js";const n=L.div`
+import{n as L,j as C}from"../index-BoIIQY8O.js";const n=L.div`
     width: 100%;
     height: auto;
     display: flex;
