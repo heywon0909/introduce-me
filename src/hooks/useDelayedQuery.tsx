@@ -1,4 +1,4 @@
-import { QueryKey, useQuery } from '@tanstack/react-query'
+import { QueryKey, useSuspenseQuery } from '@tanstack/react-query'
 import { fetchingDelay } from '@utils/fetchingDelay'
 
 export const useDelayedQuery = <
@@ -11,7 +11,7 @@ export const useDelayedQuery = <
     queryKey: TQueryKey
     queryFn: Promise<TQueryFnData>
 }) => {
-    return useQuery({
+    return useSuspenseQuery({
         queryKey,
         queryFn: () => fetchingDelay(queryFn) as TQueryFnData,
     })
