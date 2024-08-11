@@ -18,11 +18,11 @@ export default function Root() {
             <MainHeader />
             <Nav hover={hover} handleHover={handleHover} />
             <S.Container style={{ position: mainRoute ? 'fixed' : 'relative' }}>
-                <Suspense fallback={<Loading />}>
-                    <ErrorCatchWrapper>
+                <ErrorCatchWrapper>
+                    <Suspense fallback={<Loading />}>
                         <Outlet />
-                    </ErrorCatchWrapper>
-                </Suspense>
+                    </Suspense>
+                </ErrorCatchWrapper>
             </S.Container>
             {mainRoute && <Footer />}
         </>
