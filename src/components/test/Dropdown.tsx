@@ -3,16 +3,18 @@ import {
     ChangeEvent,
     createContext,
     ElementType,
-    HTMLAttributes,
     PropsWithChildren,
     ReactNode,
+    useCallback,
     useContext,
+    useEffect,
+    useMemo,
     useState,
 } from 'react'
 
 interface Context<T> {
     value?: T
-    onChange?: (value: T) => void
+    onChange?: React.Dispatch<React.SetStateAction<T>>
     isOpen?: boolean
     setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
 }
@@ -25,7 +27,7 @@ const DropdownContext = createContext<Context<any>>({
     setIsOpen: () => {},
 })
 interface Props<T> {
-    onChange: (value: T) => void
+    onChange: React.Dispatch<React.SetStateAction<T>>
     value: T
     children: ReactNode
 }
@@ -68,25 +70,37 @@ export const DropdownMenu = ({ children }: MenuProps) => {
     return <ul>{children}</ul>
 }
 
-interface CheckBox extends HTMLAttributes<HTMLInputElement> {
-    value: string
+interface CheckBox {
+    name: string
 }
-export const CheckBox = ({ value, ...props }: CheckBox) => {
-    const { onChange, value: options } = useContext(DropdownContext)
+export const CheckBox = ({ name }: CheckBox) => {
+    const { onChange, value } = useContext(DropdownContext)
+    const [isChecked, setIsChecked] = useState(Boolean(value.includes(name)))
+    useEffect(() => {
+        onChange?.((prev: string[]) =>
+            prev.includes(name)
+                ? prev.filter((v: string) => v !== name)
+                : [...prev, name]
+        )
+    }, [isChecked])
 
     const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
         e.preventDefault()
-        console.log('value', value)
-        onChange?.(value)
+        setIsChecked((prev) => !prev)
+        // onChange?.((prev: string[]) =>
+        //     prev.includes(e.target.name)
+        //         ? prev.filter((v: string) => v !== name)
+        //         : [...prev, name]
+        // )
     }
+
     return (
         <>
             <input
                 type="checkbox"
-                name={value}
+                name={name}
                 onChange={handleInput}
-                checked={options.includes(value)}
-                {...props}
+                checked={isChecked}
             />
         </>
     )

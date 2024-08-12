@@ -9,7 +9,7 @@ import {
 
 interface Props {
     value: string[]
-    onChange: (value: string[]) => void
+    onChange: React.Dispatch<React.SetStateAction<string[]>>
     options: string[]
 }
 export const MultiSelect = ({ value, onChange, options }: Props) => {
@@ -30,7 +30,7 @@ export const MultiSelect = ({ value, onChange, options }: Props) => {
                 <DropdownMenu>
                     {options.map((option, i) => (
                         <Item data={option} key={i}>
-                            <CheckBox value={option} />
+                            <CheckBox name={option} />
                         </Item>
                     ))}
                 </DropdownMenu>
