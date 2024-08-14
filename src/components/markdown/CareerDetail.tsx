@@ -10,7 +10,8 @@ interface Props {
 export default function CareerDetail({ fetchUrl }: Props) {
     const { isLoading, data } = useDelayedQuery({
         queryKey: [`${fetchUrl}`],
-        queryFn: fetch(fetchUrl).then((response) => response.text()),
+        queryFn: new Promise((resolve, reject) => reject(new Error())),
+        // queryFn: fetch(fetchUrl).then((response) => response.text()),
     })
 
     if (isLoading)
