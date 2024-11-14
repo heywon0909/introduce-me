@@ -23,6 +23,8 @@ export const JobDesc = styled.div`
 export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    width: auto;
+    height: auto;
 `
 
 export const TitleWrap = styled.div`

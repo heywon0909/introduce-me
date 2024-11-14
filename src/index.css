@@ -23,66 +23,104 @@ code {
         monospace;
 }
 
-.wrapper {
+.colored {
     border: 3px solid var(--myColor);
+}
+
+.wrapper,
+.content {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.content {
+    overflow-x: hidden;
+}
+
+.content .section {
+    width: 100%;
+    height: 100vh;
+}
+
+.content .section.hero {
+    background-image: url('../public/assets/image/sky.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    perspective: 500px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 @font-face {
     font-family: 'NotoSansKR-Bold';
-    src: url('/assets/fonts/NotoSansKR-Bold.ttf');
+    src: url('/assets/fonts/NotoSansKR-Bold.woff2');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Light';
-    src: url('/assets/fonts/NotoSansKR-Light.ttf');
+    src: url('/assets/fonts/NotoSansKR-Light.woff2');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Medium';
-    src: url('/assets/fonts/NotoSansKR-Medium.ttf');
+    src: url('/assets/fonts/NotoSansKR-Medium.woff2');
 }
 
 @font-face {
     font-family: 'NotoSansKR-Regular';
-    src: url('/assets/fonts/NotoSansKR-Regular.ttf');
+    src: url('/assets/fonts/NotoSansKR-Regular.woff2');
 }
 
 @font-face {
     font-family: 'NotoSansKR-SemiBold';
-    src: url('/assets/fonts/NotoSansKR-SemiBold.ttf');
+    src: url('/assets/fonts/NotoSansKR-SemiBold.woff2');
 }
 
 @font-face {
     font-family: 'NotoSansKR-ExtraBold';
-    src: url('/assets/fonts/NotoSansKR-ExtraBold.ttf');
+    src: url('/assets/fonts/NotoSansKR-ExtraBold.woff2');
 }
 
 @font-face {
     font-family: 'Lemon';
-    src: url('/assets/fonts/Lemon-Regular.ttf');
+    src: url('/assets/fonts/Lemon-Regular.woff2');
 }
 
 @font-face {
     font-family: 'Poppins-semibold';
-    src: url('/assets/fonts/Poppins-SemiBold.ttf');
+    src: url('/assets/fonts/Poppins-SemiBold.woff2');
 }
 
 @font-face {
     font-family: 'Poppins-black';
-    src: url('/assets/fonts/Poppins-Black.ttf');
+    src: url('/assets/fonts/Poppins-Black.woff2');
 }
 
 @font-face {
     font-family: 'Kanit-extrabold';
-    src: url('/assets/fonts/Kanit-ExtraBold.ttf');
+    font-display: block;
+    src: url('/assets/fonts/subset-Kanit-ExtraBold.woff2');
 }
 
 @font-face {
     font-family: 'Kanit-medium';
-    src: url('/assets/fonts/Kanit-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'Kanit-thin';
-    src: url('/assets/fonts/Kanit-Thin.ttf');
+    src: url('/assets/fonts/Kanit-Medium.woff2');
 }
