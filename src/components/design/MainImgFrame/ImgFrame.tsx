@@ -1,17 +1,14 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react'
 import * as S from '../styled'
 import gsap from 'gsap'
-import { FaHandsClapping } from 'react-icons/fa6';
-interface Props{
-    children: React.ReactNode;
+import { FaHandsClapping } from 'react-icons/fa6'
+interface Props {
+    children: React.ReactNode
 }
-export const ImgFrame = ({children}:Props) => {
-    const greeting = useRef<HTMLHeadingElement>(null);
-    const job = useRef<HTMLDivElement>(null);
-    const hiFive = useRef<HTMLDivElement>(null);
-    
-  
- 
+export const ImgFrame = ({ children }: Props) => {
+    const greeting = useRef<HTMLHeadingElement>(null)
+    const job = useRef<HTMLDivElement>(null)
+    const hiFive = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         const tl = gsap.timeline({ repeat: 0 })
@@ -66,33 +63,32 @@ export const ImgFrame = ({children}:Props) => {
         })
     }, [])
 
-
     return (
-          <S.FrameContainer>
-                <S.Container>
-                    <S.ContentWrapper>
-                        <S.TitleWrap ref={greeting}>
-                            <S.Title id="text">HELLO </S.Title>
-                            <S.Title ref={hiFive}>
-                                <FaHandsClapping
-                                    id="hand"
-                                    size={60}
-                                    color="rgb(67 92 221)"
-                                />
-                            </S.Title>
+        <S.FrameContainer>
+            <S.Container>
+                <S.ContentWrapper>
+                    <S.TitleWrap ref={greeting}>
+                        <S.Title id="text">HELLO </S.Title>
+                        <S.Title ref={hiFive}>
+                            <FaHandsClapping
+                                id="hand"
+                                size={60}
+                                color="rgb(67 92 221)"
+                            />
+                        </S.Title>
                     </S.TitleWrap>
                     <S.TitleWrap ref={job}>
-                            <S.Title id="text">I&apos;m </S.Title>
-                        </S.TitleWrap>
+                        <S.Title id="text">I&apos;m </S.Title>
+                    </S.TitleWrap>
                     <S.TitleWrap ref={job}>
-                            <S.Title id="text">Heywon</S.Title>
-                        </S.TitleWrap>
-                        <S.TitleWrap ref={job}>
-                            <S.JobDesc>Frontend Developer</S.JobDesc>
-                        </S.TitleWrap>
-                    </S.ContentWrapper>
-                   {children}
-                </S.Container>
-            </S.FrameContainer>
+                        <S.Title id="text">Heywon</S.Title>
+                    </S.TitleWrap>
+                    <S.TitleWrap ref={job}>
+                        <S.JobDesc>Frontend Developer</S.JobDesc>
+                    </S.TitleWrap>
+                </S.ContentWrapper>
+                {children}
+            </S.Container>
+        </S.FrameContainer>
     )
 }

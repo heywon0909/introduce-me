@@ -1,3 +1,4 @@
+import { Flex } from '@common/styled'
 import styled from '@emotion/styled'
 
 export const ContainerWrapper = styled.div`
@@ -5,16 +6,25 @@ export const ContainerWrapper = styled.div`
     height: auto;
     display: flex;
     position: relative;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     background-color: rgb(14, 16, 15);
     margin-top: 10%;
 `
 
+export const FlexContainer = styled.div`
+    ${Flex};
+    gap: 10px;
+    justify-content: space-between;
+`
+
 export const UserTitle = styled.div`
-    font-family: Poppins-black;
-    color: rgb(202 202 202);
-    font-size: 2rem;
+    font-family: NotoSansKR-Bold;
+    background: linear-gradient(45deg, #f6a8cc, #8e47c8);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.3rem;
     @media (max-width: 500px) {
         font-size: 1.1rem;
     }
@@ -36,25 +46,79 @@ export const InfoWrapper = styled.div`
 `
 
 export const Mybanner = styled.div`
-    width: auto;
+    width: 50%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(39, 39, 42, 1);
+    gap: 3px;
+    padding: 20px 2px;
+    border-radius: 0.5rem;
+`
+export const Desc = styled.p`
+    font-family: NotoSansKR-Bold;
+    color: #7e51ff;
+    font-size: 1.1rem;
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
+    }
+`
+export const DetailDesc = styled.p`
+    font-family: NotoSansKR-Light;
+    color: #fff;
+    font-size: 1rem;
+    width: 262px;
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
+    }
+`
+export const UserLink = styled.div`
+    width: 15%;
+    background: linear-gradient(to bottom left, #a584d8 0%, #3639b1 87%);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `
 
 export const Userbanner = styled.div<{
     dir?: 'column' | 'row'
+    width?: string
+}>`
+    background-color: rgba(39, 39, 42, 1);
+    display: flex;
+    flex-direction: ${({ dir }) => (dir ? dir : 'column')};
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    border-radius: 0.5rem;
+    width: ${({ width }) => width + '%'};
+    border: 1px solid #8b8787;
+`
+
+export const UserDesc = styled.div<{
+    dir?: 'column' | 'row'
+    width?: string
 }>`
     display: flex;
     flex-direction: ${({ dir }) => (dir ? dir : 'column')};
-    justify-content: space-between;
-    padding: 2px 2px;
-    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    border-radius: 0.5rem;
+    width: ${({ width }) => width + '%'};
+    font-family: NotoSansKR-Light;
+    color: #fff;
+    background: linear-gradient(to bottom, transparent, #3f3f46);
+    background: linear-gradient(to bottom, #18181b, rgba(24, 24, 27, 0));
 `
 
 export const UserImg = styled.img`
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 8%;
+    border-radius: 50%;
     float: right;
     @media (max-width: 500px) {
         width: 130px;
@@ -132,7 +196,7 @@ export const SkillText = styled.span<{
             ? 'rgb(28 222 28)'
             : 'white'};
     margin: 0;
-    font-family: Poppins-black;
+    font-family: Poppins-semibold;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -163,20 +227,10 @@ export const Skills = styled.div`
 `
 
 export const TitleText = styled.span`
-    font-size: 1rem;
-    letter-spacing: -0.01em;
-    line-height: 20px;
-    margin: 0;
-    font-family: Kanit-medium;
-    width: 100%;
-    color: rgb(160 160 160);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    @media (max-width: 600px) {
-        font-size: 1rem;
+    font-family: NotoSansKR-Bold;
+    color: #fff;
+    font-size: 1.1rem;
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
     }
-    margin-bottom: 10px;
 `
