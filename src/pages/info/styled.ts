@@ -95,7 +95,6 @@ export const Userbanner = styled.div<{
     padding: 10px 10px;
     border-radius: 0.5rem;
     width: ${({ width }) => width + '%'};
-    border: 1px solid #8b8787;
 `
 
 export const UserDesc = styled.div<{
