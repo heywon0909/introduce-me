@@ -76,7 +76,7 @@ export const DetailDesc = styled.p`
 `
 export const UserLink = styled.div`
     width: 15%;
-    background: linear-gradient(to bottom left, #a584d8 0%, #3639b1 87%);
+    background: linear-gradient(to bottom left, #af64e3 0%, #6f72d1 87%);
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;

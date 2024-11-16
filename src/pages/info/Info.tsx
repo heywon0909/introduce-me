@@ -2,23 +2,43 @@ import { StyleIcon } from '@components/common/IconButton/StyleIcon'
 import * as S from './styled'
 import heywon from '/assets/image/heywon.jpg'
 import { FaMedium, FaGithub } from 'react-icons/fa6'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { useRef } from 'react'
+
+gsap.registerPlugin(useGSAP)
 
 export default function Info() {
+    const container = useRef<HTMLDivElement>(null)
+
+    useGSAP(
+        () => {
+            // ✅ safe, created during execution, selector text scoped
+            gsap.from('.item', {
+                duration: 2,
+                opacity: 0,
+                y: 30,
+                stagger: 0.4,
+                ease: 'expo.out',
+            })
+        },
+        { scope: container }
+    )
     return (
         <S.ContainerWrapper>
-            <S.InfoWrapper>
+            <S.InfoWrapper ref={container}>
                 <S.Title>ABOUT</S.Title>
                 <S.FlexContainer>
-                    <S.Mybanner>
+                    <S.Mybanner className="item">
                         <S.UserImg src={heywon}></S.UserImg>
                         <S.UserTitle>박혜원</S.UserTitle>
                         <S.Desc>Frontend Developer</S.Desc>
                         <S.DetailDesc>
-                            Hello, I'm Hye-Won Park, a frontend developer
+                            Hello, I&apos;m Hye Won Park, a frontend developer
                             dedicated to continuous growth and leveling up 🚀.
                         </S.DetailDesc>
                     </S.Mybanner>
-                    <S.UserLink>
+                    <S.UserLink className="item">
                         <StyleIcon
                             styles={{ color: '#000', background: 'none' }}
                             icon={<FaMedium size="20" />}
@@ -30,7 +50,7 @@ export default function Info() {
                             to="https://github.com/heywon0909"
                         ></StyleIcon>
                     </S.UserLink>
-                    <S.Userbanner width="35">
+                    <S.Userbanner width="35" className="item">
                         <S.TitleText>SKILLS</S.TitleText>
                         <S.SkillsWrapper>
                             <S.SkillSection>
@@ -575,7 +595,7 @@ export default function Info() {
                     </S.Userbanner>
                 </S.FlexContainer>
 
-                <S.UserDesc>
+                <S.UserDesc className="item">
                     <S.Title>Info</S.Title>
                     <span>
                         1. React, Vue js 활용한 실무 적용 경험이 있습니다.
