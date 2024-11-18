@@ -1,6 +1,7 @@
 import { StyleIcon } from '@components/common/IconButton/StyleIcon'
 import * as S from './styled'
-import heywon from '/assets/image/heywon.jpg'
+import heywon from '/assets/image/heywon.webp'
+import fallbackHeywon from '/assets/image/heywon.png'
 import { FaMedium, FaGithub } from 'react-icons/fa6'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -30,7 +31,11 @@ export default function Info() {
                 <S.Title>ABOUT</S.Title>
                 <S.FlexContainer>
                     <S.Mybanner className="item">
-                        <S.UserImg src={heywon}></S.UserImg>
+                        <picture>
+                            <source srcSet={heywon} type="image/webp"></source>
+                            <S.UserImg src={fallbackHeywon}></S.UserImg>
+                        </picture>
+
                         <S.UserTitle>박혜원</S.UserTitle>
                         <S.Desc>Frontend Developer</S.Desc>
                         <S.DetailDesc>
