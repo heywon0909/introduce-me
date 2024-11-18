@@ -3,7 +3,6 @@ import * as S from './styled'
 import { Suspense, useState } from 'react'
 import { MainHeader } from '@components/header/Header'
 import Nav from '@components/nav/Nav'
-import { Footer } from '@components/footer/Footer'
 import { Loading } from '@components/loading/Loading'
 import { ErrorCatchWrapper } from '@error/ErrorCatcherWrapper'
 
@@ -24,7 +23,6 @@ export default function Root() {
                     </Suspense>
                 </ErrorCatchWrapper>
             </S.Container>
-            {mainRoute && <Footer />}
         </>
     )
 }
