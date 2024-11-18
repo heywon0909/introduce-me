@@ -248,3 +248,39 @@ export const TitleText = styled.span`
         font-size: 1.1rem;
     }
 `
+
+export const ProjectFlex = styled.div`
+    ${Flex};
+    padding: 10px 10px;
+    gap: 12px;
+    flex-direction: column;
+`
+export const Project = styled.div`
+    width: auto;
+    height: 200px;
+    background-color: rgb(3 3 3 / 38%);
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 2px 2px;
+    align-items: center;
+    gap: 12px;
+    transition-duration: 150ms;
+    :hover {
+        scale: 1.03;
+    }
+`
+export const ProjectImg = styled.img`
+    object-fit: cover;
+    width: 29%;
+    height: 165px;
+`
+export const ProjectDesc = styled.p`
+    font-family: NotoSansKR-Light;
+    color: #fff;
+    width: auto;
+    font-size: 0.9rem;
+`
+export const ProjectTitle = styled.h2`
+    color: #fff;
+    font-size: 1rem;
+`

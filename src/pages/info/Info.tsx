@@ -6,6 +6,7 @@ import { FaMedium, FaGithub } from 'react-icons/fa6'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
+import { FeaturedProjects } from '@components/page/info/FeaturedProjects'
 
 gsap.registerPlugin(useGSAP)
 
@@ -622,9 +623,7 @@ export default function Info() {
                         </li>
                     </ul>
                 </S.UserDesc>
-                <S.UserDesc className="item">
-                    <S.Title>Featured Projects</S.Title>
-                </S.UserDesc>
+                <FeaturedProjects />
             </S.InfoWrapper>
         </S.ContainerWrapper>
     )
