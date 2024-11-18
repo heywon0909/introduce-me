@@ -38,10 +38,6 @@ export default function Info() {
 
                         <S.UserTitle>박혜원</S.UserTitle>
                         <S.Desc>Frontend Developer</S.Desc>
-                        <S.DetailDesc>
-                            Hello, I&apos;m Hye Won Park, a frontend developer
-                            dedicated to continuous growth and leveling up 🚀.
-                        </S.DetailDesc>
                     </S.Mybanner>
                     <S.UserLink className="item">
                         <StyleIcon
@@ -609,7 +605,7 @@ export default function Info() {
                         <li>Vue js 실무 경험 (2년)</li>
                         <li>React 팀프로젝트 + 실무 (1년)</li>
                     </ul>
-                    <span>2. **협업**을 중요하게 생각합니다.</span>
+                    <span>2. &lsquo;협업&lsquo;을 중요하게 생각합니다.</span>
                     <ul>
                         <li>
                             함께 성장해 나갈 수 있는 환경을 만드는 것을
@@ -626,29 +622,9 @@ export default function Info() {
                         </li>
                     </ul>
                 </S.UserDesc>
-                <S.UserDesc>
+                <S.UserDesc className="item">
                     <S.Title>Featured Projects</S.Title>
                 </S.UserDesc>
-                {/* <S.UserWrapper>
-                    <S.UserInfoWrapper>
-                        <S.UserInfo>
-                            <S.UserText>NAME</S.UserText>
-                            <S.Text>PARK. HYE. WON</S.Text>
-                        </S.UserInfo>
-                        <S.UserInfo>
-                            <S.UserText>BIRTH</S.UserText>
-                            <S.Text>1997.03.31</S.Text>
-                        </S.UserInfo>
-                        <S.UserInfo>
-                            <S.UserText>GITHUB</S.UserText>
-                            <S.Text>https://github.com/heywon0909</S.Text>
-                        </S.UserInfo>
-                        <S.UserInfo>
-                            <S.UserText>GMAIL</S.UserText>
-                            <S.Text>hw731911@gmail.com</S.Text>
-                        </S.UserInfo>
-                    </S.UserInfoWrapper>
-                </S.UserWrapper> */}
             </S.InfoWrapper>
         </S.ContainerWrapper>
     )

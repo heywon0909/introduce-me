@@ -17,6 +17,9 @@ export const FlexContainer = styled.div`
     ${Flex};
     gap: 10px;
     justify-content: space-between;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
 `
 
 export const UserTitle = styled.div`
@@ -43,6 +46,9 @@ export const InfoWrapper = styled.div`
     flex-direction: column;
     align-items: stretch;
     gap: 20px;
+    @media (max-width: 600px) {
+        width: auto;
+    }
 `
 
 export const Mybanner = styled.div`
@@ -56,6 +62,9 @@ export const Mybanner = styled.div`
     gap: 3px;
     padding: 20px 2px;
     border-radius: 0.5rem;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 `
 export const Desc = styled.p`
     font-family: NotoSansKR-Bold;
@@ -82,6 +91,9 @@ export const UserLink = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 `
 
 export const Userbanner = styled.div<{
@@ -95,6 +107,9 @@ export const Userbanner = styled.div<{
     padding: 10px 10px;
     border-radius: 0.5rem;
     width: ${({ width }) => width + '%'};
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 `
 
 export const UserDesc = styled.div<{
