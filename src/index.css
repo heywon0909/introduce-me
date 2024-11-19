@@ -27,29 +27,6 @@ code {
     border: 3px solid var(--myColor);
 }
 
-.wrapper,
-.content {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-}
-
-.content {
-    overflow-x: hidden;
-}
-
-.content .section {
-    width: 100%;
-    height: 100vh;
-}
-
-.content .section.hero {
-    background-image: url('../public/assets/image/sky.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .image-container {
     width: 100%;
     height: 100vh;

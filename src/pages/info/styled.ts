@@ -1,3 +1,4 @@
+import { Flex } from '@common/styled'
 import styled from '@emotion/styled'
 
 export const ContainerWrapper = styled.div`
@@ -5,16 +6,28 @@ export const ContainerWrapper = styled.div`
     height: auto;
     display: flex;
     position: relative;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     background-color: rgb(14, 16, 15);
     margin-top: 10%;
 `
 
+export const FlexContainer = styled.div`
+    ${Flex};
+    gap: 10px;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+`
+
 export const UserTitle = styled.div`
-    font-family: Poppins-black;
-    color: rgb(202 202 202);
-    font-size: 2rem;
+    font-family: NotoSansKR-Bold;
+    background: linear-gradient(45deg, #f6a8cc, #8e47c8);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.3rem;
     @media (max-width: 500px) {
         font-size: 1.1rem;
     }
@@ -33,28 +46,93 @@ export const InfoWrapper = styled.div`
     flex-direction: column;
     align-items: stretch;
     gap: 20px;
+    @media (max-width: 600px) {
+        width: auto;
+    }
 `
 
 export const Mybanner = styled.div`
-    width: auto;
+    width: 50%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(39, 39, 42, 1);
+    gap: 3px;
+    padding: 20px 2px;
+    border-radius: 0.5rem;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+`
+export const Desc = styled.p`
+    font-family: NotoSansKR-Bold;
+    color: #7e51ff;
+    font-size: 1.1rem;
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
+    }
+`
+export const DetailDesc = styled.p`
+    font-family: NotoSansKR-Light;
+    color: #fff;
+    font-size: 1rem;
+    width: 262px;
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
+    }
+`
+export const UserLink = styled.div`
+    width: 15%;
+    background: linear-gradient(to bottom left, #af64e3 0%, #6f72d1 87%);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 `
 
 export const Userbanner = styled.div<{
     dir?: 'column' | 'row'
+    width?: string
+}>`
+    background-color: rgba(39, 39, 42, 1);
+    display: flex;
+    flex-direction: ${({ dir }) => (dir ? dir : 'column')};
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    border-radius: 0.5rem;
+    width: ${({ width }) => width + '%'};
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+`
+
+export const UserDesc = styled.div<{
+    dir?: 'column' | 'row'
+    width?: string
 }>`
     display: flex;
     flex-direction: ${({ dir }) => (dir ? dir : 'column')};
-    justify-content: space-between;
-    padding: 2px 2px;
-    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    border-radius: 0.5rem;
+    width: ${({ width }) => width + '%'};
+    font-family: NotoSansKR-Light;
+    color: #fff;
+    background: linear-gradient(to bottom, transparent, #3f3f46);
+    background: linear-gradient(to bottom, #18181b, rgba(24, 24, 27, 0));
 `
 
 export const UserImg = styled.img`
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 8%;
+    border-radius: 50%;
     float: right;
     @media (max-width: 500px) {
         width: 130px;
@@ -132,7 +210,7 @@ export const SkillText = styled.span<{
             ? 'rgb(28 222 28)'
             : 'white'};
     margin: 0;
-    font-family: Poppins-black;
+    font-family: Poppins-semibold;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -163,20 +241,75 @@ export const Skills = styled.div`
 `
 
 export const TitleText = styled.span`
-    font-size: 1rem;
-    letter-spacing: -0.01em;
-    line-height: 20px;
-    margin: 0;
-    font-family: Kanit-medium;
-    width: 100%;
-    color: rgb(160 160 160);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    @media (max-width: 600px) {
-        font-size: 1rem;
+    font-family: NotoSansKR-Bold;
+    color: #fff;
+    font-size: 1.1rem;
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
     }
-    margin-bottom: 10px;
+`
+
+export const ProjectFlex = styled.div`
+    ${Flex};
+    padding: 10px 10px;
+    gap: 12px;
+    flex-direction: column;
+`
+export const Project = styled.div`
+    width: auto;
+    height: 200px;
+    background-color: rgb(3 3 3 / 38%);
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 2px 2px;
+    align-items: center;
+    gap: 12px;
+    transition-duration: 150ms;
+    :hover {
+        scale: 1.03;
+    }
+`
+export const ProjectImg = styled.img`
+    object-fit: cover;
+    width: 29%;
+    height: 165px;
+`
+export const ProjectUi = styled.div`
+    width: 29%;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const ProjectDesc = styled.p`
+    font-family: NotoSansKR-Light;
+    color: #fff;
+    width: auto;
+    font-size: 0.9rem;
+`
+
+export const ProjectLink = styled.a`
+    font-family: NotoSansKR-Light;
+    color: #fff;
+    width: auto;
+    font-size: 0.75rem;
+`
+
+export const ProjectTitle = styled.h2`
+    color: #fff;
+    font-size: 1rem;
+`
+
+export const Container = styled.div`
+    ${Flex};
+    gap: 4px;
+    flex-direction: row;
+`
+export const ProjectTag = styled.div`
+    width: auto;
+    padding: 2px 10px;
+    background: #822ae6;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
 `

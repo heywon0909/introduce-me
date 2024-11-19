@@ -1143,10 +1143,10 @@ braces@^3.0.3:
   dependencies:
     fill-range "^7.1.1"
 
-bunney-ui@0.0.14:
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/bunney-ui/-/bunney-ui-0.0.14.tgz#aea9604bd7b9abeda78102fe3ce98fae1ca7eae5"
-  integrity sha512-eCuCvSYJsC0hVuO5RD3Y94QKFsHi5lO5ML6oRL2xWMativBM6+o3/dGTMqs8frcI9SamNTxcnnt6ImWytcytpA==
+bunney-ui@0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/bunney-ui/-/bunney-ui-0.0.16.tgz#da166d7d19d1fbcc537337d0ea7c2bd3429011e6"
+  integrity sha512-N48VmX3U46ktxU6ksPCiXboFUE1A7+Rp92CHrygv2xCZeFyup6ObYyvwkyUrX3vIT2VFqEZF69/pw/zLhEKr1A==
   dependencies:
     "@emotion/react" "^11.13.0"
     "@emotion/styled" "^11.13.0"

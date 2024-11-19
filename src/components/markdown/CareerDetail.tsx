@@ -30,6 +30,7 @@ export default function CareerDetail({ fetchUrl }: Props) {
                             fontSize: '1rem',
                             padding: '2px',
                             width: '100%',
+                            fontFamily: 'NotoSansKR-Light',
                         }}
                     >
                         {children}
@@ -48,12 +49,23 @@ export default function CareerDetail({ fetchUrl }: Props) {
                     </ul>
                 ),
                 li: ({ children }) => (
-                    <li style={{ color: '#fff', padding: '5px' }}>
+                    <li
+                        style={{
+                            color: '#fff',
+                            padding: '5px',
+                        }}
+                    >
                         {children}
                     </li>
                 ),
                 p: ({ children }) => (
-                    <p style={{ padding: '3px' }}>{children}</p>
+                    <p
+                        style={{
+                            padding: '3px',
+                        }}
+                    >
+                        {children}
+                    </p>
                 ),
                 h2: ({ children }) => (
                     <h2

@@ -1,3 +1,4 @@
+import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { Link } from 'react-router-dom'
 
@@ -32,4 +33,7 @@ export const LinkButton = styled(Link)`
     :hover {
         background: #23209d;
     }
+`
+export const Flex = css`
+    display: flex;
 `
