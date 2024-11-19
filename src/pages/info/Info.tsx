@@ -7,6 +7,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
 import { FeaturedProjects } from '@components/page/info/FeaturedProjects'
+import { TechBlogs } from '@components/page/info/TechBlogs'
 
 gsap.registerPlugin(useGSAP)
 
@@ -624,6 +625,7 @@ export default function Info() {
                     </ul>
                 </S.UserDesc>
                 <FeaturedProjects />
+                <TechBlogs />
             </S.InfoWrapper>
         </S.ContainerWrapper>
     )

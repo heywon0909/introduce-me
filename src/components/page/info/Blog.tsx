@@ -1,15 +1,18 @@
 import * as S from '@pages/info/styled'
+import { Mackey } from 'bunney-ui/Mackey'
+
 interface Props {
-    imageUrl: string
     title: string
     desc: string
     tag?: string[]
 }
-export const Project = ({ imageUrl, title, desc, tag }: Props) => {
+export const Blog = ({ title, desc, tag }: Props) => {
     const fmtTag = tag?.map((v, i) => ({ id: i, value: v }))
     return (
         <S.Project>
-            <S.ProjectImg src={imageUrl} />
+            <S.ProjectUi>
+                <Mackey />
+            </S.ProjectUi>
             <S.ProjectFlex>
                 <S.ProjectTitle>{title}</S.ProjectTitle>
                 <S.ProjectDesc>{desc}</S.ProjectDesc>

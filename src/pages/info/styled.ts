@@ -274,13 +274,42 @@ export const ProjectImg = styled.img`
     width: 29%;
     height: 165px;
 `
+export const ProjectUi = styled.div`
+    width: 29%;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 export const ProjectDesc = styled.p`
     font-family: NotoSansKR-Light;
     color: #fff;
     width: auto;
     font-size: 0.9rem;
 `
+
+export const ProjectLink = styled.a`
+    font-family: NotoSansKR-Light;
+    color: #fff;
+    width: auto;
+    font-size: 0.75rem;
+`
+
 export const ProjectTitle = styled.h2`
     color: #fff;
     font-size: 1rem;
+`
+
+export const Container = styled.div`
+    ${Flex};
+    gap: 4px;
+    flex-direction: row;
+`
+export const ProjectTag = styled.div`
+    width: auto;
+    padding: 2px 10px;
+    background: #822ae6;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
 `
