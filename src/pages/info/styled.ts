@@ -271,8 +271,9 @@ export const Project = styled.div`
 `
 export const ProjectImg = styled.img`
     object-fit: cover;
-    width: 29%;
+    width: auto;
     height: 165px;
+    max-width: 165px;
 `
 export const ProjectUi = styled.div`
     width: 29%;
