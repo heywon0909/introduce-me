@@ -5,7 +5,7 @@ import fallbackHeywon from '/assets/image/heywon.png'
 import { FaMedium, FaGithub } from 'react-icons/fa6'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { FeaturedProjects } from '@components/page/info/FeaturedProjects'
 import { TechBlogs } from '@components/page/info/TechBlogs'
 
@@ -13,6 +13,11 @@ gsap.registerPlugin(useGSAP)
 
 export default function Info() {
     const container = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const img = new Image()
+        img.src = heywon
+    }, [])
 
     useGSAP(
         () => {
