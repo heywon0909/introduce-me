@@ -50,6 +50,7 @@ export const FeaturedProjects = () => {
             <S.ProjectFlex>
                 {dataArr.map((v) => (
                     <Project
+                        id={v.id}
                         imageUrl={v.imageUrl}
                         optimizationImgUrl={v.optimizationImgUrl}
                         title={v.title}

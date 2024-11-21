@@ -1,5 +1,6 @@
 import { Flex } from '@common/styled'
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom'
 
 export const ContainerWrapper = styled.div`
     width: 100%;
@@ -255,8 +256,9 @@ export const ProjectFlex = styled.div`
     gap: 12px;
     flex-direction: column;
 `
-export const Project = styled.div`
+export const Project = styled(Link)`
     width: auto;
+    color: inherit;
     height: 200px;
     background-color: rgb(3 3 3 / 38%);
     border-radius: 0.5rem;
@@ -265,6 +267,7 @@ export const Project = styled.div`
     align-items: center;
     gap: 12px;
     transition-duration: 150ms;
+    text-decoration: none;
     :hover {
         scale: 1.03;
     }

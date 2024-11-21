@@ -8,8 +8,8 @@ interface Props {
 }
 
 export const MainHeader = () => {
-    const memolinkList = useMemo(() => ['info', 'career'], [])
-    // 'project'
+    const memolinkList = useMemo(() => ['info', 'career', 'project'], [])
+
     return (
         <Header
             Logo={<LogoText name="heywon0909" />}

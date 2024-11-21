@@ -6,8 +6,10 @@ interface Props {
     title: string
     desc: string
     tag?: string[]
+    id: number
 }
 export const Project = ({
+    id,
     imageUrl,
     optimizationImgUrl,
     title,
@@ -16,7 +18,7 @@ export const Project = ({
 }: Props) => {
     const fmtTag = tag?.map((v, i) => ({ id: i, value: v }))
     return (
-        <S.Project>
+        <S.Project to={`/project/${id}`}>
             <LazyImage
                 src={optimizationImgUrl}
                 fallbackComponent={
