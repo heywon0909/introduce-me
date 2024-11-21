@@ -9,7 +9,7 @@ interface Props {
 export const Blog = ({ title, desc, tag }: Props) => {
     const fmtTag = tag?.map((v, i) => ({ id: i, value: v }))
     return (
-        <S.Project>
+        <S.Blog href="https://medium.com/@hw731911">
             <S.ProjectUi>
                 <Mackey />
             </S.ProjectUi>
@@ -22,6 +22,6 @@ export const Blog = ({ title, desc, tag }: Props) => {
                     ))}
                 </S.Container>
             </S.ProjectFlex>
-        </S.Project>
+        </S.Blog>
     )
 }

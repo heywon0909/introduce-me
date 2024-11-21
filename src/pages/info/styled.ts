@@ -272,6 +272,24 @@ export const Project = styled(Link)`
         scale: 1.03;
     }
 `
+
+export const Blog = styled.a`
+    width: auto;
+    color: inherit;
+    height: 200px;
+    background-color: rgb(3 3 3 / 38%);
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 2px 2px;
+    align-items: center;
+    gap: 12px;
+    transition-duration: 150ms;
+    text-decoration: none;
+    :hover {
+        scale: 1.03;
+    }
+`
+
 export const ProjectImg = styled.img`
     object-fit: cover;
     width: auto;
