@@ -38,6 +38,10 @@ const router = createBrowserRouter(
                     element: <Project />,
                 },
                 {
+                    path: '/project/:id',
+                    element: <Project />,
+                },
+                {
                     path: '*',
                     element: <NotFoundPage />,
                 },
