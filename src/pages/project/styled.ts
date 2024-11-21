@@ -21,6 +21,16 @@ export const RowContainer = styled.div`
     ${Flex};
     flex-direction: row;
 `
+export const BgImg = styled.img`
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    gap: 30px;
+`
 
 export const FlexContainer = styled.div`
     ${Flex};
@@ -32,6 +42,7 @@ export const FlexContainer = styled.div`
     align-items: center;
     min-height: 400px;
     gap: 30px;
+    position: absolute;
 `
 export const Title = styled.div`
     font-family: Poppins-black;

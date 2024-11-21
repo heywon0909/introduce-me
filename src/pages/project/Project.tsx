@@ -1,5 +1,6 @@
 import * as S from './styled'
 import image from '/assets/image/image.png'
+import OImage from '/assets/image/image.webp'
 import ProjectBunney from '/assets/image/project-bunney.png'
 import OProjectBunney from '/assets/image/project-bunney.webp'
 import ProjectGame from '/assets/image/project-game.png'
@@ -60,7 +61,11 @@ export default function Project() {
     ]
     return (
         <S.ContainerWrapper>
-            <S.FlexContainer style={{ background: `#9f9fc7 url(${image})` }}>
+            <picture>
+                <source srcSet={OImage} type="image/webp"></source>
+                <S.BgImg src={image} />
+            </picture>
+            <S.FlexContainer>
                 <S.ColumnContainer>
                     <S.Title>ABOUT PROJECTS</S.Title>
                 </S.ColumnContainer>
@@ -68,6 +73,7 @@ export default function Project() {
                     <TechBunney />
                 </div>
             </S.FlexContainer>
+
             <S.ColumnContainer style={{ gap: '100px', marginTop: '120px' }}>
                 {projects.map((project) => (
                     <ProjectDesc
