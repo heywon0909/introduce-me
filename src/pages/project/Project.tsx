@@ -10,7 +10,6 @@ import ProjectEslint from '/assets/image/project-eslint.png'
 import OProjectEslint from '/assets/image/project-eslint.webp'
 import { TechBunney } from 'bunney-ui/TechBunney'
 import { ProjectDesc } from '@components/page/project/ProjectDesc'
-import CareerDetail from '@components/markdown/CareerDetail'
 import { useEffect } from 'react'
 import { useParams } from 'react-router'
 
@@ -20,6 +19,11 @@ export default function Project() {
         if (id) document.getElementById(id)?.scrollIntoView()
     }, [id])
 
+    useEffect(() => {
+        const img = new Image()
+        img.src = image
+    }, [])
+
     const projects = [
         {
             id: 0,
@@ -27,9 +31,7 @@ export default function Project() {
             optimizationImgUrl: OProjectBunney,
             core: 'Open Source library',
             title: 'React UI 라이브러리 제작',
-            desc: (
-                <CareerDetail fetchUrl="/introduce-me/assets/md/project-bunney.md" />
-            ),
+            desc: '/introduce-me/assets/md/project-bunney.md',
         },
         {
             id: 1,
@@ -37,9 +39,7 @@ export default function Project() {
             optimizationImgUrl: OProjectEslint,
             title: '나만의 eslint plugin 제작',
             core: 'ESlint plugin',
-            desc: (
-                <CareerDetail fetchUrl="/introduce-me/assets/md/project-plugin.md" />
-            ),
+            desc: '/introduce-me/assets/md/project-plugin.md',
         },
         {
             id: 2,
@@ -47,9 +47,7 @@ export default function Project() {
             optimizationImgUrl: OProjectGame,
             title: '짝맞추기 게임을 React로 구현',
             core: 'React Game Project',
-            desc: (
-                <CareerDetail fetchUrl="/introduce-me/assets/md/project-game.md" />
-            ),
+            desc: '/introduce-me/assets/md/project-game.md',
         },
         {
             id: 3,
@@ -57,14 +55,12 @@ export default function Project() {
             optimizationImgUrl: OProjectAudio,
             title: 'web Audio API 활용하여 오디오 음향 효과 웹페이지',
             core: 'web Audio API',
-            desc: (
-                <CareerDetail fetchUrl="/introduce-me/assets/md/project-audio.md" />
-            ),
+            desc: '/introduce-me/assets/md/project-audio.md',
         },
     ]
     return (
         <S.ContainerWrapper>
-            <S.FlexContainer style={{ background: `url(${image})` }}>
+            <S.FlexContainer style={{ background: `#9f9fc7 url(${image})` }}>
                 <S.ColumnContainer>
                     <S.Title>ABOUT PROJECTS</S.Title>
                 </S.ColumnContainer>

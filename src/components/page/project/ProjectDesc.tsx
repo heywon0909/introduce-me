@@ -1,11 +1,13 @@
 import { LazyImage } from '@components/common/Image/LazyImage'
+import { Loading } from '@components/loading/Loading'
+import CareerDetail from '@components/markdown/CareerDetail'
 import * as S from '@pages/project/styled'
-import { ReactNode } from 'react'
+import { Suspense } from 'react'
 interface Props {
     id: number
     core: string
     title: string
-    desc: ReactNode
+    desc: string
     imageUrl: string
     optimizationImgUrl: string
 }
@@ -29,7 +31,11 @@ export const ProjectDesc = ({
             <S.ColumnContainer style={{ width: '40%' }}>
                 <S.Core>{core}</S.Core>
                 <S.Title>{title}</S.Title>
-                <S.Desc>{desc}</S.Desc>
+                <S.Desc>
+                    <Suspense fallback={<Loading />}>
+                        <CareerDetail fetchUrl={desc} />
+                    </Suspense>
+                </S.Desc>
             </S.ColumnContainer>
             <S.ColumnContainer style={{ width: '30%', marginTop: '3%' }}>
                 <LazyImage
