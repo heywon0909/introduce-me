@@ -88,6 +88,8 @@ export const Core = styled.h2`
 `
 export const Desc = styled.div`
     color: #fff;
+    width: auto;
+    height: 700px;
 `
 export const ProjectImg = styled.img`
     object-fit: cover;
