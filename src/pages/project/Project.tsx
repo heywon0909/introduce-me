@@ -18,12 +18,15 @@ export default function Project() {
     const { id } = useParams()
     const container = useRef<HTMLDivElement>(null)
     useEffect(() => {
+        if (container.current) {
+            container.current.style.display = 'block'
+        }
+    }, [])
+
+    useEffect(() => {
         if (id) {
             const idElem = document.getElementById(id)
             if (idElem) idElem.scrollIntoView({ behavior: 'auto' })
-        }
-        if (container.current) {
-            container.current.style.display = 'block'
         }
     }, [id])
 
