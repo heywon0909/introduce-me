@@ -1,5 +1,5 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/ProfileImg-D-eZJ2ZP.js","index-Cl3J9x73.js","index-6tuQD20t.css","assets/TechBunney-C8yyFxZf.js"])))=>i.map(i=>d[i]);
-import{n as t,B as h,j as i,r as l,_ as m}from"../index-Cl3J9x73.js";import{g as f,F as u}from"./index-pha2o_tx.js";t.div`
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/ProfileImg-CVRRaEjT.js","index-DE6XfWtO.js","index-XJqBUM4z.css","assets/TechBunney-CGbtVScv.js"])))=>i.map(i=>d[i]);
+import{n as t,B as h,j as i,r as l,_ as m}from"../index-DE6XfWtO.js";import{g as f,F as u}from"./index-3fTCPwIt.js";t.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,4 +269,4 @@ import{n as t,B as h,j as i,r as l,_ as m}from"../index-Cl3J9x73.js";import{g as
     align-items: center;
     justify-content: center;
     width: 100%;
-`,x=l.forwardRef(function(a,r){const{children:c,otherProps:n,dir:o}=a;return i.jsx(P,{style:{...n},dir:o,ref:r,className:r?"colored":"",children:c})});x.displayName="ContentWrapper";const R=l.lazy(()=>m(async()=>{const{ProfileImg:e}=await import("./ProfileImg-D-eZJ2ZP.js");return{ProfileImg:e}},__vite__mapDeps([0,1,2,3])).then(({ProfileImg:e})=>({default:e})));function K(){return i.jsxs(x,{otherProps:{height:"100vh"},children:[i.jsx($,{leftFrameText:"DEVELOPER",rightFrameText:"FRONT-END"}),i.jsx(b,{children:i.jsx(z,{children:i.jsx(E,{children:i.jsx(l.Suspense,{fallback:i.jsx("div",{}),children:i.jsx(R,{})})})})})]})}export{K as default};
+`,x=l.forwardRef(function(a,r){const{children:c,otherProps:n,dir:o}=a;return i.jsx(P,{style:{...n},dir:o,ref:r,className:r?"colored":"",children:c})});x.displayName="ContentWrapper";const R=l.lazy(()=>m(async()=>{const{ProfileImg:e}=await import("./ProfileImg-CVRRaEjT.js");return{ProfileImg:e}},__vite__mapDeps([0,1,2,3])).then(({ProfileImg:e})=>({default:e})));function K(){return i.jsxs(x,{otherProps:{height:"100vh"},children:[i.jsx($,{leftFrameText:"DEVELOPER",rightFrameText:"FRONT-END"}),i.jsx(b,{children:i.jsx(z,{children:i.jsx(E,{children:i.jsx(l.Suspense,{fallback:i.jsx("div",{}),children:i.jsx(R,{})})})})})]})}export{K as default};

@@ -1,4 +1,4 @@
-import{n as t,F as n,j as e,r as c,p as g,q as x}from"../index-Cl3J9x73.js";import{L as f,P as u,O as h,a as j,b as y,c as b,d as w,e as P,f as I}from"./LazyImage-CrD-Wf_t.js";import{f as v}from"./TechBunney-C8yyFxZf.js";import{C as U}from"./CareerDetail-8N1-kzFG.js";const C=t.div`
+import{n as t,F as n,j as e,r as c,p as g,q as x}from"../index-DE6XfWtO.js";import{L as f,P as u,O as h,a as j,b as y,c as b,d as w,e as P,f as I}from"./LazyImage-DQtx-nIm.js";import{f as v}from"./TechBunney-CGbtVScv.js";import{C as U}from"./CareerDetail-DvquCDdz.js";const C=t.div`
     width: 100%;
     height: calc(100vh - 57px);
     display: flex;
@@ -68,6 +68,8 @@ import{n as t,F as n,j as e,r as c,p as g,q as x}from"../index-Cl3J9x73.js";impo
     font-family: Poppins-black;
 `,A=t.div`
     color: #fff;
+    width: auto;
+    height: 700px;
 `,R=t.img`
     object-fit: cover;
     width: auto;
