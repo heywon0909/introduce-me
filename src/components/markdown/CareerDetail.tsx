@@ -1,7 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import { useDelayedQuery } from '@hooks/useDelayedQuery'
 import { BunneyLoading } from 'bunney-ui/BunneyLoading'
-import { ContentLoading } from './styled'
 
 interface Props {
     fetchUrl: string
@@ -13,12 +12,7 @@ export default function CareerDetail({ fetchUrl }: Props) {
         queryFn: fetch(fetchUrl).then((response) => response.text()),
     })
 
-    if (isLoading)
-        return (
-            <ContentLoading>
-                <BunneyLoading />
-            </ContentLoading>
-        )
+    if (isLoading) return <BunneyLoading />
 
     return (
         <ReactMarkdown
