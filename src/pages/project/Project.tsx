@@ -11,13 +11,20 @@ import ProjectEslint from '/assets/image/project-eslint.png'
 import OProjectEslint from '/assets/image/project-eslint.webp'
 import { TechBunney } from 'bunney-ui/TechBunney'
 import { ProjectDesc } from '@components/page/project/ProjectDesc'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useParams } from 'react-router'
 
 export default function Project() {
     const { id } = useParams()
+    const container = useRef<HTMLDivElement>(null)
     useEffect(() => {
-        if (id) document.getElementById(id)?.scrollIntoView()
+        if (id) {
+            const idElem = document.getElementById(id)
+            if (idElem) idElem.scrollIntoView({ behavior: 'auto' })
+        }
+        if (container.current) {
+            container.current.style.display = 'block'
+        }
     }, [id])
 
     useEffect(() => {
@@ -74,7 +81,10 @@ export default function Project() {
                 </div>
             </S.FlexContainer>
 
-            <S.ColumnContainer style={{ gap: '100px', marginTop: '120px' }}>
+            <S.ColumnContainer
+                style={{ gap: '100px', marginTop: '120px', display: 'none' }}
+                ref={container}
+            >
                 {projects.map((project) => (
                     <ProjectDesc
                         id={project.id}
