@@ -1,14 +1,20 @@
-## Hello, I'm Heywon0909 😎
+# Heywon's Portfolio
 
-This is my porfolio website.
+이 포트폴리오 웹사이트는 제 경력 이력과 진행했던 프로젝트 내용을 담고 있습니다.
 
-It contains the following contents:
+## 문제 및 최적화
 
--   Info
--   Career
--   Project
+### 1. 폰트 및 이미지 최적화  
+웹사이트의 로딩 속도를 개선하기 위해 다음과 같은 최적화를 진행했습니다:
 
-## My interesting experience is getting bigger and bigger 
+- **Font Optimization** 
+  - 폰트 로딩 시간을 줄이고 렌더링 성능을 개선하기 위한 최적화 작업을 적용했습니다.  
+  - 내용: 폰트 최적화 과정에 대한 내용을 담고있습니다(https://medium.com/p/c0dc1b040d2c)
 
-Now in my 3rd year of frontend, I'm trying to learn a lot.
+- **Image Optimization** 
+  - 이미지 파일 크기를 압축하고 크기를 조정하였습니다. 
+  - WebP와 같은 최신 이미지 포맷을 활용해 렌더링 성능을 개선하였습니다. 
+
+
+
 
