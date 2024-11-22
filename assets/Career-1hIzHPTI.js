@@ -1,4 +1,4 @@
-import{n as t,j as e,r as f,p}from"../index-Bkn478kz.js";import{u as s,C as a}from"./CareerDetail-CR6bymSE.js";const x=t.div`
+import{n as t,j as e,r as f,p}from"../index-GoXt1sgk.js";import{u as s,C as a}from"./CareerDetail-CcRHSciq.js";const x=t.div`
     width: calc(100vw - 20px);
     height: calc(100% - 70px);
     display: flex;
