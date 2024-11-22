@@ -10,7 +10,7 @@
 - **Font Optimization** 
   - 문제: 메인 화면에서 로고 옆 보여지는 폰트가 깨지는 현상이 발생
   - 원인: 폰트로딩과정에서 오래 걸림
-  - 해결: 폰트(ttf -> woff2) 로 변경, 서브셋 폰트 적용, 메인 폰트 FOIT 형상을 띄도록 font-display:block으로 수정 
+  - 해결: 폰트(ttf -> woff2,woff) 로 변경, 서브셋 폰트 적용, 메인 폰트 FOIT 형상을 띄도록 font-display:block으로 수정 
   - 내용: 폰트 최적화 과정에 대한 내용을 담고있습니다(https://medium.com/p/c0dc1b040d2c)
 
 - **Image Optimization** 
