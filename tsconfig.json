@@ -3,19 +3,39 @@
         "target": "ES2020",
         "baseUrl": ".",
         "paths": {
-            "@components/*": ["src/components/*"],
-            "@pages/*": ["src/pages/*"],
-            "@assets/*": ["public/introduce-me/assets/*"],
-            "@utils/*": ["src/utils/*"],
-            "@hooks/*": ["src/hooks/*"],
-            "@common/*": ["src/common/*"],
-            "@error/*": ["src/error/*"]
+            "@components/*": [
+                "src/components/*"
+            ],
+            "@pages/*": [
+                "src/pages/*"
+            ],
+            "@assets/*": [
+                "public/introduce-me/assets/*"
+            ],
+            "@utils/*": [
+                "src/utils/*"
+            ],
+            "@hooks/*": [
+                "src/hooks/*"
+            ],
+            "@common/*": [
+                "src/common/*"
+            ],
+            "@error/*": [
+                "src/error/*"
+            ],
+            "@external/*": [
+                "src/external/*"
+            ]
         },
         "useDefineForClassFields": true,
-        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
         "module": "ESNext",
         "skipLibCheck": true,
-
         /* Bundler mode */
         "moduleResolution": "bundler",
         "allowImportingTsExtensions": true,
@@ -30,5 +50,12 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true
     },
-    "include": ["src/**/*"]
+    "include": [
+        "src/**/*",
+        "vite.config.ts"
+    ],
+    "exclude": [
+        "build",
+        "eslint.config.js",
+    ]
 }
