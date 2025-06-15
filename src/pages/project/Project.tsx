@@ -1,4 +1,3 @@
-import * as S from './styled'
 import image from '/assets/image/image.png'
 import OImage from '/assets/image/image.webp'
 import ProjectBunney from '/assets/image/project-bunney.png'
@@ -13,6 +12,7 @@ import { TechBunney } from 'bunney-ui/TechBunney'
 import { ProjectDesc } from '@components/page/project/ProjectDesc'
 import { useEffect, useRef } from 'react'
 import { useParams } from 'react-router'
+import * as S from './styled'
 
 export default function Project() {
     const { id } = useParams()

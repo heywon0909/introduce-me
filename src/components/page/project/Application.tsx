@@ -6,11 +6,9 @@ interface Props {
     icon: ReactNode
     url: string
 }
-export const Application = ({ desc, icon, url }: Props) => {
-    return (
+export const Application = ({ desc, icon, url }: Props) => (
         <S.AppContainer onClick={() => (location.href = url)}>
             <S.App style={{ background: '#fff' }}>{icon}</S.App>
             <S.AppDesc>{desc}</S.AppDesc>
         </S.AppContainer>
     )
-}

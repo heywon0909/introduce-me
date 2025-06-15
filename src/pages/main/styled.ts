@@ -109,24 +109,24 @@ export const Frame = styled.div<{ left?: number; right?: number }>`
     ${(props) =>
         props.left &&
         `
-    left:${props.left}%;
+    left:${String(props.left)}%;
   `};
     ${(props) =>
         props.right &&
         `
-    right:${props.right}%;
+    right:${String(props.right)}%;
   `};
     flex-direction: column;
     @media (min-width: 768px) {
         ${(props) =>
             props.left &&
             `
-    left:${props.left + 10}%;
+    left:${String(props.left + 10)}%;
   `};
         ${(props) =>
             props.right &&
             `
-    right:${props.right + 10}%;
+    right:${String(props.right + 10)}%;
   `};
     }
 `
@@ -139,7 +139,7 @@ export const FrameText = styled.span`
 
 export const Wrapper = styled.div<{ dir?: 'row' | 'column' }>`
     display: flex;
-    flex-direction: ${({ dir }) => dir || 'column'};
+    flex-direction: ${({ dir }) => dir ?? 'column'};
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -203,7 +203,7 @@ export const InfoTitle = styled.h3<{ margin?: number }>`
     color: #737373;
     font-size: 1.7rem;
     font-weight: 500;
-    margin: ${({ margin }) => margin && `${margin}px`};
+    margin: ${({ margin }) => margin && `${String(margin)}px`};
 `
 
 export const Content = styled.div`

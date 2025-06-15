@@ -1,17 +1,16 @@
-import * as S from './styled'
 import { ButtonProps } from '@mui/base/Button'
+import * as S from './styled'
+import { ReactNode } from 'react'
 
 interface Props {
     text?: string
     props?: ButtonProps
-    children?: React.ReactNode
+    children?: ReactNode
     onClick?: () => void
 }
-export const StyleButton = ({ text, props, children, onClick }: Props) => {
-    return (
-        <S.Button {...props} onClick={onClick}>
-            {children}
-            {text}
-        </S.Button>
-    )
-}
+export const StyleButton = ({ text, props, children, onClick }: Props) => (
+    <S.Button {...props} onClick={onClick}>
+        {children}
+        {text}
+    </S.Button>
+)

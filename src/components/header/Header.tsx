@@ -1,10 +1,10 @@
-import * as S from './styled'
 import { LogoText } from '@components/header/atoms/LogoText'
+import { ReactNode, useMemo } from 'react'
+import * as S from './styled'
 import { Menu } from './atoms/MenuLink'
-import { useMemo } from 'react'
 interface Props {
-    Logo?: React.ReactNode
-    MenuLink?: React.ReactNode
+    Logo?: ReactNode
+    MenuLink?: ReactNode
 }
 
 export const MainHeader = () => {
@@ -18,11 +18,9 @@ export const MainHeader = () => {
     )
 }
 
-const Header = ({ Logo, MenuLink }: Props) => {
-    return (
-        <S.Header>
-            {Logo}
-            {MenuLink}
-        </S.Header>
-    )
-}
+const Header = ({ Logo, MenuLink }: Props) => (
+    <S.Header>
+        {Logo}
+        {MenuLink}
+    </S.Header>
+)

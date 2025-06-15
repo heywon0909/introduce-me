@@ -18,7 +18,7 @@ export const Project = ({
 }: Props) => {
     const fmtTag = tag?.map((v, i) => ({ id: i, value: v }))
     return (
-        <S.Project to={`/project/${id}`}>
+        <S.Project to={`/project/${String(id)}`}>
             <LazyImage
                 src={optimizationImgUrl}
                 fallbackComponent={

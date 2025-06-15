@@ -1,8 +1,7 @@
 import Box from '@mui/material/Box'
 import { BunneyLoading } from 'bunney-ui/BunneyLoading'
 
-export const Loading = () => {
-    return (
+export const Loading = () => (
         <Box
             sx={{
                 display: 'flex',
@@ -18,4 +17,3 @@ export const Loading = () => {
             <BunneyLoading />
         </Box>
     )
-}

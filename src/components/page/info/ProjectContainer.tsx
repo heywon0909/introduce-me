@@ -3,11 +3,9 @@ import { PropsWithChildren } from 'react'
 interface Props extends PropsWithChildren {
     title: string
 }
-export const ProjectContainer = ({ title, children }: Props) => {
-    return (
+export const ProjectContainer = ({ title, children }: Props) => (
         <S.UserDesc className="item">
             <S.Title>{title}</S.Title>
             {children}
         </S.UserDesc>
     )
-}

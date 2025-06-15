@@ -1,7 +1,6 @@
+import { ReactNode } from 'react'
 import * as S from '../../styled'
 interface Props {
-    children?: React.ReactNode
+    children?: ReactNode
 }
-export const ImgSmallFrame = ({ children }: Props) => {
-    return <S.Img>{children}</S.Img>
-}
+export const ImgSmallFrame = ({ children }: Props) => <S.Img>{children}</S.Img>

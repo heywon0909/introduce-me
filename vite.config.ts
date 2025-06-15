@@ -49,6 +49,10 @@ export default defineConfig({
                 find: '@error',
                 replacement: path.resolve(__dirname, 'src/error'),
             },
+            {
+                find: '@external',
+                replacement: path.resolve(__dirname, 'src/external'),
+            },
         ],
     },
 })

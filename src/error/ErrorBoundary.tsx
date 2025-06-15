@@ -1,10 +1,10 @@
-import { Component } from 'react'
+import { Component, ReactNode } from 'react'
 
 interface State {
     hasError: boolean
     info?: Error | null
 }
-export type ErrorFallbackProps<ErrorType extends Error = Error> = {
+export interface ErrorFallbackProps<ErrorType extends Error = Error> {
     error: ErrorType
     reset: (...args: unknown[]) => void
 }
@@ -13,18 +13,15 @@ export type ErrorFallbackComponent = <ErrorType extends Error>(
 ) => JSX.Element
 interface Props {
     errorFallback: ErrorFallbackComponent
-    children?: React.ReactNode
+    children?: ReactNode
     resetQuery?: () => void
     keys?: unknown[]
 }
 const initialState: State = { hasError: false, info: null }
 
-const compareArr = (prevArr: Array<unknown>, nextArr: Array<unknown>) => {
-    return (
-        prevArr.length === nextArr.length &&
-        prevArr.some((item, index) => !Object.is(item, nextArr[index]))
-    )
-}
+const compareArr = (prevArr: unknown[], nextArr: unknown[]) =>
+    prevArr.length === nextArr.length &&
+    prevArr.some((item, index) => !Object.is(item, nextArr[index]))
 
 export class ErrorBoundary extends Component<Props, State> {
     constructor(props: Props) {
@@ -48,12 +45,13 @@ export class ErrorBoundary extends Component<Props, State> {
     componentDidUpdate(prevProps: Props, prevState: State) {
         const { info } = this.state
         const { keys } = this.props
+        if (keys === undefined) return
 
         if (
             info !== null &&
             prevState.info !== null &&
             prevProps.keys &&
-            compareArr(prevProps.keys, keys as unknown[])
+            compareArr(prevProps.keys, keys)
         ) {
             this.resetBoundary()
         }
@@ -64,7 +62,7 @@ export class ErrorBoundary extends Component<Props, State> {
         const isError = hasError && info !== null
         const fallbackErrorUI = (err: ErrorFallbackProps['error']) =>
             this.props.errorFallback({ error: err, reset: this.resetBoundary })
-        if (isError) return fallbackErrorUI(info as Error)
+        if (isError && info) return fallbackErrorUI(info)
 
         return this.props.children
     }

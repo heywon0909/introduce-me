@@ -103,11 +103,11 @@ export const Userbanner = styled.div<{
 }>`
     background-color: rgba(39, 39, 42, 1);
     display: flex;
-    flex-direction: ${({ dir }) => (dir ? dir : 'column')};
+    flex-direction: ${({ dir }) => dir ?? 'column'};
     justify-content: space-evenly;
     padding: 10px 10px;
     border-radius: 0.5rem;
-    width: ${({ width }) => width + '%'};
+    width: ${({ width }) => String(width) + '%'};
     @media (max-width: 600px) {
         width: 100%;
     }
@@ -118,11 +118,11 @@ export const UserDesc = styled.div<{
     width?: string
 }>`
     display: flex;
-    flex-direction: ${({ dir }) => (dir ? dir : 'column')};
+    flex-direction: ${({ dir }) => dir ?? 'column'};
     justify-content: space-evenly;
     padding: 10px 10px;
     border-radius: 0.5rem;
-    width: ${({ width }) => width + '%'};
+    width: ${({ width }) => String(width) + '%'};
     font-family: NotoSansKR-Light;
     color: #fff;
     background: linear-gradient(to bottom, transparent, #3f3f46);

@@ -1,18 +1,15 @@
 import ReactMarkdown from 'react-markdown'
 import { useDelayedQuery } from '@hooks/useDelayedQuery'
-import { Loading } from '@components/loading/Loading'
 
 interface Props {
     fetchUrl: string
 }
 
 export default function CareerDetail({ fetchUrl }: Props) {
-    const { isLoading, data } = useDelayedQuery({
-        queryKey: [`${fetchUrl}`],
+    const { data } = useDelayedQuery({
+        queryKey: [fetchUrl],
         queryFn: fetch(fetchUrl).then((response) => response.text()),
     })
-
-    if (isLoading) return <Loading />
 
     return (
         <ReactMarkdown

@@ -1,5 +1,4 @@
 import { StyleIcon } from '@components/common/IconButton/StyleIcon'
-import * as S from './styled'
 import heywon from '/assets/image/heywon.webp'
 import fallbackHeywon from '/assets/image/heywon.png'
 import { FaMedium, FaGithub } from 'react-icons/fa6'
@@ -8,6 +7,7 @@ import { useGSAP } from '@gsap/react'
 import { useEffect, useRef } from 'react'
 import { FeaturedProjects } from '@components/page/info/FeaturedProjects'
 import { TechBlogs } from '@components/page/info/TechBlogs'
+import * as S from './styled'
 
 gsap.registerPlugin(useGSAP)
 
