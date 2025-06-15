@@ -5,12 +5,12 @@ import { useState } from 'react'
 interface Props {
     title?: string
     desc: string
-    data: Array<{
+    data: {
         imageUrl?: string
         optimizationImgUrl?: string
         id: number
         title: string
-    }>
+    }[]
 }
 export const CustomApplication = ({ desc, data }: Props) => {
     const [open, setOpen] = useState(false)
@@ -39,28 +39,26 @@ export const CustomApplication = ({ desc, data }: Props) => {
                 <S.AppContainer onClick={handleOpen}>
                     <S.AppDesc>{desc}</S.AppDesc>
                     <S.AppDetail>
-                        {data.map((item) => {
-                            return (
-                                <>
-                                    {item.imageUrl &&
-                                    item.optimizationImgUrl ? (
-                                        <picture>
-                                            <source
-                                                srcSet={item.optimizationImgUrl}
-                                                type="image/webp"
-                                            ></source>
-                                            <img
-                                                src={item.imageUrl}
-                                                width={120}
-                                                height={80}
-                                            />
-                                        </picture>
-                                    ) : (
-                                        <Mackey size={6} />
-                                    )}
-                                </>
-                            )
-                        })}
+                        {data.map((item) => (
+                            <>
+                                {item.imageUrl && item.optimizationImgUrl ? (
+                                    <picture>
+                                        <source
+                                            srcSet={item.optimizationImgUrl}
+                                            type="image/webp"
+                                        ></source>
+                                        <img
+                                            src={item.imageUrl}
+                                            width={120}
+                                            height={80}
+                                            alt={item.title}
+                                        />
+                                    </picture>
+                                ) : (
+                                    <Mackey size={6} />
+                                )}
+                            </>
+                        ))}
                     </S.AppDetail>
                 </S.AppContainer>
             </Backdrop>

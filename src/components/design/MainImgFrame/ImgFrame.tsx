@@ -1,9 +1,9 @@
-import { useEffect, useRef } from 'react'
-import * as S from '../styled'
+import { ReactNode, useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { FaHandsClapping } from 'react-icons/fa6'
+import * as S from '../styled'
 interface Props {
-    children: React.ReactNode
+    children: ReactNode
 }
 export const ImgFrame = ({ children }: Props) => {
     const greeting = useRef<HTMLHeadingElement>(null)
@@ -51,7 +51,7 @@ export const ImgFrame = ({ children }: Props) => {
     }, [])
 
     useEffect(() => {
-        const textElements: Array<HTMLElement> = gsap.utils.toArray(
+        const textElements: HTMLElement[] = gsap.utils.toArray(
             document.querySelectorAll('#text')
         )
 

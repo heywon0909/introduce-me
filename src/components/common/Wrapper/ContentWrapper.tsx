@@ -1,8 +1,8 @@
-import { forwardRef } from 'react'
+import { CSSProperties, forwardRef, ReactNode } from 'react'
 import * as S from './styled'
 interface Props {
-    children: React.ReactNode
-    otherProps?: React.CSSProperties
+    children: ReactNode
+    otherProps?: CSSProperties
     dir?: 'row' | 'column'
 }
 export const ContentWrapper = forwardRef<HTMLDivElement, Props>(

@@ -1,5 +1,6 @@
+import { ReactNode } from 'react'
 import * as S from './styled'
-interface Comapny {
+export interface Comapny {
     companyName: string
     companyLogo: string
     workPeriod: string
@@ -7,7 +8,7 @@ interface Comapny {
 }
 interface Props {
     data: Comapny
-    children: React.ReactNode
+    children: ReactNode
 }
 export const Company = ({ data, children }: Props) => {
     const { companyName, workPeriod, companyDesc, companyLogo } = data

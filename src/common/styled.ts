@@ -12,7 +12,7 @@ export const ContainerWrapper = styled.div<{ gap?: number }>`
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 16, 15);
-    gap: ${({ gap }) => gap && `${gap}px`};
+    gap: ${({ gap }) => gap && `${String(gap)}px`};
 `
 export const Text = styled.div`
     font-family: NotoSansKR-Medium;

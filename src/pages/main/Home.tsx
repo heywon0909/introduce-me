@@ -1,10 +1,10 @@
-import * as S from './styled'
 import { FrameText } from '@components/design/FrameText'
 import { ImgFrame } from '@components/design/MainImgFrame/ImgFrame'
 import { ImgSmallFrame } from '@components/design/MainImgFrame/atoms/ImgSmallFrame'
 // import { ProfileImg } from '@components/design/MainImgFrame/atoms/ProfileImg'
 import { ContentWrapper } from '@components/common/Wrapper/ContentWrapper'
 import { lazy, Suspense } from 'react'
+import * as S from './styled'
 
 const ProfileImg = lazy(() =>
     import('@components/design/MainImgFrame/atoms/ProfileImg').then(

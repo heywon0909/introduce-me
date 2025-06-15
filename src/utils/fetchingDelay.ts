@@ -4,7 +4,9 @@ export const fetchingDelay = async <TQueryFnData = unknown>(
     let result
     try {
         result = new Promise((resolve) =>
-            setTimeout(() => resolve(fetchingAPI), 1000)
+            setTimeout(() => {
+                resolve(fetchingAPI)
+            }, 1000)
         )
     } catch (error) {
         console.warn(error)

@@ -1,15 +1,14 @@
-import * as S from './styled'
 import { ErrorFallbackProps } from '@error/ErrorBoundary'
 
 import { Text } from '@common/styled'
 import { Button } from '@components/common/Button/styled'
 import { Mackey } from 'bunney-ui/Mackey'
+import * as S from './styled'
 interface Props {
-    error?: ErrorFallbackProps<Error>['error']
+    error?: ErrorFallbackProps['error']
     reset: () => void
 }
-export const ErrorFallback = ({ reset }: Props) => {
-    return (
+export const ErrorFallback = ({ reset }: Props) => (
         <S.FullWrapper gap={15}>
             <Mackey />
             <Text>Error is Found</Text>
@@ -23,4 +22,3 @@ export const ErrorFallback = ({ reset }: Props) => {
             </Button>
         </S.FullWrapper>
     )
-}

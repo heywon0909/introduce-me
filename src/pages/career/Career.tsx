@@ -1,23 +1,20 @@
-import * as S from './styled'
-import { Company } from '@components/company/Comapny'
+import { Comapny, Company } from '@components/company/Comapny'
 import { Loading } from '@components/loading/Loading'
 import CareerDetail from '@components/markdown/CareerDetail'
 import { useDelayedQuery } from '@hooks/useDelayedQuery'
 import { Suspense } from 'react'
+import * as S from './styled'
+import { getData } from '@external/api'
 
 export default function Resume() {
-    const { data: tmax } = useDelayedQuery({
+    const { data: tmax } = useDelayedQuery<Comapny>({
         queryKey: ['prevCareer'],
-        queryFn: fetch('/introduce-me/assets/data/tmax.json')
-            .then((response) => response.text())
-            .then((res) => JSON.parse(res)),
+        queryFn: getData('tmax'),
     })
 
     const { data: eco } = useDelayedQuery({
         queryKey: ['curCareer'],
-        queryFn: fetch('/introduce-me/assets/data/eco.json')
-            .then((response) => response.text())
-            .then((res) => JSON.parse(res)),
+        queryFn: getData('eco'),
     })
 
     return (

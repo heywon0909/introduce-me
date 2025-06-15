@@ -67,24 +67,24 @@ export const Frame = styled.div<{ left?: number; right?: number }>`
     ${(props) =>
         props.left &&
         `
-    left:${props.left}%;
+    left:${String(props.left)}%;
   `};
     ${(props) =>
         props.right &&
         `
-    right:${props.right}%;
+    right:${String(props.right)}%;
   `};
     flex-direction: column;
     @media (min-width: 768px) {
         ${(props) =>
             props.left &&
             `
-    left:${props.left + 10}%;
+    left:${String(props.left + 10)}%;
   `};
         ${(props) =>
             props.right &&
             `
-    right:${props.right + 10}%;
+    right:${String(props.right + 10)}%;
   `};
     }
 `
