@@ -20,4 +20,7 @@
   - 내용: 이미지 최적화 과정에 대한 내용을 담고 있습니다(https://medium.com/p/0f87210b6cae)
 
 
-
+### 2. code convention
+- 자체 제작한 eslint-config-everything 🎁 적용
+- 추후 다른 프로젝트에서도 eslint-config-everything rule을 적용할 예정 
+  
