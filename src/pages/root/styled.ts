@@ -1,14 +1,10 @@
 import styled from '@emotion/styled'
 
-export const Container = styled.div`
-    position: relative;
-    width: 100%;
-    margin-top: 57px;
-    height: calc(100% - 70px);
+export const Container = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-grow: 1;
 `
 
 export const ContainerWrapper = styled.div`
