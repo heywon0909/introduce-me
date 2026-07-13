@@ -30,8 +30,8 @@ export const Button = styled(BaseButton)(
   font-size: 0.875rem;
   line-height: 1.5;
   background-color: ${blue[500]};
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
   color: white;
   transition: all 150ms ease;
   cursor: pointer;

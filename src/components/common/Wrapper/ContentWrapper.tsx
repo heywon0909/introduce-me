@@ -9,14 +9,14 @@ export const ContentWrapper = forwardRef<HTMLDivElement, Props>(
     function ContentWrapper(props, ref) {
         const { children, otherProps, dir } = props
         return (
-            <S.Wrapper
+            <S.CommonSection
                 style={{ ...otherProps }}
                 dir={dir}
                 ref={ref}
                 className={ref ? 'colored' : ''}
             >
                 {children}
-            </S.Wrapper>
+            </S.CommonSection>
         )
     }
 )
