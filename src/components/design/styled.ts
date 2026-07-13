@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 
 export const Container = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -9,6 +10,7 @@ export const Container = styled.div`
     height: 100%;
     padding: 0px 5px;
     gap: 3%;
+
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -29,33 +31,33 @@ export const ContentWrapper = styled.div`
 
 export const TitleWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 300px;
 `
 
 export const Title = styled.span`
-    font-size: 6rem;
+    font-size: 11rem;
     letter-spacing: -0.01em;
     line-height: 100%;
     margin: 0;
     font-family: Kanit-extrabold;
     width: 100%;
-    color: #000;
-    // background: linear-gradient(to right, #fdbbbb, #001c95) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 0%;
+    background-size: 100%;
     transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     position: relative;
+    text-align: center;
+    @media (max-width: 768px) {
+        font-size: 12vw;
+    }
     @media (max-width: 600px) {
         font-size: 10vw;
     }
-    background-image: linear-gradient(120deg, #ffc4f7, #725bdc);
+    // background-image: linear-gradient(70deg, #8a67ec, #1a05ec);
+    background-image: linear-gradient(114deg, #688bae 0%, #d8a67d 100%);
     -webkit-background-clip: text;
     color: transparent;
 `
@@ -116,8 +118,7 @@ export const Img = styled.div`
     flex-shrink: 1;
 `
 
-export const ProfileImg = styled.img`
-    position: absolute;
-    top: 22%;
-    left: 27%;
+export const ProfileImg = styled.div`
+    display: flex;
+    flex-direction: column;
 `
