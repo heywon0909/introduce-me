@@ -7,6 +7,7 @@ export default function Home() {
             otherProps={{
                 background:
                     'linear-gradient(18deg, #0d2137 30%, #04080d 60%, #050505 100%)',
+                gap: '2em',
             }}
             dir="column"
         >
