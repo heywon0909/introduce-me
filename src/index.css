@@ -14,6 +14,9 @@ div#root {
 
 html {
     --myColor: #00bae2;
+    @media (min-width: 1024px) {
+        scroll-snap-type: y mandatory;
+    }
 }
 
 code {

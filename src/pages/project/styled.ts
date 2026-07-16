@@ -11,6 +11,12 @@ export const ContainerWrapper = styled.section`
         rgb(3 43 70) 60% 60%,
         rgb(11 13 13) 100%
     );
+    @media (max-width: 567px) {
+        padding-top: 120px;
+    }
+    @media (min-width: 1024px) {
+        scroll-snap-type: y mandatory;
+    }
 `
 
 export const ColumnWrapper = styled.div`
@@ -34,6 +40,7 @@ export const ColumnContainer = styled.div`
     ${Flex};
     width: 100%;
     min-height: 100vh;
+    scroll-snap-align: start;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -41,6 +48,7 @@ export const ColumnContainer = styled.div`
 
 export const RowContainer = styled.article`
     ${Flex};
+
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
