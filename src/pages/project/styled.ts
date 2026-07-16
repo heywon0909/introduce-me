@@ -1,25 +1,55 @@
 import { Flex } from '@common/styled'
 import styled from '@emotion/styled'
 
-export const ContainerWrapper = styled.div`
+export const ContainerWrapper = styled.section`
     width: 100%;
-    height: calc(100vh - 57px);
     display: flex;
-    position: relative;
     flex-direction: column;
-    position: relative;
-    top: 2%;
-    background-color: rgb(14, 16, 15);
+    background: linear-gradient(
+        18deg,
+        #000207 15%,
+        rgb(3 43 70) 60% 60%,
+        rgb(11 13 13) 100%
+    );
+`
+
+export const ColumnWrapper = styled.div`
+    ${Flex};
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+export const ProjectDescription = styled.div`
+    ${Flex};
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 768px) {
+        max-width: 600px;
+        align-items: flex-start;
+    }
 `
 
 export const ColumnContainer = styled.div`
     ${Flex};
+    width: 100%;
+    min-height: 100vh;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
 
-export const RowContainer = styled.div`
+export const RowContainer = styled.article`
     ${Flex};
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 0 0.85em;
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+        align-items: center;
+    }
 `
 export const BgImg = styled.img`
     width: 100%;
@@ -45,9 +75,9 @@ export const FlexContainer = styled.div`
     position: absolute;
 `
 export const Title = styled.div`
-    font-family: Poppins-black;
-    color: #fff;
-    font-size: 1.5rem;
+    font-family: NotoSansKR-SemiBold;
+    color: #0ae448;
+    font-size: 1.2rem;
 `
 
 export const App = styled.div`
@@ -83,17 +113,68 @@ export const AppContainer = styled.div`
     cursor: pointer;
 `
 export const Core = styled.h2`
-    color: #0ebeff;
-    font-family: Poppins-black;
+    font-family: NotoSansKR-SemiBold;
+    color: #b7b7b7;
 `
 export const Desc = styled.div`
     color: #fff;
-    width: auto;
-    height: 700px;
+    min-width: 600px;
+    min-height: 600px;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: auto;
+    }
 `
+
 export const ProjectImg = styled.img`
     object-fit: cover;
     width: auto;
     height: auto;
+    width: 100%;
     max-width: 400px;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        min-width: 400px;
+    }
+`
+
+export const LinkWrapper = styled.div`
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+`
+
+export const Link = styled.a`
+   text-align: center;
+    color: rgb(123 123 123);
+    background: linear-gradient(135deg, #a1a3ac, #ffffff);
+    padding: 0.5em 1.1em;
+    border-radius: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+    text-decoration-line: none;
+    font-family: NotoSansKR-Medium;
+    font-size: 1rem;
+    font-family: NotoSansKR-Medium;
+    cursor: pointer;
+    text-decoration-line: none;
+    min-width:120px;
+    &:hover {
+        color: #37393a;
+    }
+    &:active {
+        color: #000;
+        opacity: 0.7;
+    }
+    
+    };
+`
+
+export const LinkDescription = styled.p`
+    margin: 0;
 `

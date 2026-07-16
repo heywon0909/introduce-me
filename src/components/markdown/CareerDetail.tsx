@@ -18,10 +18,10 @@ export default function CareerDetail({ fetchUrl }: Props) {
                     <code
                         style={{
                             color: '#fff',
-                            fontSize: '1rem',
+                            fontSize: 'clamp(0.9rem,4vw,1rem)',
                             padding: '2px',
                             width: '100%',
-                            fontFamily: 'NotoSansKR-Light',
+                            fontFamily: 'NotoSansKR-Regular',
                         }}
                     >
                         {children}
@@ -31,9 +31,10 @@ export default function CareerDetail({ fetchUrl }: Props) {
                     <ul
                         style={{
                             color: '#fff',
-                            fontSize: '1rem',
+                            fontSize: 'clamp(0.9rem,4vw,1rem)',
                             padding: '2px',
                             width: '100%',
+                            fontFamily: 'NotoSansKR-Regular',
                         }}
                     >
                         {children}
@@ -44,6 +45,8 @@ export default function CareerDetail({ fetchUrl }: Props) {
                         style={{
                             color: '#fff',
                             padding: '5px',
+                            fontSize: 'clamp(0.8rem,4vw,0.9rem)',
+                            fontFamily: 'NotoSansKR-Regular',
                         }}
                     >
                         {children}
@@ -53,6 +56,8 @@ export default function CareerDetail({ fetchUrl }: Props) {
                     <p
                         style={{
                             padding: '3px',
+                            fontSize: 'clamp(0.8rem,4vw,0.9rem)',
+                            fontFamily: 'NotoSansKR-Light',
                         }}
                     >
                         {children}
@@ -62,12 +67,24 @@ export default function CareerDetail({ fetchUrl }: Props) {
                     <h2
                         style={{
                             padding: '10px',
-                            fontSize: '1rem',
-                            color: '#a5bdfd',
+                            fontSize: 'clamp(0.9rem,4vw,1rem)',
+                            color: '#fff',
+                            fontFamily: 'NotoSansKR-Regular',
                         }}
                     >
                         {children}
                     </h2>
+                ),
+                h3: ({ children }) => (
+                    <h3
+                        style={{
+                            fontSize: 'clamp(1rem,4vw,1.1rem)',
+                            color: '#fff',
+                            fontFamily: 'NotoSansKR-Regular',
+                        }}
+                    >
+                        {children}
+                    </h3>
                 ),
             }}
         >

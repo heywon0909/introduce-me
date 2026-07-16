@@ -1,8 +1,9 @@
 import { LazyImage } from '@components/common/Image/LazyImage'
-import { Loading } from '@components/loading/Loading'
 import CareerDetail from '@components/markdown/CareerDetail'
 import * as S from '@pages/project/styled'
+import { FaGithub } from 'react-icons/fa'
 import { Suspense } from 'react'
+import { Loading } from '@components/loading/Loading'
 interface Props {
     id: number
     core: string
@@ -10,6 +11,10 @@ interface Props {
     desc: string
     imageUrl: string
     optimizationImgUrl: string
+    github: {
+        title: string
+        url: string
+    }
 }
 export const ProjectDesc = ({
     id,
@@ -18,25 +23,25 @@ export const ProjectDesc = ({
     desc,
     imageUrl,
     optimizationImgUrl,
+    github,
 }: Props) => (
-    <S.RowContainer
-        style={{
-            justifyContent: 'center',
-            padding: '120px 0',
-            gap: '10px',
-        }}
-        id={String(id)}
-    >
-        <S.ColumnContainer style={{ width: '40%' }}>
+    <S.RowContainer id={String(id)}>
+        <S.ProjectDescription>
             <S.Core>{core}</S.Core>
             <S.Title>{title}</S.Title>
+            <S.LinkWrapper>
+                <S.Link href={github.url} target="_blank">
+                    <FaGithub size="20" />
+                    <S.LinkDescription>{github.title}</S.LinkDescription>
+                </S.Link>
+            </S.LinkWrapper>
             <S.Desc>
                 <Suspense fallback={<Loading />}>
                     <CareerDetail fetchUrl={desc} />
                 </Suspense>
             </S.Desc>
-        </S.ColumnContainer>
-        <S.ColumnContainer style={{ width: '30%', marginTop: '3%' }}>
+        </S.ProjectDescription>
+        <S.ColumnWrapper>
             <LazyImage
                 src={optimizationImgUrl}
                 fallbackComponent={
@@ -47,6 +52,6 @@ export const ProjectDesc = ({
                     />
                 }
             />
-        </S.ColumnContainer>
+        </S.ColumnWrapper>
     </S.RowContainer>
 )
