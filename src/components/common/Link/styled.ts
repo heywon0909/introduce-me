@@ -6,8 +6,8 @@ export const MenuLink = styled(Link, {
         propName !== 'clicked',
 })<{ clicked?: boolean }>`
     text-align: center;
-    color: rgb(123 123 123);
-    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    background: linear-gradient(135deg, #6d8bff, #9b6dff);
     padding: 0.7rem 1.4rem;
     border-radius: 20px;
     text-decoration-line: none;
@@ -17,10 +17,11 @@ export const MenuLink = styled(Link, {
     cursor: pointer;
     text-decoration-line: none;
     &:hover {
-        color: #fff;
+        background: linear-gradient(135deg, #5972d4, #8259d9);
+        color: #d6d5d5;
     }
     &:active {
-        color: #fff;
+        opacity: 0.7;
     }
     ${(props) =>
         props.clicked &&
