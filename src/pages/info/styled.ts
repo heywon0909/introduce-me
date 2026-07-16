@@ -3,7 +3,6 @@ import styled from '@emotion/styled'
 import { Link } from 'react-router-dom'
 
 export const ContainerWrapper = styled.div`
-    width: 100%;
     height: auto;
     display: flex;
     position: relative;
@@ -29,7 +28,7 @@ export const UserTitle = styled.div`
     background-clip: text;
     color: transparent;
     font-size: 1.3rem;
-    @media (max-width: 500px) {
+    @media (max-width: 576px) {
         font-size: 1.1rem;
     }
 `
@@ -41,7 +40,6 @@ export const Title = styled.div`
 `
 
 export const InfoWrapper = styled.div`
-    width: 60%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -64,14 +62,14 @@ export const Mybanner = styled.div`
     padding: 20px 2px;
     border-radius: 0.5rem;
     @media (max-width: 600px) {
-        width: 100%;
+        width: auto;
     }
 `
 export const Desc = styled.p`
     font-family: NotoSansKR-Bold;
     color: #7e51ff;
     font-size: 1.1rem;
-    @media (max-width: 500px) {
+    @media (max-width: 576px) {
         font-size: 1.1rem;
     }
 `
@@ -80,7 +78,7 @@ export const DetailDesc = styled.p`
     color: #fff;
     font-size: 1rem;
     width: 262px;
-    @media (max-width: 500px) {
+    @media (max-width: 576px) {
         font-size: 1.1rem;
     }
 `
@@ -92,9 +90,6 @@ export const UserLink = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    @media (max-width: 600px) {
-        width: 100%;
-    }
 `
 
 export const Userbanner = styled.div<{
@@ -108,9 +103,6 @@ export const Userbanner = styled.div<{
     padding: 10px 10px;
     border-radius: 0.5rem;
     width: ${({ width }) => String(width) + '%'};
-    @media (max-width: 600px) {
-        width: 100%;
-    }
 `
 
 export const UserDesc = styled.div<{
@@ -135,14 +127,13 @@ export const UserImg = styled.img`
     object-fit: cover;
     border-radius: 50%;
     float: right;
-    @media (max-width: 500px) {
+    @media (max-width: 576px) {
         width: 130px;
         height: 130px;
     }
 `
 
 export const UserInfoWrapper = styled.div`
-    width: 60%;
     padding: 2px 2px;
     height: 291px;
     display: flex;
@@ -153,13 +144,11 @@ export const UserInfoWrapper = styled.div`
 `
 
 export const UserInfo = styled.div`
-    width: 100%;
     display: flex;
     padding: 2px 2px;
 `
 
 export const UserWrapper = styled.div<{ url?: string }>`
-    width: 100%;
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -189,7 +178,6 @@ export const Text = styled.span`
     line-height: 100%;
     margin: 0;
     font-family: Poppins-black;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -208,11 +196,10 @@ export const SkillText = styled.span<{
         importance === 'strong'
             ? 'rgb(76 61 255)'
             : importance === 'knowlegable'
-            ? 'rgb(28 222 28)'
-            : 'white'};
+              ? 'rgb(28 222 28)'
+              : 'white'};
     margin: 0;
     font-family: Poppins-semibold;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -222,20 +209,17 @@ export const SkillText = styled.span<{
 `
 
 export const SkillsWrapper = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 `
 
 export const SkillSection = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
 `
 
 export const Skills = styled.div`
-    width: 100%;
     gap: 4%;
     display: flex;
     padding: 2px 2px;
@@ -245,7 +229,7 @@ export const TitleText = styled.span`
     font-family: NotoSansKR-Bold;
     color: #fff;
     font-size: 1.1rem;
-    @media (max-width: 500px) {
+    @media (max-width: 576px) {
         font-size: 1.1rem;
     }
 `
@@ -326,7 +310,7 @@ export const ProjectTitle = styled.h2`
 export const Container = styled.div`
     ${Flex};
     gap: 4px;
-    flex-direction: row;
+    flex-wrap: wrap;
 `
 export const ProjectTag = styled.div`
     width: auto;
@@ -334,4 +318,5 @@ export const ProjectTag = styled.div`
     background: #822ae6;
     border-radius: 0.5rem;
     font-size: 0.8rem;
+    min-width: 64px;
 `
