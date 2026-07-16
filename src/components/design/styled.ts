@@ -38,13 +38,12 @@ export const TitleWrap = styled.div`
 `
 
 export const Title = styled.span`
-    font-size: 11rem;
+    font-size: clamp(2rem, 10vw, 11rem);
     letter-spacing: -0.01em;
     line-height: 100%;
     margin: 0;
     font-family: Kanit-extrabold;
     width: 100%;
-    -webkit-background-clip: text;
     background-clip: text;
     background-size: 100%;
     transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
@@ -60,6 +59,7 @@ export const Title = styled.span`
     background-image: linear-gradient(114deg, #688bae 0%, #d8a67d 100%);
     -webkit-background-clip: text;
     color: transparent;
+    height: 2em;
 `
 
 export const Frame = styled.div<{ left?: number; right?: number }>`
