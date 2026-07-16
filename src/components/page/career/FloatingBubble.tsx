@@ -22,8 +22,8 @@ const FloatingBubbles = () => {
                 id: i, // 리액트 반복문(map)을 위한 고유 키
                 size: `${String(size)}px`,
                 left: `${String(Math.random() * 100)}%`,
-                duration: `${String(8 + Math.random() * 12)}s`, // 8초 ~ 20초
-                delay: `${String(Math.random() * 10)}s`, // 0초 ~ 10초 대기
+                duration: `${String(Math.random() * 20)}s`, // 8초 ~ 20초
+                delay: `${String(Math.random())}s`, // 0초 ~ 10초 대기
             })
         }
 
@@ -41,7 +41,7 @@ const FloatingBubbles = () => {
                         width: bubble.size,
                         height: bubble.size,
                         left: bubble.left,
-                        bottom: '-50px', // 화면 살짝 아래에서 시작
+                        bottom: '0px', // 화면 살짝 아래에서 시작
                         animationDuration: bubble.duration,
                         animationDelay: bubble.delay,
                         position: 'absolute', // CSS에 없다면 추가

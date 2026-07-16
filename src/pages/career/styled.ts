@@ -4,17 +4,15 @@ import styled from '@emotion/styled'
 export const Title = styled.h2`
     font-family: Poppins-black;
     color: #fff;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 4vw, 2rem);
     margin: 0.09em;
 `
 
 export const Text = styled.p`
     font-family: Poppins-black;
     color: rgb(182 182 182);
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
 `
-
-//TODO: design 폴더에 넣어야할ㄷ듯...?
 export const Grid = styled.div`
     position: absolute;
     top: 0;
@@ -33,10 +31,18 @@ export const Grid = styled.div`
     );
 `
 
-export const Section = styled.section`
+export const Section = styled.section<{ dir?: 'row' | 'column' }>`
     display: flex;
-    flex-direction: column;
+    flex-direction: ${({ dir }) => dir ?? 'column'};
+    justify-content: center;
     width: 100%;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+`
+
+export const IntroduceText = styled.div`
+    min-height: 220px;
 `
 
 export const Li = styled.li`
@@ -55,9 +61,13 @@ export const Article = styled.article`
     align-items: center;
     gap: 15px;
     width: 70%;
-
-    @media (max-width: 768px) {
-        flex-wrap: wrap;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        margin: 1em;
+        align-items: flex-start;
+    }
+    @media (max-width: 576px) {
+        width: 90%;
     }
 `
 export const Company = styled.div``
@@ -70,7 +80,7 @@ export const Description = styled.div`
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     overflow: hidden;
-    opacity: 1;
+    opacity: 0;
     transform: translateY(40px);
     max-width: 700px;
 `
@@ -83,14 +93,16 @@ export const SectionBG = styled.div<{ bg: string }>`
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow-x: hidden;
 `
 
 export const IntroduceArticle = styled(Article)`
+    width: auto;
     background: rgb(166 166 166 / 14%);
     backdrop-filter: blur(90px);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 3rem;
+    padding: clamp(1em, 4vw, 3em);
     flex-direction: row;
 `
 
@@ -140,7 +152,6 @@ export const CompanyCareer = styled.div`
     padding: 2px 15px;
     border-left: 0.1rem solid #7c7c7c;
     display: flex;
-    width: 60%;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -222,6 +233,12 @@ const bubbleRise = keyframes`
         }
   `
 
+const spin = keyframes`
+  to { 
+    transform: rotate(360deg); 
+  }
+`
+
 export const Bubble = styled.div`
     position: absolute;
     border-radius: 50%;
@@ -233,4 +250,55 @@ export const Bubble = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.05);
     pointer-events: none;
     animation: ${bubbleRise} linear infinite;
+`
+
+export const Link = styled.a`
+    text-align: center;
+    color: rgb(123 123 123);
+    padding: 0.7rem 1.2rem;
+    border-radius: 20px;
+    border: 0;
+    text-decoration-line: none;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    cursor: pointer;
+    position: relative;
+    text-decoration-line: none;
+    max-width: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    isolation: isolate;
+    overflow: hidden;
+    max-width: 105px;
+    font-family: inherit;
+
+    &:hover {
+        color: #fff;
+    }
+    &:active {
+        color: #fff;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        inset: -2px;
+        z-index: -1;
+        border-radius: inherit;
+        background: conic-gradient(
+            from 0deg,
+            #0b2843,
+            #9b6dff,
+            #0487e7,
+            #0b2843
+        );
+        animation: ${spin} 4s linear infinite;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 2px;
+        z-index: -1;
+        border-radius: 20px;
+        background: #10141d;
+    }
 `
