@@ -31,7 +31,7 @@ export default function Project() {
             optimizationImgUrl: OProjectBunney,
             core: 'Open Source library',
             title: 'React UI 라이브러리 제작',
-            desc: '/introduce-me/assets/md/project-bunney.md',
+            desc: '/assets/md/project-bunney.md',
             github: {
                 title: 'bunney-ui',
                 url: 'https://github.com/heywon0909/bunney-ui',
@@ -43,7 +43,7 @@ export default function Project() {
             optimizationImgUrl: OProjectEslint,
             title: '나만의 eslint plugin 제작',
             core: 'ESlint plugin',
-            desc: '/introduce-me/assets/md/project-plugin.md',
+            desc: '/assets/md/project-plugin.md',
             github: {
                 title: 'eslint-plugin-ate',
                 url: 'https://github.com/heywon0909/ate',
@@ -55,7 +55,7 @@ export default function Project() {
             optimizationImgUrl: OProjectGame,
             title: '짝맞추기 게임을 React로 구현',
             core: 'React Game Project',
-            desc: '/introduce-me/assets/md/project-game.md',
+            desc: '/assets/md/project-game.md',
             github: {
                 title: 'match-picture-game',
                 url: 'https://github.com/heywon0909/match-picture-game',
@@ -67,7 +67,7 @@ export default function Project() {
             optimizationImgUrl: OProjectAudio,
             title: 'web Audio API 활용하여 오디오 음향 효과 웹페이지',
             core: 'web Audio API',
-            desc: '/introduce-me/assets/md/project-audio.md',
+            desc: '/assets/md/project-audio.md',
             github: {
                 title: 'audio-mixer',
                 url: 'https://github.com/heywon0909/audio-mixer',

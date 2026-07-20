@@ -49,7 +49,7 @@ const router = createBrowserRouter(
         },
     ],
     {
-        basename: '/introduce-me/',
+        basename: '/',
     }
 )
 

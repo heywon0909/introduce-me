@@ -4,9 +4,10 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/introduce-me/',
+    // base: '/introduce-me/',
+    base: '/',
     build: {
-        assetsDir: path.resolve(__dirname, 'build'),
+        assetsDir: path.resolve(__dirname, 'dist'),
         rollupOptions: {
             input: path.resolve(__dirname, 'index.html'),
             output: {
