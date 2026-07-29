@@ -8,15 +8,25 @@ export const LogoImg = styled.img`
 
 export const LogoImgWrapper = styled.div`
     width: 40px;
-    margin-top: 0px;
+    height: auto;
     margin-left: 5px;
-    padding-top: 2px;
 `
 
 export const Logo = styled.span`
     color: #fff;
     font-family: Lemon;
     font-size: 16px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+`
+
+export const Wrapper = styled.div`
+    position: relative;
+    width: 120px;
+    height: 24px;
 `
 
 export const LogoWrapper = styled(Link)`

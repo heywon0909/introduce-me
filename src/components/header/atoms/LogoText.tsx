@@ -7,9 +7,9 @@ interface Props {
 }
 export const LogoText = memo(({ name }: Props) => (
     <S.LogoWrapper to="/">
-        {name.split('').map((v, i) => (
-            <S.Logo key={v + String(i)}>{v}</S.Logo>
-        ))}
+        <S.Wrapper>
+            <S.Logo>{name}</S.Logo>
+        </S.Wrapper>
         <S.LogoImgWrapper>
             <Logo size={2} color="#3110ff" />
         </S.LogoImgWrapper>
