@@ -15,12 +15,6 @@ export const Container = styled.div`
         flex-direction: column;
     }
 `
-export const JobDesc = styled.div`
-    color: rgb(84 32 181);
-    font-size: 1.5rem;
-    font-family: Kanit-medium;
-    font-weight: 100;
-`
 
 export const ContentWrapper = styled.div`
     display: flex;
@@ -55,7 +49,6 @@ export const Title = styled.span`
     @media (max-width: 600px) {
         font-size: 10vw;
     }
-    // background-image: linear-gradient(70deg, #8a67ec, #1a05ec);
     background-image: linear-gradient(114deg, #688bae 0%, #d8a67d 100%);
     -webkit-background-clip: text;
     color: transparent;

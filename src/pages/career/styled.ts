@@ -2,14 +2,14 @@ import { keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 
 export const Title = styled.h2`
-    font-family: Poppins-black;
+    font-family: NotoSansKR-Bold;
     color: #fff;
     font-size: clamp(1.2rem, 4vw, 2rem);
     margin: 0.09em;
 `
 
 export const Text = styled.p`
-    font-family: Poppins-black;
+    font-family: NotoSansKR-Medium;
     color: rgb(182 182 182);
     font-size: clamp(0.9rem, 3vw, 1.1rem);
 `
@@ -175,11 +175,6 @@ export const CompanyTitle = styled.h2`
     font-family: NotoSansKR-Bold;
     color: rgb(182 182 182);
     font-size: 1.5rem;
-`
-
-export const CompanyPeriod = styled.div`
-    font-family: Poppins-black;
-    color: #fff;
 `
 
 export const CompanyDesc = styled.div`

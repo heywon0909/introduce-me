@@ -24,8 +24,6 @@ export const FlexContainer = styled.div`
 
 export const UserTitle = styled.div`
     font-family: NotoSansKR-Bold;
-    background: linear-gradient(45deg, #f6a8cc, #8e47c8);
-    background-clip: text;
     color: transparent;
     font-size: 1.3rem;
     @media (max-width: 576px) {
@@ -34,7 +32,7 @@ export const UserTitle = styled.div`
 `
 
 export const Title = styled.div`
-    font-family: Poppins-black;
+    font-family: NotoSansKR-Bold;
     color: #fff;
     font-size: 1.5rem;
 `
@@ -162,7 +160,7 @@ export const UserText = styled.span`
     letter-spacing: -0.01em;
     line-height: 100%;
     margin: 0;
-    font-family: Poppins-black;
+    font-family: NotoSansKR-Regular;
     width: 200px;
     color: rgb(238 210 247);
     display: flex;
@@ -177,7 +175,7 @@ export const Text = styled.span`
     letter-spacing: -0.01em;
     line-height: 100%;
     margin: 0;
-    font-family: Poppins-black;
+    font-family: NotoSansKR-Regular;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -199,12 +197,11 @@ export const SkillText = styled.span<{
               ? 'rgb(28 222 28)'
               : 'white'};
     margin: 0;
-    font-family: Poppins-semibold;
+    font-family: NotoSansKR-SemiBold;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    position: relative;
     margin-bottom: 10px;
 `
 
