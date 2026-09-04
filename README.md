@@ -23,4 +23,7 @@
 ### 2. code convention
 - 자체 제작한 eslint-config-everything 🎁 적용
 - 추후 다른 프로젝트에서도 eslint-config-everything rule을 적용할 예정 
-  
+
+---
+## 🔔 포트폴리오 웹사이트 업데이트 
+website 최신 버전(https://introduce-me-kappa.vercel.app/)
